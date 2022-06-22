@@ -20,6 +20,39 @@
     <title>Connect 4</title>
 </head>
 <body>
+    <header>
+        <!-- navigation bar created with bootstrap 5.0.2 see READme for credits -->
+        <nav class="navbar navbar-expand-md navbar-light navbar-padding-right">
+            <a href="#" class="navbar-brand" style="margin-left: 10px;">
+                <img src="assets/images/connect-4-logo.png" alt="Connect 4 logo" class="d-inline-block align-text-top d-md-none">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle naviation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li>
+                        <a class="nav-link" href="#newGameModal" id="#newGameModal">New Game</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#helpModal" id="#helpModal">Help</a>
+                    </li>
+                    <li>
+                        <a class="d-none d-md-block" href="#">
+                            <img src="assets/images/connect-4-logo.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#settingsModal" id="#settingsModal">Settings</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#contactModal" id="#contactModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
     <!-- font awesome link -->
     <script src="https://kit.fontawesome.com/2da9131e05.js" crossorigin="anonymous"></script>
