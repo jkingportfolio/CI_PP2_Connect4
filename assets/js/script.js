@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // Variables
 
-const cells = document.querySelectorAll('.game-grid span')
-let currentPlayer = 1
+const cells = document.querySelectorAll('.game-grid span');
+let currentPlayer = 1;
 let winningCombinations = [
             //horizontal
             [0, 1, 2, 3],
@@ -78,7 +78,7 @@ let winningCombinations = [
             [15, 23, 31, 39],
             [16, 24, 32, 40],
             [17, 25, 33, 41],
-]
+];
 
 // Loop through all cell spans, determine whos turn it is, then check if counter placement is valid
 for (let i = 0; i < cells.length; i++) {
@@ -94,7 +94,7 @@ for (let i = 0; i < cells.length; i++) {
             } else if (currentPlayer == 2) {
                 cells[i].classList.add('occupied');
                 cells[i].classList.add('player-two');
-                currentPlayer == 1;
+                currentPlayer = 1;
                 notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
             }
         } else alert('Cannot place here');
