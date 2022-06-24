@@ -114,6 +114,16 @@ position: relative;
     background-color: rgb(43, 46, 226);
 }
 
+/* counters */
+
+.player-one {
+    background-color: red;
+}
+
+.player-two {
+    background-color: yellow;
+}
+
 footer {
     display: flex !important;
     flex-direction: row !important;
