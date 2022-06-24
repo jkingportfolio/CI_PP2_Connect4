@@ -54,6 +54,10 @@ header {
     padding-right:10px;
 }
 
+#game-notification {
+    text-align: center;
+}
+
 section {
 position: relative;
 }
