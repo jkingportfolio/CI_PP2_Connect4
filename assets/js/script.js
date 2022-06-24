@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function(){
+
 // Variables
 
 let winningCombinations = [
@@ -76,7 +78,7 @@ let winningCombinations = [
             [17, 25, 33, 41],
 ]
 
-
+});
 
 
 // Modals
