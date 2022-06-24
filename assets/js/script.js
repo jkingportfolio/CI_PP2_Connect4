@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 const cells = document.querySelectorAll('.game-grid span');
 let currentPlayer = 1;
+let notification = document.getElementById('game-notification');
 let winningCombinations = [
             //horizontal
             [0, 1, 2, 3],
@@ -80,6 +81,39 @@ let winningCombinations = [
             [17, 25, 33, 41],
 ];
 
+// Check board for winning combination
+function winCheck () {
+    for (let i = 0; i < winningCombinations.length; i++) {
+        const cell1 = cells[winningCombinations[i][0]];
+        const cell2 = cells[winningCombinations[i][1]];
+        const cell3 = cells[winningCombinations[i][2]];
+        const cell4 = cells[winningCombinations[i][3]];
+
+        if (
+            cell1.classList.contains('player-one') &&
+            cell2.classList.contains('player-one') &&
+            cell3.classList.contains('player-one') &&
+            cell4.classList.contains('player-one')
+        )
+        {
+            notification.innerText = ('Player 1 wins');
+            // Add function to end game, restart or quit
+        }
+        if (
+            cell1.classList.contains('player-two') &&
+            cell2.classList.contains('player-two') &&
+            cell3.classList.contains('player-two') &&
+            cell4.classList.contains('player-two')
+        )
+        {
+            notification.innerText = ('Player 2 wins');
+            // Add function to end game, restart or quit
+        }
+        
+
+    }
+}
+
 // Loop through all cell spans, determine whos turn it is, then check if counter placement is valid
 for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = () => {
@@ -98,6 +132,7 @@ for (let i = 0; i < cells.length; i++) {
                 notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
             }
         } else alert('Cannot place here');
+        winCheck();
     }
 }
 
