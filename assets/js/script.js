@@ -98,6 +98,7 @@ function winCheck () {
         {
             notification.innerText = ('Player 1 wins');
             // Add function to end game, restart or quit
+            newGame();
         }
         if (
             cell1.classList.contains('player-two') &&
@@ -108,6 +109,7 @@ function winCheck () {
         {
             notification.innerText = ('Player 2 wins');
             // Add function to end game, restart or quit
+            newGame();
         }
         
 
@@ -134,6 +136,12 @@ for (let i = 0; i < cells.length; i++) {
         } else alert('Cannot place here');
         winCheck();
     }
+}
+
+function newGame() {
+    for (let i = 0; i < cells.length - 7; i++) {
+        cells[i].classList.remove('player-one', 'player-two', 'occupied');
+     }
 }
 
 });
