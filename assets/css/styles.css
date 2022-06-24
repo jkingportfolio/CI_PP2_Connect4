@@ -87,7 +87,7 @@ position: relative;
     overflow: hidden;
     border: 5px solid #000000;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 10rem auto;
 }
 
 .game-grid {
@@ -244,5 +244,9 @@ footer {
 
     .game-section {
         min-height: 30vh;
+    }
+
+    .game-board {
+        margin: 3rem auto;
     }
 }
