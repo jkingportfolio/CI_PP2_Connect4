@@ -243,6 +243,10 @@ footer {
         align-items: center;
     }
 
+    #game-notification {
+        padding-top: 40px;
+    }
+
     .game-section {
         min-height: 30vh;
     }
