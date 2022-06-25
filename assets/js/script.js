@@ -133,7 +133,7 @@ for (let i = 0; i < cells.length; i++) {
                 currentPlayer = 1;
                 notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
             }
-        } else alert('Cannot place here');
+        } else notification.innerHTML = 'Invalid move!';
         winCheck();
     }
 }
