@@ -81,6 +81,7 @@ let winningCombinations = [
             [17, 25, 33, 41],
 ];
 
+
 // Check board for winning combination
 function winCheck () {
     for (let i = 0; i < winningCombinations.length; i++) {
