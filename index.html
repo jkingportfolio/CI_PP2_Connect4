@@ -188,7 +188,25 @@
                 <section class="contact-modal">
                         <div class="modal-content">
                             <div class="contact-close">+</div>
-                            <p>Contact</p>
+                            <h3>Contact us</h3>
+                            <form id="contact-form" action="https://formdump.codeinstitute.net" method="POST" class="form-container">
+                                <div class="">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" aria-describedby="name" required>
+                                </div>
+                                <div class="">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" name="email" aria-describedby="email"
+                                        required>
+                                </div>
+                                <div class="">
+                                    <label for="message" class="form-label">Let me know what you think!</label>
+                                    <textarea class="message" rows="10" name="message" id="message"
+                                        placeholder="Enter your message here"></textarea>
+                                </div>
+                                <!-- submit button -->
+                                <button type="submit" form="contact-form" class="submit-button" aria-label="Submit">Submit</button>
+                            </form>
                         </div>
                 </section>
     </main>
