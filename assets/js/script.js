@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
-    let playerTwoComputer = false;
+    let playerTwoComputer = true;
+    let computerRandomNumber;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
         //horizontal
@@ -98,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Game logic for when two human players are playing
     function twoPlayerGame() {
         // Loop through all cell spans, determine whos turn it is, then check if counter placement is valid (2 player)
         for (let i = 0; i < cells.length; i++) {
@@ -119,10 +121,32 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
+
     // One player vs computer game logic function
     function onePlayerGame() {
-
+        for (let i = 0; i < cells.length; i++) {
+            if (currentPlayer = 2 && playerTwoComputer){
+                computerRandomNumber = cells[Math.floor(Math.random() * i)];
+                console.log(computerRandomNumber);
+                cells[i].classList.add('occupied');
+                cells[i].classList.add('player-two');
+                currentPlayer = 1;
+                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+            } else if (currentPlayer = 1 && playerTwoComputer){
+            cells[i].onclick = () => {
+                if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
+                    if (currentPlayer == 1) {
+                        cells[i].classList.add('occupied');
+                        cells[i].classList.add('player-one');
+                        currentPlayer = 2;
+                        notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+                    } else notification.innerHTML = 'Invalid move!';
+                } 
+                winCheck();
+            }
+        }
     }
+}
     // Player one turn when against the computer
     function onePlayerTurn() {
 
