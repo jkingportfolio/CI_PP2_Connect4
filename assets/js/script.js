@@ -85,6 +85,32 @@ let sounds = false;
 let music = false;
 let gameOver = false;
 
+// Wipe all occupied counters from the board
+function newGame() {
+    for (let i = 0; i < cells.length - 7; i++) {
+        cells[i].classList.remove('player-one', 'player-two', 'occupied');
+     }
+}
+
+// Loop through all cell spans, determine whos turn it is, then check if counter placement is valid (2 player)
+for (let i = 0; i < cells.length; i++) {
+    cells[i].onclick = () => {
+        if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
+            if (currentPlayer == 1) {
+                cells[i].classList.add('occupied');
+                cells[i].classList.add('player-one');
+                currentPlayer = 2;
+                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+            } else if (currentPlayer == 2) {
+                cells[i].classList.add('occupied');
+                cells[i].classList.add('player-two');
+                currentPlayer = 1;
+                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+            }
+        } else notification.innerHTML = 'Invalid move!';
+        winCheck();
+    }
+}
 
 // Check board for winning combination
 function winCheck () {
@@ -119,32 +145,6 @@ function winCheck () {
         
 
     }
-}
-
-// Loop through all cell spans, determine whos turn it is, then check if counter placement is valid
-for (let i = 0; i < cells.length; i++) {
-    cells[i].onclick = () => {
-        if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
-            if (currentPlayer == 1) {
-                cells[i].classList.add('occupied');
-                cells[i].classList.add('player-one');
-                currentPlayer = 2;
-                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-            } else if (currentPlayer == 2) {
-                cells[i].classList.add('occupied');
-                cells[i].classList.add('player-two');
-                currentPlayer = 1;
-                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-            }
-        } else notification.innerHTML = 'Invalid move!';
-        winCheck();
-    }
-}
-
-function newGame() {
-    for (let i = 0; i < cells.length - 7; i++) {
-        cells[i].classList.remove('player-one', 'player-two', 'occupied');
-     }
 }
 
 });
