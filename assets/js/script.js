@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
     let playerTwoComputer = false;
-    let computerRandomNumber;
+    let computerRandomNumber = cells[Math.floor(Math.random() * cells.length)];
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
         //horizontal
