@@ -92,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
             cells[i].classList.remove('player-one', 'player-two', 'occupied');
             if (!playerTwoComputer) {
                 twoPlayerGame();
+            } else {
+                onePlayerGame();
             }
         }
     }
@@ -116,6 +118,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 winCheck();
             }
         }
+    }
+    // One player vs computer game logic function
+    function onePlayerGame() {
+
+    }
+    // Player one turn when against the computer
+    function onePlayerTurn() {
+
     }
 
     // Check board for winning combination
