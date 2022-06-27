@@ -130,6 +130,10 @@ position: relative;
     border-radius: 50%;
 }
 
+.game-cell:hover {
+    cursor: pointer;
+}
+
 .game-cell-bottom {
     background-color: rgb(43, 46, 226);
 }
