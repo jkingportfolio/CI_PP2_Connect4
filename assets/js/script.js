@@ -129,29 +129,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    //New onePlayerGame function to try and provide functionality to human vs computer game type
     function onePlayerGame() {
-        for (let i = 0; i < cells.length; i++) {
-            computerRandomNumber = Math.floor(Math.random() * cells.length + 1);
-            if (currentPlayer = 2) {
-                if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
-                    cells[computerRandomNumber].classList.add('occupied');
-                    cells[computerRandomNumber].classList.add('player-two');
-                    currentPlayer = 1;
-                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-                } else                
-                winCheck();
-            } else if (currentPlayer = 1) {
-                cells[i].onclick = () => {
-                    if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
-                        cells[i].classList.add('occupied');
-                        cells[i].classList.add('player-two');
-                        currentPlayer = 2;
-                        notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-                    } else notification.innerHTML = 'Invalid move!';
-                    winCheck();
-                }
-            }
-        }
+        if (currentPlayer == 1) {
+            playerOneTurn();
+        } else computerTurn();
     }
 
     // Player one turn when against the computer
@@ -170,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function computerTurn(){
-
+        
     }
     
 
@@ -253,3 +235,30 @@ document.querySelector('.contact-close').addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "None";
     });
+
+
+    // One player game function pre splitting up of functions to try and fix issues with computer players turn
+    // function onePlayerGame() {
+    //     for (let i = 0; i < cells.length; i++) {
+    //         computerRandomNumber = Math.floor(Math.random() * cells.length + 1);
+    //         if (currentPlayer = 2) {
+    //             if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
+    //                 cells[computerRandomNumber].classList.add('occupied');
+    //                 cells[computerRandomNumber].classList.add('player-two');
+    //                 currentPlayer = 1;
+    //                 notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+    //             } else                
+    //             winCheck();
+    //         } else if (currentPlayer = 1) {
+    //             cells[i].onclick = () => {
+    //                 if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
+    //                     cells[i].classList.add('occupied');
+    //                     cells[i].classList.add('player-two');
+    //                     currentPlayer = 2;
+    //                     notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+    //                 } else notification.innerHTML = 'Invalid move!';
+    //                 winCheck();
+    //             }
+    //         }
+    //     }
+    // }
