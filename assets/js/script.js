@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
-    let playerTwoComputer = true;
+    let playerTwoComputer = false;
     let computerRandomNumber;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
@@ -122,31 +122,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // One player vs computer game logic function
     function onePlayerGame() {
         for (let i = 0; i < cells.length; i++) {
-            if (currentPlayer = 2 && playerTwoComputer){
-                computerRandomNumber = cells[Math.floor(Math.random() * i)];
-                console.log(computerRandomNumber);
-                cells[i].classList.add('occupied');
-                cells[i].classList.add('player-two');
-                currentPlayer = 1;
-                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-            } else if (currentPlayer = 1 && playerTwoComputer){
-            cells[i].onclick = () => {
-                if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
-                    if (currentPlayer == 1) {
+            computerRandomNumber = cells[Math.floor(Math.random() * cells.length)];
+            if (currentPlayer = 2) {
+                if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
+                    cells[computerRandomNumber].classList.add('occupied');
+                    cells[computerRandomNumber].classList.add('player-two');
+                    currentPlayer = 1;
+                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+                } else notification.innerHTML = 'Invalid move!';
+                winCheck();
+            } else if (currentPlayer = 1) {
+                cells[i].onclick = () => {
+                    if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
                         cells[i].classList.add('occupied');
-                        cells[i].classList.add('player-one');
-                        currentPlayer = 2;
+                        cells[i].classList.add('player-two');
+                        currentPlayer = 1;
                         notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                     } else notification.innerHTML = 'Invalid move!';
-                } 
-                winCheck();
+                    winCheck();
+                }
             }
         }
     }
-}
+
     // Player one turn when against the computer
     function onePlayerTurn() {
 
@@ -168,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ) {
                 notification.innerText = ('Player 1 wins');
                 // Add function to end game, restart or quit
+                gameOver = true;
                 newGame();
             }
             if (
@@ -178,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ) {
                 notification.innerText = ('Player 2 wins');
                 // Add function to end game, restart or quit
+                gameOver = true;
                 newGame();
             }
 
