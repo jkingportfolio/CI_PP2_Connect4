@@ -155,9 +155,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Player one turn when against the computer
-    function onePlayerTurn() {
-
-    }
+    // function onePlayerTurn() {
+    //     for (let i = 0; i < cells.length; i++) {
+    //         cells[i].onclick = () => {
+    //             if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
+    //                 cells[i].classList.add('occupied');
+    //                 cells[i].classList.add('player-one');
+    //                 currentPlayer = 2;
+    //                 notification.innerHTML = `Its Player ${currentPlayer}'s turn!`                    
+    //             } else notification.innerHTML = 'Invalid move!';
+    //             winCheck();
+    //         }
+    //     }
+    // }
+    
 
     // Check board for winning combination
     function winCheck() {
