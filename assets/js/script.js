@@ -85,6 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let sounds = false;
     let music = false;
     let gameOver = false;
+    // While game active is false, game-notification to display the game type ie PvP PvC
+    let gameActive = false;
 
     newGame();
     // Wipe all occupied counters from the board
