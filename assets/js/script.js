@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
-    let playerTwoComputer = false;
+    let playerTwoComputer = true;
     let computerRandomNumber;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function onePlayerGame() {
         for (let i = 0; i < cells.length; i++) {
-            computerRandomNumber = cells[Math.floor(Math.random() * cells.length)];
+            computerRandomNumber = Math.floor(Math.random() * cells.length);
             if (currentPlayer = 2) {
                 if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
                     cells[computerRandomNumber].classList.add('occupied');
@@ -134,6 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentPlayer = 1;
                     notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                 } else notification.innerHTML = 'Invalid move!';
+                console.log(computerRandomNumber);
+                break;
                 winCheck();
             } else if (currentPlayer = 1) {
                 cells[i].onclick = () => {
@@ -188,6 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
     }
+
+
 
 });
 
