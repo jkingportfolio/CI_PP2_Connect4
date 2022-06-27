@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 const cells = document.querySelectorAll('.game-grid span');
 let currentPlayer = 1;
+let playerTwoComputer = false;
 let notification = document.getElementById('game-notification');
 let winningCombinations = [
             //horizontal
@@ -80,6 +81,9 @@ let winningCombinations = [
             [16, 24, 32, 40],
             [17, 25, 33, 41],
 ];
+let sounds = false;
+let music = false;
+let gameOver = false;
 
 
 // Check board for winning combination
