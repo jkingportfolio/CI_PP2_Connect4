@@ -124,8 +124,6 @@ function winCheck () {
 // Loop through all cell spans, determine whos turn it is, then check if counter placement is valid
 for (let i = 0; i < cells.length; i++) {
     cells[i].onclick = () => {
-        //log cell number which has been clicked - for testing
-        console.log(i);
         if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
             if (currentPlayer == 1) {
                 cells[i].classList.add('occupied');
