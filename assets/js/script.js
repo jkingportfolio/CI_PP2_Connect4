@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
-    let playerTwoComputer = true;
+    let playerTwoComputer = false;
     let computerRandomNumber;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
@@ -91,13 +91,18 @@ document.addEventListener("DOMContentLoaded", function () {
     newGame();
     // Wipe all occupied counters from the board
     function newGame() {
+        gameOver = false;
         for (let i = 0; i < cells.length - 7; i++) {
             cells[i].classList.remove('player-one', 'player-two', 'occupied');
-            if (!playerTwoComputer) {
-                twoPlayerGame();
-            } else {
-                onePlayerGame();
-            }
+            gameCheck();
+        }
+    }
+
+    function gameCheck() {
+        if (!playerTwoComputer) {
+            twoPlayerGame();
+        } else {
+            onePlayerGame();
         }
     }
 
@@ -126,23 +131,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function onePlayerGame() {
         for (let i = 0; i < cells.length; i++) {
-            computerRandomNumber = Math.floor(Math.random() * cells.length);
+            computerRandomNumber = Math.floor(Math.random() * cells.length + 1);
             if (currentPlayer = 2) {
                 if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
                     cells[computerRandomNumber].classList.add('occupied');
                     cells[computerRandomNumber].classList.add('player-two');
                     currentPlayer = 1;
                     notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-                } else notification.innerHTML = 'Invalid move!';
-                console.log(computerRandomNumber);
-                break;
+                } else                
                 winCheck();
             } else if (currentPlayer = 1) {
                 cells[i].onclick = () => {
                     if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
                         cells[i].classList.add('occupied');
                         cells[i].classList.add('player-two');
-                        currentPlayer = 1;
+                        currentPlayer = 2;
                         notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                     } else notification.innerHTML = 'Invalid move!';
                     winCheck();
@@ -189,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         }
-    }
+    } gameCheck();
 
 
 
