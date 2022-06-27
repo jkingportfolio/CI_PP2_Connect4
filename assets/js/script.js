@@ -151,9 +151,20 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function computerTurn(){
-        
-    }
+    // Computer turn when playing against computer
+    function computerTurn() {
+        for (let i = 0; i < cells.length; i++) {
+            computerRandomNumber = Math.floor(Math.random() * cells.length + 1);
+            if (currentPlayer = 2) {
+                if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
+                    cells[computerRandomNumber].classList.add('occupied');
+                    cells[computerRandomNumber].classList.add('player-two');
+                    currentPlayer = 1;
+                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+                } else
+                    winCheck();
+            }
+        }
     
 
     // Check board for winning combination
