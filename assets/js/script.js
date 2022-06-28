@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
-    let playerTwoComputer = false;
+    let playerTwoComputer = true;
     let computerRandomNumber;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
@@ -152,20 +152,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Computer turn when playing against computer
-    function computerTurn() {
-        for (let i = 0; i < cells.length; i++) {
-            computerRandomNumber = Math.floor(Math.random() * cells.length + 1);
-            if (currentPlayer = 2) {
-                if (cells[computerRandomNumber + 7].classList.contains('occupied') && !cells[computerRandomNumber].classList.contains('occupied')) {
-                    cells[computerRandomNumber].classList.add('occupied');
-                    cells[computerRandomNumber].classList.add('player-two');
-                    currentPlayer = 1;
-                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-                } else
-                    winCheck();
-            }
-        }
-    }
+    function computerTurn() { 
+            computerRandomNumber = Math.floor((Math.random() * cells.length));
+            console.log(computerRandomNumber); 
+            while (!cells[computerRandomNumber + 7].classList.contains('occupied') && cells[computerRandomNumber].classList.contains('occupied')) {                
+            }; 
+            cells[computerRandomNumber].classList.add('occupied');
+            cells[computerRandomNumber].classList.add('player-two');
+            currentPlayer = 1;
+            notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+            } 
+            winCheck();
     
 
     // Check board for winning combination
