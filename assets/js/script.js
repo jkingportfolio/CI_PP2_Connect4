@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cells = document.querySelectorAll('.game-grid span');
     let currentPlayer = 1;
-    let playerTwoComputer = true;
+    let playerTwoComputer = false;
     let computerRandomNumber;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Player one turn when against the computer
-    function onePlayerTurn() {
+    function playerOneTurn() {
         for (let i = 0; i < cells.length; i++) {
             cells[i].onclick = () => {
                 if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
@@ -165,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     winCheck();
             }
         }
+    }
     
 
     // Check board for winning combination
