@@ -245,6 +245,10 @@ footer {
     cursor: pointer;
 }
 
+.help-list {
+    text-align: left;
+}
+
 .settings-modal {
     display: none;
     justify-content: center;
