@@ -189,10 +189,6 @@ footer {
     height: 75px;
     background-color: linear-gradient;
     margin: auto;
-    border-radius: 50px;
-    background: #0e0e0e;
-    border: 1px solid #222;
-    box-shadow: 0 0 5px 1px #333;
   }
   
   .switch-container button {
