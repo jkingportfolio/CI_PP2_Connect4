@@ -288,6 +288,7 @@ footer {
 .modal-content {
     display: block;
     width: 80%;
+    max-width: 600px;
     height: 80%;
     background-color: white;
     border-radius: 5px;
