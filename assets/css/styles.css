@@ -138,6 +138,10 @@ position: relative;
     background-color: rgb(43, 46, 226);
 }
 
+.occupied {
+    cursor: not-allowed !important;
+}
+
 /* counters */
 
 .player-one {
