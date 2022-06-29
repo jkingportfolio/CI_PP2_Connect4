@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentPlayer = 1;
     let playerTwoComputer = true;
     let computerRandomNumber;
+    let maxCells = 41;
     let notification = document.getElementById('game-notification');
     let winningCombinations = [
         //horizontal
@@ -153,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Computer turn when playing against computer
     function computerTurn() {
-        computerRandomNumber = Math.floor((Math.random() * 41));
+        computerRandomNumber = Math.floor((Math.random() * maxCells));
         console.log(computerRandomNumber);
         if (!cells[computerRandomNumber + 7].classList.contains('occupied') || cells[computerRandomNumber].classList.contains('occupied')) {
             
