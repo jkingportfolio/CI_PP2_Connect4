@@ -183,7 +183,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 notification.innerText = ('Player 1 wins');
                 // Add function to end game, restart or quit
                 gameOver = true;
-                newGame();
+                cell1.classList.add('winning-counter')
+                cell2.classList.add('winning-counter')
+                cell3.classList.add('winning-counter')
+                cell4.classList.add('winning-counter')
+                gameEnd();
+                // newGame();
             }
             if (
                 cell1.classList.contains('player-two') &&
@@ -194,7 +199,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 notification.innerText = ('Player 2 wins');
                 // Add function to end game, restart or quit
                 gameOver = true;
-                newGame();
+                cell1.classList.add('winning-counter')
+                cell2.classList.add('winning-counter')
+                cell3.classList.add('winning-counter')
+                cell4.classList.add('winning-counter')
+                gameEnd(cell1, cell2, cell3, cell4);
+                // newGame();
             }
         } gameCheck();
     } 
@@ -202,7 +212,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //Game end
     function gameEnd() {
         if (gameOver) {
-            //animate the winning 4
             //give option to restart or quit
             //restart will call newGame function wiping board etc
             //quit will display start screen (possibly with a lock on clicking cells)
