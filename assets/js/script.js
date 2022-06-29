@@ -164,11 +164,8 @@ document.addEventListener("DOMContentLoaded", function () {
             currentPlayer = 1;
             notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
         } winCheck();
-    }
+    }          
     
-            
-    
-
     // Check board for winning combination
     function winCheck() {
         for (let i = 0; i < winningCombinations.length; i++) {
@@ -202,7 +199,15 @@ document.addEventListener("DOMContentLoaded", function () {
         } gameCheck();
     } 
 
-
+    //Game end
+    function gameEnd() {
+        if (gameOver) {
+            //animate the winning 4
+            //give option to restart or quit
+            //restart will call newGame function wiping board etc
+            //quit will display start screen (possibly with a lock on clicking cells)
+        }
+    }
 
 });
 
