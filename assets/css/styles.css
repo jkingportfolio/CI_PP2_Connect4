@@ -305,7 +305,7 @@ footer {
 
 .player-one-winner {
     animation-name: player-one-winner;
-    animation-duration: 0.25s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
 }
 
@@ -316,8 +316,12 @@ footer {
 
 .player-two-winner {
     animation-name: player-two-winner;
-    animation-duration: 0.25s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
+}
+
+.disable-click {
+    pointer-events:none;
 }
 
 /* media queries*/

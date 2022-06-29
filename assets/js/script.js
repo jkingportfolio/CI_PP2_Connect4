@@ -187,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 cell2.classList.add('player-one-winner')
                 cell3.classList.add('player-one-winner')
                 cell4.classList.add('player-one-winner')
+                cells.classList.add('disable-click');
                 gameEnd();
                 // newGame();
             }
