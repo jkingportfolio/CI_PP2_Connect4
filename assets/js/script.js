@@ -153,10 +153,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Computer turn when playing against computer
     function computerTurn() {
-        computerRandomNumber = Math.floor((Math.random() * cells.length));
+        computerRandomNumber = Math.floor((Math.random() * 41));
         console.log(computerRandomNumber);
-        if (!cells[computerRandomNumber + 7].classList.contains('occupied') && cells[computerRandomNumber].classList.contains('occupied')) {
-            return;
+        if (!cells[computerRandomNumber + 7].classList.contains('occupied') || cells[computerRandomNumber].classList.contains('occupied')) {
+            
         } else {
             cells[computerRandomNumber].classList.add('occupied');
             cells[computerRandomNumber].classList.add('player-two');
