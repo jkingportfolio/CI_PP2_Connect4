@@ -183,10 +183,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 notification.innerText = ('Player 1 wins');
                 // Add function to end game, restart or quit
                 gameOver = true;
-                cell1.classList.add('winning-counter')
-                cell2.classList.add('winning-counter')
-                cell3.classList.add('winning-counter')
-                cell4.classList.add('winning-counter')
+                cell1.classList.add('player-one-winner')
+                cell2.classList.add('player-one-winner')
+                cell3.classList.add('player-one-winner')
+                cell4.classList.add('player-one-winner')
                 gameEnd();
                 // newGame();
             }
@@ -199,10 +199,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 notification.innerText = ('Player 2 wins');
                 // Add function to end game, restart or quit
                 gameOver = true;
-                cell1.classList.add('winning-counter')
-                cell2.classList.add('winning-counter')
-                cell3.classList.add('winning-counter')
-                cell4.classList.add('winning-counter')
+                cell1.classList.add('player-two-winner')
+                cell2.classList.add('player-two-winner')
+                cell3.classList.add('player-two-winner')
+                cell4.classList.add('player-two-winner')
                 gameEnd(cell1, cell2, cell3, cell4);
                 // newGame();
             }

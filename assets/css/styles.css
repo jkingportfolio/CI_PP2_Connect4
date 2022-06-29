@@ -298,8 +298,26 @@ footer {
     overflow-y: auto;
 }
 
-.winning-counter {
-    background-color: green !important;
+@keyframes player-one-winner {
+    from {background-color: red;}
+    to {background-color: rgb(255, 255, 255);}
+}
+
+.player-one-winner {
+    animation-name: player-one-winner;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes player-two-winner {
+    from {background-color: yellow;}
+    to {background-color: rgb(255, 255, 255);}
+}
+
+.player-two-winner {
+    animation-name: player-two-winner;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
 }
 
 /* media queries*/
