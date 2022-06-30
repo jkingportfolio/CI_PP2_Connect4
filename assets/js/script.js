@@ -268,21 +268,25 @@ document.querySelector('.settings-close').addEventListener('click',
         document.querySelector('.settings-modal').style.display = "None";
     });
 
-    // function musicOn() {
+    function musicOn() {        
+        music = true;
+        console.log(music);
+    }
 
-    // }
+    function musicOff() {
+        music = false;
+        console.log(music);
+    }
 
-    // function musicOff() {
+    function soundOn() {
+        sounds = true;
+        console.log(sounds);
+    }
 
-    // }
-
-    // function soundOn() {
-
-    // }
-
-    // function soundOff() {
-
-    // }
+    function soundOff() {
+        sounds = false;
+        console.log(sounds);
+    }
 
 document.getElementById("#contactModal").addEventListener('click',
     function () {
