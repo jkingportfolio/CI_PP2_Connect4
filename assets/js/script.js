@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function onePlayerGame() {
         if (currentPlayer == 1) {
             playerOneTurn();
-        } else computerTurn();
+        } else setTimeout(computerTurn, 300);
     }
 
     // Player one turn when against the computer
