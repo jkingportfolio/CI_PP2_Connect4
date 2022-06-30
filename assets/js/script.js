@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-
     // Variables
 
     const cells = document.querySelectorAll('.game-grid span');
@@ -145,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     cells[i].classList.add('occupied');
                     cells[i].classList.add('player-one');
                     currentPlayer = 2;
-                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`                    
+                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                 } else notification.innerHTML = 'Invalid move!';
                 winCheck();
             }
@@ -157,15 +155,16 @@ document.addEventListener("DOMContentLoaded", function () {
         computerRandomNumber = Math.floor((Math.random() * maxCells));
         console.log(computerRandomNumber);
         if (!cells[computerRandomNumber + 7].classList.contains('occupied') || cells[computerRandomNumber].classList.contains('occupied')) {
-            
+
         } else {
             cells[computerRandomNumber].classList.add('occupied');
             cells[computerRandomNumber].classList.add('player-two');
             currentPlayer = 1;
             notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-        } winCheck();
-    }          
-    
+        }
+        winCheck();
+    }
+
     // Check board for winning combination
     function winCheck() {
         for (let i = 0; i < winningCombinations.length; i++) {
@@ -207,8 +206,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 gameEnd(cell1, cell2, cell3, cell4);
                 // newGame();
             }
-        } gameCheck();
-    } 
+        }
+        gameCheck();
+    }
 
     //Game end
     function gameEnd() {
@@ -219,7 +219,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-});
+
+
+
 
 
 // Modals
@@ -234,19 +236,19 @@ document.querySelector('.new-game-close').addEventListener('click',
         document.querySelector('.new-game-modal').style.display = "None";
     });
 
-    function playerTwoSelectHuman() {
-        playerTwoComputer = false;
-        console.log(playerTwoComputer);
-    }
+function playerTwoSelectHuman() {
+    playerTwoComputer = false;
+    console.log(playerTwoComputer);
+}
 
-    function playerTwoSelectComputer() {
-        playerTwoComputer = true;
-        console.log(playerTwoComputer);
-    }
+function playerTwoSelectComputer() {
+    playerTwoComputer = true;
+    console.log(playerTwoComputer);
+}
 
-    function cancel() {
-        document.querySelector('.new-game-modal').style.display = "None";
-    }
+function cancel() {
+    document.querySelector('.new-game-modal').style.display = "None";
+}
 
 document.getElementById("#helpModal").addEventListener('click',
     function () {
@@ -268,25 +270,30 @@ document.querySelector('.settings-close').addEventListener('click',
         document.querySelector('.settings-modal').style.display = "None";
     });
 
-    function musicOn() {        
-        music = true;
-        console.log(music);
-    }
+document.querySelector('.settings-close').addEventListener('click',
+function () {
+    document.querySelector('.settings-modal').style.display = "None";
+});
 
-    function musicOff() {
-        music = false;
-        console.log(music);
-    }
+function musicOn() {
+    music = true;
+    console.log(music);
+}
 
-    function soundOn() {
-        sounds = true;
-        console.log(sounds);
-    }
+function musicOff() {
+    music = false;
+    console.log(music);
+}
 
-    function soundOff() {
-        sounds = false;
-        console.log(sounds);
-    }
+function soundOn() {
+    sounds = true;
+    console.log(sounds);
+}
+
+function soundOff() {
+    sounds = false;
+    console.log(sounds);
+}
 
 document.getElementById("#contactModal").addEventListener('click',
     function () {
@@ -297,3 +304,4 @@ document.querySelector('.contact-close').addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "None";
     });
+    
