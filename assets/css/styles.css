@@ -298,6 +298,19 @@ footer {
     overflow-y: auto;
 }
 
+.modal-content-left {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    height: 70%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    overflow-y: auto;
+}
+
 @keyframes player-one-winner {
     from {background-color: red;}
     to {background-color: rgb(255, 255, 255);}
