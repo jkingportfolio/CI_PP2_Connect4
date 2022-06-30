@@ -234,16 +234,18 @@ document.querySelector('.new-game-close').addEventListener('click',
         document.querySelector('.new-game-modal').style.display = "None";
     });
 
-    function playerTwoSelectHuman(); {
-
+    function playerTwoSelectHuman() {
+        playerTwoComputer = false;
+        console.log(playerTwoComputer);
     }
 
-    function playerTwoSelectComputer(); {
-
+    function playerTwoSelectComputer() {
+        playerTwoComputer = true;
+        console.log(playerTwoComputer);
     }
 
-    function cancel(); {
-        
+    function cancel() {
+        document.querySelector('.new-game-modal').style.display = "None";
     }
 
 document.getElementById("#helpModal").addEventListener('click',
@@ -266,21 +268,21 @@ document.querySelector('.settings-close').addEventListener('click',
         document.querySelector('.settings-modal').style.display = "None";
     });
 
-    function musicOn(); {
+    // function musicOn() {
 
-    }
+    // }
 
-    function musicOff(); {
+    // function musicOff() {
 
-    }
+    // }
 
-    function soundOn(); {
+    // function soundOn() {
 
-    }
+    // }
 
-    function soundOff(); {
-        
-    }
+    // function soundOff() {
+
+    // }
 
 document.getElementById("#contactModal").addEventListener('click',
     function () {
