@@ -119,14 +119,14 @@
                         <div class="new-game-close">+</div>
                         <h3>Second Player<h3>
                             <div class="switch-container">
-                                <button id="player-two-human active">Human</button>
-                                <button id="player-two-computer">Computer</button>
+                                <button onclick="playerTwoSelectHuman()" id="player-two-human active">Human</button>
+                                <button onclick="playerTwoSelectComputer()" id="player-two-computer">Computer</button>
                             </div>
                         <h3>New game</h3>
                         <p>Are you sure you want to start a new game?</p>
                         <div class="switch-container">
-                            <button id="new-game-yes">Yes</button>
-                            <button id="cancel">Cancel</button>
+                            <button onclick="newGame()" id="new-game-yes">Yes</button>
+                            <button onclick="cancel()" id="cancel">Cancel</button>
                         </div>
                     </div>
                 </section>
@@ -163,13 +163,13 @@
                         <h3>Settings</h3>
                         <p>Music</p>
                         <div class="switch-container">
-                            <button id="music-on">On</button>
-                            <button id="music-off">Off</button>
+                            <button onclick="musicOn()" id="music-on">On</button>
+                            <button onclick="musicOff()" id="music-off">Off</button>
                         </div>
                         <p>Sound Effect</p>
                         <div class="switch-container">
-                            <button id="sound-on">On</button>
-                            <button id="sound-off">Off</button>
+                            <button onclick="soundOn()" id="sound-on">On</button>
+                            <button onclick="soundOff()" id="sound-off">Off</button>
                         </div>
                         <p>Player 1 counter colour</p>
                         <div class="switch-container">
@@ -205,7 +205,7 @@
                                         placeholder="Enter your message here"></textarea>
                                 </div>
                                 <!-- submit button -->
-                                <button type="submit" form="contact-form" class="submit-button" aria-label="Submit">Submit</button>
+                                <button type="submit" onclick="submitForm()" form="contact-form" class="submit-button" aria-label="Submit">Submit</button>
                             </form>
                         </div>
                 </section>
