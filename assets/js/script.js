@@ -246,6 +246,11 @@ function playerTwoSelectComputer() {
     console.log(playerTwoComputer);
 }
 
+document.getElementById("new-game-yes").addEventListener('click',
+    function () {
+        document.querySelector('.new-game-modal').style.display = "None";
+    });
+
 function cancel() {
     document.querySelector('.new-game-modal').style.display = "None";
 }
