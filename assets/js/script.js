@@ -234,6 +234,18 @@ document.querySelector('.new-game-close').addEventListener('click',
         document.querySelector('.new-game-modal').style.display = "None";
     });
 
+    function playerTwoSelectHuman(); {
+
+    }
+
+    function playerTwoSelectComputer(); {
+
+    }
+
+    function cancel(); {
+        
+    }
+
 document.getElementById("#helpModal").addEventListener('click',
     function () {
         document.querySelector('.help-modal').style.display = "Flex";
@@ -253,6 +265,22 @@ document.querySelector('.settings-close').addEventListener('click',
     function () {
         document.querySelector('.settings-modal').style.display = "None";
     });
+
+    function musicOn(); {
+
+    }
+
+    function musicOff(); {
+
+    }
+
+    function soundOn(); {
+
+    }
+
+    function soundOff(); {
+        
+    }
 
 document.getElementById("#contactModal").addEventListener('click',
     function () {
