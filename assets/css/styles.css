@@ -340,7 +340,7 @@ footer {
 
 @keyframes player-one-winner {
     from {background-color: red;}
-    to {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(129, 0, 0);}
 }
 
 .player-one-winner {
@@ -351,7 +351,7 @@ footer {
 
 @keyframes player-two-winner {
     from {background-color: yellow;}
-    to {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(129, 127, 0);}
 }
 
 .player-two-winner {

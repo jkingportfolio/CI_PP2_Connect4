@@ -229,6 +229,10 @@ document.addEventListener("DOMContentLoaded", function(){
             //quit will display start screen (possibly with a lock on clicking cells)
         }
 
+    window.addEventListener("orientationchange", event => {
+        console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
+        });
+
 // Modals
 
 // New Game modal functions
