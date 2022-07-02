@@ -305,11 +305,15 @@ function musicOff() {
 
 function soundOn() {
     sounds = true;
+    document.getElementById('sound-on').classList.add('btn-active');
+    document.getElementById('sound-off').classList.remove('btn-active');
     console.log(sounds);
 }
 
 function soundOff() {
     sounds = false;
+    document.getElementById('sound-off').classList.add('btn-active');
+    document.getElementById('sound-on').classList.remove('btn-active');   
     console.log(sounds);
 }
 
