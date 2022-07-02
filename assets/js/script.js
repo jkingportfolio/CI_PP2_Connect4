@@ -96,7 +96,8 @@ document.addEventListener("DOMContentLoaded", function(){
     function newGame() {
         gameOver = false;
         for (let i = 0; i < cells.length - 7; i++) {
-            cells[i].classList.remove('player-one', 'player-two', 'occupied');
+            cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
+            cells[i].innerHTML = ""
             gameCheck();
         }
     }
@@ -189,8 +190,6 @@ document.addEventListener("DOMContentLoaded", function(){
             ) {
                 notification.innerText = ('Player 1 wins');
                 // Add function to end game, restart or quit
-                gameOver = true;
-                console.log(gameOver);
                 cell1.classList.add('player-one-winner')
                 cell2.classList.add('player-one-winner')
                 cell3.classList.add('player-one-winner')
@@ -206,13 +205,11 @@ document.addEventListener("DOMContentLoaded", function(){
             ) {
                 notification.innerText = ('Player 2 wins');
                 // Add function to end game, restart or quit
-                gameOver = true;
-                console.log(gameOver);
                 cell1.classList.add('player-two-winner')
                 cell2.classList.add('player-two-winner')
                 cell3.classList.add('player-two-winner')
                 cell4.classList.add('player-two-winner')
-                gameEnd(cell1, cell2, cell3, cell4);
+                gameEnd();
                 // newGame();
             }
         }
