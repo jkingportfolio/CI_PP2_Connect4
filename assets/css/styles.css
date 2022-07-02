@@ -125,6 +125,9 @@ position: relative;
 }
 
 .game-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     background-color: white;
     border-radius: 50%;

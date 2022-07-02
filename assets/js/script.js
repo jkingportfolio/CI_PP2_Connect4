@@ -118,11 +118,13 @@ document.addEventListener("DOMContentLoaded", function(){
                     if (currentPlayer == 1) {
                         cells[i].classList.add('occupied');
                         cells[i].classList.add('player-one');
+                        cells[i].innerHTML = '1'
                         currentPlayer = 2;
                         notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                     } else if (currentPlayer == 2) {
                         cells[i].classList.add('occupied');
                         cells[i].classList.add('player-two');
+                        cells[i].innerHTML = '2'
                         currentPlayer = 1;
                         notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                     }
@@ -146,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
                     cells[i].classList.add('occupied');
                     cells[i].classList.add('player-one');
+                    cells[i].innerHTML = '1'
                     currentPlayer = 2;
                     notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                 } else notification.innerHTML = 'Invalid move!';
@@ -163,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function(){
         } else {
             cells[computerRandomNumber].classList.add('occupied');
             cells[computerRandomNumber].classList.add('player-two');
+            cells[computerRandomNumber].innerHTML = '2'
             currentPlayer = 1;
             notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
         }
