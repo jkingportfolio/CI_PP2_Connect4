@@ -309,4 +309,14 @@ document.querySelector('.contact-close').addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "None";
     });
+
+document.getElementById("#contactSubmitModal").addEventListener('click',
+function () {
+    document.querySelector('.contact-submit-modal').style.display = "Flex";
+    });
+
+document.querySelector('.contact--submit-close').addEventListener('click',
+    function () {
+        document.querySelector('.contact-submit-modal').style.display = "None";
+    });
     
