@@ -238,11 +238,15 @@ document.querySelector('.new-game-close').addEventListener('click',
 
 function playerTwoSelectHuman() {
     playerTwoComputer = false;
+    document.getElementById('#player-two-human').classList.add('btn-active');
+    document.getElementById('#player-two-computer').classList.remove('btn-active');
     console.log(playerTwoComputer);
 }
 
 function playerTwoSelectComputer() {
     playerTwoComputer = true;
+    document.getElementById('#player-two-computer').classList.add('btn-active');
+    document.getElementById('#player-two-human').classList.remove('btn-active');
     console.log(playerTwoComputer);
 }
 
@@ -310,12 +314,7 @@ document.querySelector('.contact-close').addEventListener('click',
         document.querySelector('.contact-modal').style.display = "None";
     });
 
-document.getElementById("#contactSubmitModal").addEventListener('click',
-function () {
-    document.querySelector('.contact-submit-modal').style.display = "Flex";
-    });
-
-document.querySelector('.contact--submit-close').addEventListener('click',
+document.querySelector('.contact-submit-close').addEventListener('click',
     function () {
         document.querySelector('.contact-submit-modal').style.display = "None";
     });
