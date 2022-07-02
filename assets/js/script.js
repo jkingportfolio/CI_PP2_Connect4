@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", function(){
         gameOver = false;
         for (let i = 0; i < cells.length - 7; i++) {
             cells[i].classList.remove('player-one', 'player-two', 'occupied');
-            cells[i].removeAttribute('disabled');
             gameCheck();
         }
     }
@@ -187,11 +186,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 notification.innerText = ('Player 1 wins');
                 // Add function to end game, restart or quit
                 gameOver = true;
+                console.log(gameOver);
                 cell1.classList.add('player-one-winner')
                 cell2.classList.add('player-one-winner')
                 cell3.classList.add('player-one-winner')
                 cell4.classList.add('player-one-winner')
-                cells.classList.add('disable-click');
                 gameEnd();
                 // newGame();
             }
@@ -204,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 notification.innerText = ('Player 2 wins');
                 // Add function to end game, restart or quit
                 gameOver = true;
+                console.log(gameOver);
                 cell1.classList.add('player-two-winner')
                 cell2.classList.add('player-two-winner')
                 cell3.classList.add('player-two-winner')
@@ -217,12 +217,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
     //Game end
     function gameEnd() {
-        if (gameOver) {            
+        gameOver = true; 
+            for (let i = 0; i < cells.length; i++) {
+                cells[i].classList.add('disable-click');
+            }               
             //give option to restart or quit
             //restart will call newGame function wiping board etc
             //quit will display start screen (possibly with a lock on clicking cells)
         }
-    }
 
 
 
