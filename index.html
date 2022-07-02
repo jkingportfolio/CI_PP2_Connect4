@@ -120,7 +120,7 @@
                         <h3>Second Player<h3>
                             <div class="switch-container">
                                 <button onclick="playerTwoSelectHuman()" id="player-two-human" class="">Human</button>
-                                <button onclick="playerTwoSelectComputer()" id="player-two-computer" class="">Computer</button>
+                                <button onclick="playerTwoSelectComputer()" id="player-two-computer" class="btn-active">Computer</button>
                             </div>
                         <h3>New game</h3>
                         <p>Are you sure you want to start a new game?</p>
@@ -155,7 +155,7 @@
                         <h4 class="align-left">Session Stats</h4>
                         <p class="align-left">Each game sessions statistics will be counted and can be located below the game board. 
                             These statistics will reset upon page reload or closure.</p>
-                        <div href="#help-modal-top">JUMP TO TOP</div>
+                        <button onclick="scrollToTop()">JUMP TO TOP</button>
                     </div>
                 </section>
                 <section class="settings-modal">
@@ -218,7 +218,7 @@
             </section>
     </main>
     <footer>
-        <div class="social-icon">
+        <div id="footer-contact" class="social-icon">
             Contact
         </div>
         <div class="display-flex-row">

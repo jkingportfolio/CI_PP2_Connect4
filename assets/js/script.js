@@ -277,6 +277,11 @@ document.querySelector('.help-close').addEventListener('click',
         document.querySelector('.help-modal').style.display = "None";
     });
 
+function scrollToTop() {
+    document.getElementById('helpModal').scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+
 document.getElementById("#settingsModal").addEventListener('click',
     function () {
         document.querySelector('.settings-modal').style.display = "Flex";
@@ -334,4 +339,13 @@ document.querySelector('.contact-submit-close').addEventListener('click',
     function () {
         document.querySelector('.contact-submit-modal').style.display = "None";
     });
+
+
+// footer contact
+
+document.getElementById("footer-contact").addEventListener('click',
+    function () {
+        document.querySelector('.contact-modal').style.display = "Flex";
+    });
+
     
