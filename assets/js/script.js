@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function(){
+    newGame();
+});
+    
     // Variables
 
     const cells = document.querySelectorAll('.game-grid span');
@@ -93,6 +97,7 @@
         gameOver = false;
         for (let i = 0; i < cells.length - 7; i++) {
             cells[i].classList.remove('player-one', 'player-two', 'occupied');
+            cells[i].removeAttribute('disabled');
             gameCheck();
         }
     }
@@ -212,7 +217,7 @@
 
     //Game end
     function gameEnd() {
-        if (gameOver) {
+        if (gameOver) {            
             //give option to restart or quit
             //restart will call newGame function wiping board etc
             //quit will display start screen (possibly with a lock on clicking cells)
@@ -238,15 +243,15 @@ document.querySelector('.new-game-close').addEventListener('click',
 
 function playerTwoSelectHuman() {
     playerTwoComputer = false;
-    document.getElementById('#player-two-human').classList.add('btn-active');
-    document.getElementById('#player-two-computer').classList.remove('btn-active');
+    document.getElementById('player-two-human').classList.add('btn-active');
+    document.getElementById('player-two-computer').classList.remove('btn-active');
     console.log(playerTwoComputer);
 }
 
 function playerTwoSelectComputer() {
     playerTwoComputer = true;
-    document.getElementById('#player-two-computer').classList.add('btn-active');
-    document.getElementById('#player-two-human').classList.remove('btn-active');
+    document.getElementById('player-two-computer').classList.add('btn-active');
+    document.getElementById('player-two-human').classList.remove('btn-active');
     console.log(playerTwoComputer);
 }
 
