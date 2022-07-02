@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     }
 
+    // Check if it is a one player or two player game
     function gameCheck() {
         if (!playerTwoComputer) {
             twoPlayerGame();
@@ -213,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 currentPlayer = 2;
                 gameEnd();
                 // newGame();
-            }
+            } // Insert if statment for draw
         } gameCheck();        
     }
 
@@ -228,12 +229,9 @@ document.addEventListener("DOMContentLoaded", function(){
             //quit will display start screen (possibly with a lock on clicking cells)
         }
 
-
-
-
-
-
 // Modals
+
+// New Game modal functions
 
 document.getElementById("#newGameModal").addEventListener('click',
     function () {
@@ -268,6 +266,8 @@ function cancel() {
     document.querySelector('.new-game-modal').style.display = "None";
 }
 
+// Help modal functions
+
 document.getElementById("#helpModal").addEventListener('click',
     function () {
         document.querySelector('.help-modal').style.display = "Flex";
@@ -278,10 +278,13 @@ document.querySelector('.help-close').addEventListener('click',
         document.querySelector('.help-modal').style.display = "None";
     });
 
+// This needs a fix
 function scrollToTop() {
     document.getElementById('helpModal').scrollTop = 0;
     document.documentElement.scrollTop = 0;
     }
+
+// Settings modal functions
 
 document.getElementById("#settingsModal").addEventListener('click',
     function () {
@@ -326,6 +329,8 @@ function soundOff() {
     console.log(sounds);
 }
 
+// Contact modal functions
+
 document.getElementById("#contactModal").addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "Flex";
@@ -342,7 +347,7 @@ document.querySelector('.contact-submit-close').addEventListener('click',
     });
 
 
-// footer contact
+// Footer contact
 
 document.getElementById("footer-contact").addEventListener('click',
     function () {
