@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+.align-left {
+    text-align: left;
+}
+
 /* header */
 
 header {
@@ -246,10 +250,6 @@ footer {
     font-size: 30px;
     transform: rotate(45deg);
     cursor: pointer;
-}
-
-.help-list {
-    text-align: left;
 }
 
 .settings-modal {
