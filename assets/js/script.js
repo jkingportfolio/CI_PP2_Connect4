@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function(){
     function onePlayerGame() {
         if (currentPlayer == 1) {
             playerOneTurn();
-        } else setTimeout(computerTurn, 300);
+        } else setTimeout(computerTurn, 100);
     }
 
     // Player one turn when against the computer
@@ -194,6 +194,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell2.classList.add('player-one-winner')
                 cell3.classList.add('player-one-winner')
                 cell4.classList.add('player-one-winner')
+                currentPlayer = 1;
                 gameEnd();
                 // newGame();
             }
@@ -209,11 +210,11 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell2.classList.add('player-two-winner')
                 cell3.classList.add('player-two-winner')
                 cell4.classList.add('player-two-winner')
+                currentPlayer = 2;
                 gameEnd();
                 // newGame();
             }
-        }
-        gameCheck();
+        } gameCheck();        
     }
 
     //Game end
