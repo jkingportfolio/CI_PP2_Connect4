@@ -291,11 +291,15 @@ function () {
 
 function musicOn() {
     music = true;
+    document.getElementById('music-on').classList.add('btn-active');
+    document.getElementById('music-off').classList.remove('btn-active');
     console.log(music);
 }
 
 function musicOff() {
     music = false;
+    document.getElementById('music-off').classList.add('btn-active');
+    document.getElementById('music-on').classList.remove('btn-active');    
     console.log(music);
 }
 
