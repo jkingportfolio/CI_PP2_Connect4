@@ -252,6 +252,7 @@ document.getElementById("#newGameModal").addEventListener('click',
 document.querySelector('.new-game-close').addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
 // document.getElementById('#newGameModal').addEventListener('blur',
@@ -276,10 +277,12 @@ function playerTwoSelectComputer() {
 document.getElementById("new-game-yes").addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
 function cancel() {
     document.querySelector('.new-game-modal').style.display = "None";
+    document.getElementById('toggleMobileMenu').classList.remove('show');
 }
 
 // Help modal functions
@@ -292,6 +295,7 @@ document.getElementById("#helpModal").addEventListener('click',
 document.querySelector('.help-close').addEventListener('click',
     function () {
         document.querySelector('.help-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
 // document.getElementById('#helpModal').addEventListener('blur',
@@ -315,6 +319,7 @@ document.getElementById("#settingsModal").addEventListener('click',
 document.querySelector('.settings-close').addEventListener('click',
     function () {
         document.querySelector('.settings-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
 // document.getElementById('#settingsModal').addEventListener('blur',
@@ -360,6 +365,7 @@ document.getElementById("#contactModal").addEventListener('click',
 document.querySelector('.contact-close').addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
 document.querySelector('.contact-submit-close').addEventListener('click',
