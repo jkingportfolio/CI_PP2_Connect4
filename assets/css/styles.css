@@ -67,7 +67,7 @@ header {
 
 #new-game-button {
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 .rotating-text {
@@ -103,6 +103,24 @@ position: relative;
     justify-content: center;
     margin: 0 auto;
 }
+
+.player-one-turn {
+    animation: player-one-turn 5s infinite;
+}
+
+@keyframes player-one-turn {
+    from {background-color: red;}
+    to {background-color: white;}
+  }
+
+  .player-two-turn {
+    animation: player-two-turn 5s infinite;
+}
+
+@keyframes player-two-turn {
+    from {background-color: yellow;}
+    to {background-color: white;}
+  }
 
 .game-board {
     position: sticky;

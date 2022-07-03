@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function(){
             twoPlayerGame();
         } else {
             onePlayerGame();
-        }
+        } 
     }
 
     // Game logic for when two human players are playing
@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (currentPlayer == 1) {
             playerOneTurn();
         } else setTimeout(computerTurn, 100);
+        notificationColour();
     }
 
     // Player one turn when against the computer
@@ -247,6 +248,19 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log('This is landscape');
         }
         });
+
+    function notificationColour() {
+        if (notification.innerHTML === "Its Player 1's turn!") {
+            document.getElementById('game-notification').classList.remove('player-two-turn');
+            document.getElementById('game-notification').classList.add('player-one-turn');
+        } else if (notification.innerHTML === "Its Player 2's turn!") {
+            document.getElementById('game-notification').classList.remove('player-one-turn');
+            document.getElementById('game-notification').classList.add('player-two-turn');
+        } else {
+            document.getElementById('game-notification').classList.remove('player-one-turn');
+            document.getElementById('game-notification').classList.remove('player-two-turn');
+        }
+    };
 
     
 
