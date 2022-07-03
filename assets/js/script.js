@@ -104,6 +104,7 @@ document.addEventListener("DOMContentLoaded", function(){
             } else {
                 notification.innerHTML = `Click to play!`
             }
+            notificationColour();
             gameCheck();
         }
     }
@@ -137,6 +138,7 @@ document.addEventListener("DOMContentLoaded", function(){
                         notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
                     }
                 } else notification.innerHTML = 'Invalid move!';
+                notificationColour()
                 winCheck();
             }
         }
