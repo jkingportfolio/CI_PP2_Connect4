@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function(){
     let gameOver = false;
     // While game active is false, game-notification to display the game type ie PvP PvC
     let gameActive = false;
+    let warningCount = 0;
 
     newGame();
     // Wipe all occupied counters from the board
@@ -243,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
 
     window.addEventListener("orientationchange", function() {
-        if (window.orientation == 90 || window.orientation == -90) {
+        if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
             document.querySelector('.orientation-warning-modal').style.display = "Flex";
         // Add code to show pop up stating the game is best played in portrait
         } else {
@@ -410,6 +411,7 @@ document.querySelector('.warning-close').addEventListener('click',
     function () {
         document.querySelector('.orientation-warning-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
+        warningCount += 1;
     });
 
 
