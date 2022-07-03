@@ -229,9 +229,16 @@ document.addEventListener("DOMContentLoaded", function(){
             //quit will display start screen (possibly with a lock on clicking cells)
         }
 
-    window.addEventListener("orientationchange", event => {
-        console.log("the orientation of the device is now " + event.target.screen.orientation.angle);
+    window.addEventListener("orientationchange", function() {
+        if (window.orientation == 90 || window.orientation == -90) {
+        console.log('This is portrait');
+        // Add code to show pop up stating the game is best played in portrait
+        } else {
+        console.log('This is landscape');
+        }
         });
+
+    
 
 // Modals
 
@@ -372,5 +379,6 @@ document.getElementById("footer-contact").addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "Flex";
     });
+    
 
     
