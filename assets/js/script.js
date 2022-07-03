@@ -99,6 +99,11 @@ document.addEventListener("DOMContentLoaded", function(){
             cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
             cells[i].innerHTML = ""
             document.getElementById("new-game-button").style.display = "none";
+            if (gameActive) {
+                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+            } else {
+                notification.innerHTML = `Click to play!`
+            }
             gameCheck();
         }
     }
@@ -198,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell4.classList.add('player-one-winner')
                 currentPlayer = 1;
                 document.getElementById("new-game-button").style.display = "flex";
+                gameActive = true;
                 gameEnd();
                 // newGame();
             }
@@ -215,6 +221,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell4.classList.add('player-two-winner')
                 currentPlayer = 2;
                 document.getElementById("new-game-button").style.display = "flex";
+                gameActive = true;
                 gameEnd();
                 // newGame();
             } // Insert if statment for draw
