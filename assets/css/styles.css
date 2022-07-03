@@ -192,6 +192,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
+    animation-name: modal-slide;
+    animation-duration: 0.5s;
 }
 
 .switch-container {
@@ -246,6 +248,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
+    animation-name: modal-slide;
+    animation-duration: 0.5s;
 }
 
 .help-close {
@@ -266,6 +270,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
+    animation-name: modal-slide;
+    animation-duration: 0.5s;
 }
 
 .settings-close {
@@ -286,6 +292,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
+    animation-name: modal-slide;
+    animation-duration: 0.5s;
 }
 
 .contact-close {
@@ -342,6 +350,14 @@ footer {
     position: relative;
     overflow-y: auto;
 }
+
+/* Modal slide from top animation */
+@keyframes modal-slide {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+  }
+
+/* Player one winning animation */
 
 @keyframes player-one-winner {
     from {background-color: red;}

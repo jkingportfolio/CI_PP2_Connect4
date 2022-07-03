@@ -178,7 +178,7 @@
                         <p>Player 1 counter colour</p>
                         <div class="switch-container">
                             <input type="color" id="player-one-counter-colour" name="p1cc"
-                                    value="#FF0000">
+                                    value="#FF0000" onChange="changeColor(this.value)">
                             <label for="p1cc">Player One</label>
                         </div>
                         <p>Player 2 counter colour</p>
@@ -222,7 +222,7 @@
             </section>
     </main>
     <footer>
-        <div class="social-icon" href="#contactModal">
+        <div id="footer-contact" class="social-icon" href="#contactModal">
             Contact
         </div>
         <div class="display-flex-row">
