@@ -331,6 +331,13 @@ footer {
     text-align: left;
 }
 
+.form-control {
+    display: block;
+    text-align: left;
+    margin: 5px;
+    width: 100%;
+}
+
 .modal-content {
     display: block;
     width: 80%;

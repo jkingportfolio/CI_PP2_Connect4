@@ -254,10 +254,10 @@ document.querySelector('.new-game-close').addEventListener('click',
         document.querySelector('.new-game-modal').style.display = "None";
     });
 
-document.getElementById('#newGameModal').addEventListener('blur',
-function () {
-    document.querySelector('.new-game-modal').style.display = "None";
-});
+// document.getElementById('#newGameModal').addEventListener('blur',
+// function () {
+//     document.querySelector('.new-game-modal').style.display = "None";
+// });
 
 function playerTwoSelectHuman() {
     playerTwoComputer = false;
@@ -294,10 +294,10 @@ document.querySelector('.help-close').addEventListener('click',
         document.querySelector('.help-modal').style.display = "None";
     });
 
-document.getElementById('#helpModal').addEventListener('blur',
-function () {
-    document.querySelector('.help-modal').style.display = "None";
-});
+// document.getElementById('#helpModal').addEventListener('blur',
+// function () {
+//     document.querySelector('.help-modal').style.display = "None";
+// });
 
 // This needs a fix
 function scrollToTop() {
@@ -317,10 +317,10 @@ document.querySelector('.settings-close').addEventListener('click',
         document.querySelector('.settings-modal').style.display = "None";
     });
 
-document.getElementById('#settingsModal').addEventListener('blur',
-function () {
-    document.querySelector('.settings-modal').style.display = "None";
-});
+// document.getElementById('#settingsModal').addEventListener('blur',
+// function () {
+//     document.querySelector('.settings-modal').style.display = "None";
+// });
 
 function musicOn() {
     music = true;
@@ -367,10 +367,10 @@ document.querySelector('.contact-submit-close').addEventListener('click',
         document.querySelector('.contact-submit-modal').style.display = "None";
     });
 
-document.getElementById('#contactModal').addEventListener('blur',
-function () {
-    document.querySelector('.contact-modal').style.display = "None";
-});
+// document.getElementById('#contactModal').addEventListener('blur',
+// function () {
+//     document.querySelector('.contact-modal').style.display = "None";
+// });
 
 
 // Footer contact
