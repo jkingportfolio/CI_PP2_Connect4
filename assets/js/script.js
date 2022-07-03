@@ -247,6 +247,11 @@ document.querySelector('.new-game-close').addEventListener('click',
         document.querySelector('.new-game-modal').style.display = "None";
     });
 
+document.getElementById('#newGameModal').addEventListener('blur',
+function () {
+    document.querySelector('.new-game-modal').style.display = "None";
+});
+
 function playerTwoSelectHuman() {
     playerTwoComputer = false;
     document.getElementById('player-two-human').classList.add('btn-active');
@@ -282,6 +287,11 @@ document.querySelector('.help-close').addEventListener('click',
         document.querySelector('.help-modal').style.display = "None";
     });
 
+document.getElementById('#helpModal').addEventListener('blur',
+function () {
+    document.querySelector('.help-modal').style.display = "None";
+});
+
 // This needs a fix
 function scrollToTop() {
     document.getElementById('helpModal').scrollTop = 0;
@@ -300,7 +310,7 @@ document.querySelector('.settings-close').addEventListener('click',
         document.querySelector('.settings-modal').style.display = "None";
     });
 
-document.querySelector('.settings-close').addEventListener('click',
+document.getElementById('#settingsModal').addEventListener('blur',
 function () {
     document.querySelector('.settings-modal').style.display = "None";
 });
@@ -349,6 +359,11 @@ document.querySelector('.contact-submit-close').addEventListener('click',
     function () {
         document.querySelector('.contact-submit-modal').style.display = "None";
     });
+
+document.getElementById('#contactModal').addEventListener('blur',
+function () {
+    document.querySelector('.contact-modal').style.display = "None";
+});
 
 
 // Footer contact
