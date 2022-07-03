@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     window.addEventListener("orientationchange", function() {
         if (window.orientation == 90 || window.orientation == -90) {
-        console.log('This is portrait');
+            document.querySelector('.orientation-warning-modal').style.display = "Flex";
         // Add code to show pop up stating the game is best played in portrait
         } else {
         console.log('This is landscape');
@@ -403,6 +403,14 @@ document.querySelector('.contact-submit-close').addEventListener('click',
 // function () {
 //     document.querySelector('.contact-modal').style.display = "None";
 // });
+
+// Landscape warning modal
+
+document.querySelector('.warning-close').addEventListener('click',
+    function () {
+        document.querySelector('.orientation-warning-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
+    });
 
 
 // Footer contact
