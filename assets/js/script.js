@@ -98,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function(){
         for (let i = 0; i < cells.length - 7; i++) {
             cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
             cells[i].innerHTML = ""
+            document.getElementById("new-game-button").style.display = "none";
             gameCheck();
         }
     }
@@ -196,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell3.classList.add('player-one-winner')
                 cell4.classList.add('player-one-winner')
                 currentPlayer = 1;
+                document.getElementById("new-game-button").style.display = "flex";
                 gameEnd();
                 // newGame();
             }
@@ -212,6 +214,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell3.classList.add('player-two-winner')
                 cell4.classList.add('player-two-winner')
                 currentPlayer = 2;
+                document.getElementById("new-game-button").style.display = "flex";
                 gameEnd();
                 // newGame();
             } // Insert if statment for draw
