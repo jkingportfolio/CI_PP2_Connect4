@@ -83,8 +83,6 @@ header {
          transform: scale(1);}
 }
 
-
-
 .animated-text {  
     animation: float 0.75s linear infinite;
     animation-direction: alternate;
@@ -95,6 +93,19 @@ header {
 
     to {transform: scale(1.0);}
 }
+
+.horizontal-shake {
+    animation: horizontal-shake 0.35s;
+    animation-iteration-count: 4;
+}
+
+@keyframes horizontal-shake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
 
 section {
 position: relative;

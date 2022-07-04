@@ -265,6 +265,11 @@ document.addEventListener("DOMContentLoaded", function(){
         } else if (notification.innerHTML === "Its Player 2's turn!") {
             document.getElementById('game-notification').classList.remove('player-one-turn');
             document.getElementById('game-notification').classList.add('player-two-turn');
+        } else if (notification.innerHTML === "Invalid move!") {
+            document.getElementById('game-notification').classList.remove('player-one-turn');
+            document.getElementById('game-notification').classList.remove('player-two-turn');
+            document.getElementById('game-notification').classList.remove('animated-text');
+            document.getElementById('game-notification').classList.add('horizontal-shake');
         } else {
             document.getElementById('game-notification').classList.remove('player-one-turn');
             document.getElementById('game-notification').classList.remove('player-two-turn');
