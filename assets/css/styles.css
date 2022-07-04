@@ -71,7 +71,19 @@ header {
     display: flex;
     justify-content: center;
     cursor: pointer;
+    animation: bounce 0.7s ease 0.5s infinite alternate;
 }
+
+/*Bouncy button*/
+@keyframes bounce {
+    0% {transform: scale(1.1,.9);
+        transform: scale(1.1,.9);}
+   50% {transform: scale(.9,1.1) translateY(-.5rem)}
+   70% {transform: scale(1);
+         transform: scale(1);}
+}
+
+
 
 .animated-text {  
     animation: float 0.75s linear infinite;
@@ -448,7 +460,6 @@ footer {
 .disable-click {
     pointer-events:none;
 }
-
 
 /* media queries*/
 
