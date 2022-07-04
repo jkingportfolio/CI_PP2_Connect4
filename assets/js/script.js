@@ -156,6 +156,9 @@ document.addEventListener("DOMContentLoaded", function(){
     // Player one turn when against the computer
     function playerOneTurn() {
         for (let i = 0; i < cells.length; i++) {
+            cells[i].classList.remove('disable-click');
+        }
+        for (let i = 0; i < cells.length; i++) {
             cells[i].onclick = () => {
                 if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
                     cells[i].classList.add('occupied');
@@ -173,6 +176,9 @@ document.addEventListener("DOMContentLoaded", function(){
     function computerTurn() {
         computerRandomNumber = Math.floor((Math.random() * maxCells));
         console.log(computerRandomNumber);
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].classList.add('disable-click');
+        }
         if (!cells[computerRandomNumber + 7].classList.contains('occupied') || cells[computerRandomNumber].classList.contains('occupied')) {
 
         } else {
