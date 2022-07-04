@@ -239,6 +239,7 @@ footer {
     top: 0;
     animation-name: modal-slide-on;
     animation-duration: 0.5s;
+    
 }
 
 .switch-container {
@@ -423,6 +424,7 @@ footer {
     text-align: center;
     position: relative;
     overflow-y: auto;
+    box-shadow: 19px 20px 5px 0px rgb(0 0 0 / 30%);
 }
 
 .modal-content-left {
