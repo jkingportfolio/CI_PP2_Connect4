@@ -265,7 +265,6 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     };
 
-    
 
 // Modals
 
