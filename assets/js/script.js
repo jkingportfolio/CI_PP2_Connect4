@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 cell2.classList.add('player-two-winner')
                 cell3.classList.add('player-two-winner')
                 cell4.classList.add('player-two-winner')
-                currentPlayer = 2;
+                currentPlayer = 1;
                 document.getElementById("new-game-button").style.display = "flex";
                 gameActive = true;
                 gameEnd();

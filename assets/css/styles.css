@@ -68,6 +68,7 @@ header {
 #new-game-button {
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 
 .rotating-text {  
@@ -95,6 +96,7 @@ position: relative;
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .player-one-turn {
@@ -103,18 +105,18 @@ position: relative;
 }
 
 @keyframes player-one-turn {
-    from {background-color: rgb(255, 83, 83);}
-    to {background-color: white;}
+    from {background:radial-gradient(circle at 50% 50%, rgba(238, 130, 238, 0) 0%, rgba(18, 212, 0, 0) 50%, rgba(255, 0, 0, 1) 100%);}
+    to {background: white;}
   }
 
   .player-two-turn {
-    animation: player-two-turn 2s infinite;
+    animation: player-two-turn 0.5s infinite;
     animation-direction: alternate;
 }
 
 @keyframes player-two-turn {
-    from {background-color: yellow;}
-    to {background-color: white;}
+    from {background:radial-gradient(circle at 50% 50%, rgba(238, 130, 238, 0) 0%, rgba(18, 212, 0, 0) 50%, rgba(255, 255, 0, 1) 100%);}
+    to {background: white;}
   }
 
 .game-board {
@@ -459,5 +461,9 @@ footer {
 
     .game-board {
         margin: 3rem auto;
+    }
+
+    #game-notification {
+        width: 60%;
     }
 }
