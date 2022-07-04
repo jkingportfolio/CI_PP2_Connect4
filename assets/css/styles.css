@@ -72,15 +72,15 @@ header {
     cursor: pointer;
 }
 
-.rotating-text {  
-    animation: float 3s linear infinite;
+.animated-text {  
+    animation: float 0.75s linear infinite;
     animation-direction: alternate;
 }
     
 @keyframes float {
-    from { transform: rotate(5deg); }
+    from {transform: scale(0.5);}
 
-    to {transform: rotate(-5deg); }
+    to {transform: scale(1.0);}
 }
 
 section {
