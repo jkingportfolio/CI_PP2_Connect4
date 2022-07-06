@@ -395,11 +395,6 @@ document.querySelector('.contact-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-document.getElementById('.contact-submit-btn').addEventListener('click',
-    function () {
-        document.querySelector('.contact-submit-modal').style.display = "Flex";
-    });
-
 // document.getElementById('#contactModal').addEventListener('blur',
 // function () {
 //     document.querySelector('.contact-modal').style.display = "None";
