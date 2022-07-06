@@ -70,6 +70,8 @@ header {
 #new-game-button {
     display: flex;
     justify-content: center;
+    max-width: 200px;
+    margin: auto;
     cursor: pointer;
     animation: bounce 0.7s ease 0.5s infinite alternate;
 }
@@ -540,7 +542,7 @@ footer {
 .modal-content {
     display: block;
     width: 80%;
-    max-width: 600px;
+    max-width: 400px;
     height: 70%;
     background-color: white;
     border-radius: 5px;
@@ -554,7 +556,7 @@ footer {
 .modal-content-left {
     display: block;
     width: 80%;
-    max-width: 600px;
+    max-width: 400px;
     height: 40rem;
     background-color: white;
     border-radius: 5px;
