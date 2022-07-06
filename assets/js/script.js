@@ -336,12 +336,6 @@ document.querySelector('.help-close').addEventListener('click',
 //     document.querySelector('.help-modal').style.display = "None";
 // });
 
-// This needs a fix
-function scrollToTop() {
-    document.getElementById('helpModal').scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 // Settings modal functions
 
 document.getElementById("#settingsModal").addEventListener('click',
@@ -401,9 +395,9 @@ document.querySelector('.contact-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-document.querySelector('.contact-submit-close').addEventListener('click',
+document.getElementById('.contact-submit-btn').addEventListener('click',
     function () {
-        document.querySelector('.contact-submit-modal').style.display = "None";
+        document.querySelector('.contact-submit-modal').style.display = "Flex";
     });
 
 // document.getElementById('#contactModal').addEventListener('blur',
