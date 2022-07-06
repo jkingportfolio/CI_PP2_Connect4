@@ -203,6 +203,7 @@ section {
 }
 
 .player-one-turn {
+    text-decoration: underline solid red 20%;
     animation: player-one-turn 1s linear 0s 1 normal both;
 }
 
@@ -251,6 +252,7 @@ section {
 }
 
 .player-two-turn {
+    text-decoration: underline solid yellow 20%;
     animation: player-two-turn 1s linear 0s 1 normal both;
 }
 
@@ -258,7 +260,7 @@ section {
     0% {
         animation-timing-function: ease-in;
         opacity: 0;
-        transform: translateX(-250px);
+        transform: translateX(250px);
     }
 
     38% {
@@ -269,7 +271,7 @@ section {
 
     55% {
         animation-timing-function: ease-in;
-        transform: translateX(-68px);
+        transform: translateX(68px);
     }
 
     72% {
@@ -279,7 +281,7 @@ section {
 
     81% {
         animation-timing-function: ease-in;
-        transform: translateX(-28px);
+        transform: translateX(28px);
     }
 
     90% {
@@ -289,7 +291,7 @@ section {
 
     95% {
         animation-timing-function: ease-in;
-        transform: translateX(-8px);
+        transform: translateX(8px);
     }
 
     100% {

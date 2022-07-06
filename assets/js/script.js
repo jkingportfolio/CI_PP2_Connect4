@@ -94,6 +94,7 @@ let warningCount = 0;
 newGame();
 // Wipe all occupied counters from the board
 function newGame() {
+    currentPlayer = 1;
     for (let i = 0; i < cells.length - 7; i++) {
         cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
         cells[i].innerHTML = ""
