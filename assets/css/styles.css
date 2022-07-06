@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
 body {
-    min-height: 100vh;
+    min-height: 100vh !important;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -106,22 +106,6 @@ header {
 
     to {
         transform: scale(1.0);
-    }
-}
-
-.animated-text-test {
-    background-image: linear-gradient(to right, #00F260, #f79d00, #0575E6, #64f38c);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-size: 300%;
-    background-position: -100%;
-    animation: testanimation 5s infinite alternate-reverse;
-}
-
-@keyframes testanimation {
-    to {
-        background-position: 100%;
     }
 }
 
@@ -274,7 +258,7 @@ section {
     0% {
         animation-timing-function: ease-in;
         opacity: 0;
-        transform: translateX(250px);
+        transform: translateX(-250px);
     }
 
     38% {
@@ -285,7 +269,7 @@ section {
 
     55% {
         animation-timing-function: ease-in;
-        transform: translateX(68px);
+        transform: translateX(-68px);
     }
 
     72% {
@@ -295,7 +279,7 @@ section {
 
     81% {
         animation-timing-function: ease-in;
-        transform: translateX(32px);
+        transform: translateX(-28px);
     }
 
     90% {
@@ -305,7 +289,7 @@ section {
 
     95% {
         animation-timing-function: ease-in;
-        transform: translateX(8px);
+        transform: translateX(-8px);
     }
 
     100% {
