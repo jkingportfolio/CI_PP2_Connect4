@@ -94,6 +94,54 @@ header {
     to {transform: scale(1.0);}
 }
 
+.wobble {
+    animation: wobble 2s cubic-bezier(0.11, 0, 0.5, 0) 0s infinite normal none;
+}
+
+@keyframes wobble {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+.winner {
+    animation: winner 2s ease-out 0s 1 normal both;
+}
+
+@keyframes winner {
+	0% {
+		opacity: 0.5;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+
 .horizontal-shake {
     animation: horizontal-shake 0.35s;
     animation-iteration-count: 4;
@@ -125,24 +173,100 @@ position: relative;
 }
 
 .player-one-turn {
-    animation: player-one-turn 2s infinite;
-    animation-fill-mode: both;
+    animation: player-one-turn 1s linear 0s 1 normal both;
 }
 
 @keyframes player-one-turn {
-    from {background:radial-gradient(circle at 50% 50%, rgba(238, 130, 238, 0) 0%, rgba(18, 212, 0, 0) 50%, rgba(255, 0, 0, 1) 100%);}
-    to {background: white;}
-  }
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(-68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
 
   .player-two-turn {
-    animation: player-two-turn 0.5s infinite;
-    animation-direction: alternate;
+    animation: player-two-turn 1s linear 0s 1 normal both;
 }
 
 @keyframes player-two-turn {
-    from {background:radial-gradient(circle at 50% 50%, rgba(238, 130, 238, 0) 0%, rgba(18, 212, 0, 0) 50%, rgba(255, 255, 0, 1) 100%);}
-    to {background: white;}
-  }
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(32px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}
 
 .game-board {
     position: sticky;
