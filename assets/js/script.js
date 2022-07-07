@@ -242,6 +242,8 @@ function gameEnd() {
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('occupied');
         notification.classList.remove('invalid-animation');
+        notification.classList.remove('player-one-turn');
+        notification.classList.remove('player-two-turn');
     }
 }
 
