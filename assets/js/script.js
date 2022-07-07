@@ -96,14 +96,14 @@ function newGame() {
     currentPlayer = 1;
     for (let i = 0; i < cells.length - 7; i++) {
         cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
-        cells[i].innerHTML = ""
+        cells[i].innerText = ""
         notification.classList.remove('winner');
         notification.classList.add('wobble');
         document.getElementById("new-game-button").style.display = "none";
         if (gameActive) {
-            notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+            notification.innerText = `Its Player ${currentPlayer}'s turn!`
         } else {
-            notification.innerHTML = `Click to play!`
+            notification.innerText = `Click to play!`
         }
         notificationColour();
         gameCheck();
@@ -128,17 +128,17 @@ function twoPlayerGame() {
                 if (currentPlayer == 1) {
                     cells[i].classList.add('occupied');
                     cells[i].classList.add('player-one');
-                    cells[i].innerHTML = '1'
+                    cells[i].innerText = '1'
                     currentPlayer = 2;
-                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+                    notification.innerText = `Its Player ${currentPlayer}'s turn!`
                 } else if (currentPlayer == 2) {
                     cells[i].classList.add('occupied');
                     cells[i].classList.add('player-two');
-                    cells[i].innerHTML = '2'
+                    cells[i].innerText = '2'
                     currentPlayer = 1;
-                    notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+                    notification.innerText = `Its Player ${currentPlayer}'s turn!`
                 }
-            } else notification.innerHTML = 'Invalid move!';
+            } else notification.innerText = 'Invalid move!';
             notificationColour()
             winCheck();
         }
@@ -164,10 +164,10 @@ function playerOneTurn() {
             if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
                 cells[i].classList.add('occupied');
                 cells[i].classList.add('player-one');
-                cells[i].innerHTML = '1'
+                cells[i].innerText = '1'
                 currentPlayer = 2;
-                notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
-            } else notification.innerHTML = 'Invalid move!';
+                notification.innerText = `Its Player ${currentPlayer}'s turn!`
+            } else notification.innerText = 'Invalid move!';
             winCheck();
         }
     }
@@ -185,9 +185,9 @@ function computerTurn() {
     } else {
         cells[computerRandomNumber].classList.add('occupied');
         cells[computerRandomNumber].classList.add('player-two');
-        cells[computerRandomNumber].innerHTML = '2'
+        cells[computerRandomNumber].innerText = '2'
         currentPlayer = 1;
-        notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
+        notification.innerText = `Its Player ${currentPlayer}'s turn!`
     }
     winCheck();
 }
@@ -262,15 +262,15 @@ window.addEventListener("orientationchange", function () {
 });
 
 function notificationColour() {
-    if (notification.innerHTML === "Its Player 1's turn!") {
+    if (notification.innerText === "Its Player 1's turn!") {
         document.getElementById('game-notification').classList.remove('invalid-animation');
         document.getElementById('game-notification').classList.remove('player-two-turn');
         document.getElementById('game-notification').classList.add('player-one-turn');
-    } else if (notification.innerHTML === "Its Player 2's turn!") {
+    } else if (notification.innerText === "Its Player 2's turn!") {
         document.getElementById('game-notification').classList.remove('invalid-animation');
         document.getElementById('game-notification').classList.remove('player-one-turn');
         document.getElementById('game-notification').classList.add('player-two-turn');
-    } else if (notification.innerHTML === "Invalid move!") {
+    } else if (notification.innerText === "Invalid move!") {
         document.getElementById('game-notification').classList.remove('player-one-turn');
         document.getElementById('game-notification').classList.remove('player-two-turn');
         document.getElementById('game-notification').classList.remove('animated-text');
