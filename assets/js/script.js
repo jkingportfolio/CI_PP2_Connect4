@@ -97,6 +97,8 @@ function newGame() {
     for (let i = 0; i < cells.length - 7; i++) {
         cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
         cells[i].innerHTML = ""
+        notification.classList.remove('winner');
+        notification.classList.add('wobble');
         document.getElementById("new-game-button").style.display = "none";
         if (gameActive) {
             notification.innerHTML = `Its Player ${currentPlayer}'s turn!`
@@ -239,6 +241,7 @@ function gameEnd() {
     gameActive = false;
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('occupied');
+        notification.classList.remove('horizontal-shake');
     }
 }
 
