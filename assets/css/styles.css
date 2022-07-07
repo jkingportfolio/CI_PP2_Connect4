@@ -67,14 +67,14 @@ header {
     border-radius: 50%;
 }
 
-#new-game-button {
+.game-button {
     display: flex;
     justify-content: center;
     max-width: 200px;
     margin: auto;
     cursor: pointer;
     animation: new-game-button 0.7s ease 0.5s infinite alternate;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 /*Bouncy button*/

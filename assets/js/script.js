@@ -245,6 +245,11 @@ function gameEnd() {
     }
 }
 
+document.getElementById("new-game-button").addEventListener('click',
+    function () {
+        newGame();
+    });
+
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
         document.querySelector('.orientation-warning-modal').style.display = "Flex";
