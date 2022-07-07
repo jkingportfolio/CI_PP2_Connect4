@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
 
 body {
     min-height: 100vh !important;
@@ -368,11 +369,15 @@ section {
 .player-one {
     animation: place-counter 0.5s linear 0s 1 normal none;
     background-color: red;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
 }
 
 .player-two {
-
+    animation: place-counter 0.5s linear 0s 1 normal none;
     background-color: yellow;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
 }
 
 @keyframes place-counter {
