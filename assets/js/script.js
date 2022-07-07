@@ -91,7 +91,6 @@ let music = false;
 let gameActive = false;
 let warningCount = 0;
 
-newGame();
 // Wipe all occupied counters from the board
 function newGame() {
     currentPlayer = 1;
@@ -148,7 +147,7 @@ function twoPlayerGame() {
 function onePlayerGame() {
     if (currentPlayer == 1) {
         playerOneTurn();
-    } else setTimeout(computerTurn, 500);
+    } else setTimeout(computerTurn, 300);
     notificationColour();
 }
 
@@ -213,7 +212,6 @@ function winCheck() {
             cell4.classList.add('player-one-winner')
             currentPlayer = 1;
             document.getElementById("new-game-button").style.display = "flex";
-            gameActive = true;
             gameEnd();
         }
         if (
@@ -230,7 +228,6 @@ function winCheck() {
             cell4.classList.add('player-two-winner')
             currentPlayer = 1;
             document.getElementById("new-game-button").style.display = "flex";
-            gameActive = true;
             gameEnd();
         } // Insert if statment for draw
     }
@@ -241,7 +238,7 @@ function winCheck() {
 function gameEnd() {
     gameActive = false;
     for (let i = 0; i < cells.length; i++) {
-        cells[i].classList.add('disable-click');
+        cells[i].classList.add('occupied');
     }
 }
 
