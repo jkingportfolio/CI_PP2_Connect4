@@ -256,9 +256,11 @@ window.addEventListener("orientationchange", function () {
 
 function notificationColour() {
     if (notification.innerHTML === "Its Player 1's turn!") {
+        document.getElementById('game-notification').classList.remove('invalid-animation');
         document.getElementById('game-notification').classList.remove('player-two-turn');
         document.getElementById('game-notification').classList.add('player-one-turn');
     } else if (notification.innerHTML === "Its Player 2's turn!") {
+        document.getElementById('game-notification').classList.remove('invalid-animation');
         document.getElementById('game-notification').classList.remove('player-one-turn');
         document.getElementById('game-notification').classList.add('player-two-turn');
     } else if (notification.innerHTML === "Invalid move!") {
@@ -267,6 +269,7 @@ function notificationColour() {
         document.getElementById('game-notification').classList.remove('animated-text');
         document.getElementById('game-notification').classList.add('invalid-animation');
     } else {
+        document.getElementById('game-notification').classList.remove('invalid-animation');
         document.getElementById('game-notification').classList.remove('player-one-turn');
         document.getElementById('game-notification').classList.remove('player-two-turn');
     }
