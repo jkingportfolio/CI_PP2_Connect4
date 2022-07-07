@@ -241,7 +241,7 @@ function gameEnd() {
     gameActive = false;
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('occupied');
-        notification.classList.remove('horizontal-shake');
+        notification.classList.remove('invalid-animation');
     }
 }
 
@@ -265,7 +265,7 @@ function notificationColour() {
         document.getElementById('game-notification').classList.remove('player-one-turn');
         document.getElementById('game-notification').classList.remove('player-two-turn');
         document.getElementById('game-notification').classList.remove('animated-text');
-        document.getElementById('game-notification').classList.add('horizontal-shake');
+        document.getElementById('game-notification').classList.add('invalid-animation');
     } else {
         document.getElementById('game-notification').classList.remove('player-one-turn');
         document.getElementById('game-notification').classList.remove('player-two-turn');

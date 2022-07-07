@@ -158,31 +158,55 @@ header {
 	}
 }
 
-.horizontal-shake {
-    animation: horizontal-shake 0.35s;
-    animation-iteration-count: 4;
+.invalid-animation {
+    color: red;
+    animation: invalid-animation 0.5s ease 0s 3 normal none;
 }
 
-@keyframes horizontal-shake {
-    0% {
-        transform: translateX(0)
-    }
+@keyframes invalid-animation {
+	0% {
+		transform: translate(0);
+	}
 
-    25% {
-        transform: translateX(5px)
-    }
+	10% {
+		transform: translate(-2px, -2px);
+	}
 
-    50% {
-        transform: translateX(-5px)
-    }
+	20% {
+		transform: translate(2px, -2px);
+	}
 
-    75% {
-        transform: translateX(5px)
-    }
+	30% {
+		transform: translate(-2px, 2px);
+	}
 
-    100% {
-        transform: translateX(0)
-    }
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	50% {
+		transform: translate(-2px, -2px);
+	}
+
+	60% {
+		transform: translate(2px, -2px);
+	}
+
+	70% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	90% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
 }
 
 section {
