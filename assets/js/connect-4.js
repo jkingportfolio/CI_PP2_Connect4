@@ -160,6 +160,7 @@ function twoPlayerGame() {
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                 }
             } else notification.innerText = 'Invalid move!';
+            window.navigator.vibrate(300);
             notificationColour();
             winCheck();
         };
@@ -200,6 +201,7 @@ function playerOneTurn() {
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
             } else notification.innerText = 'Invalid move!';
+            window.navigator.vibrate(300);
             winCheck();
         };
     }
