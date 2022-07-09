@@ -158,3 +158,20 @@ document.querySelector('.contact-close').addEventListener('click',
         document.querySelector('.contact-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
+
+// Contact submission success modal show
+
+function contactSubmitSuccess () {
+    document.querySelector('.contact-submit-modal').style.display = "Flex"
+}
+
+// Hide Contact submit modal 
+
+document.querySelector('.contact-submit-close').addEventListener('click',
+    function () {
+        document.querySelector('.contact-submit-modal').style.display = "None";
+        document.querySelector('.contact-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
+    });
+
+

@@ -1,10 +1,10 @@
 /**
  * [contact.js will send email using EmailJS
- * Credit: EmailJS documentation tutorial "Sending Emails Using EmailJS"]
+ * Credit: EmailJS documentation tutorial "Sending Emails Using EmailJS"
  * The API that is used is described here: https://www.emailjs.com/]
  */
 
- window.onload = function() {
+window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         emailjs.init('vvPdJTW7PGVWTufFs');
@@ -17,5 +17,6 @@
             }, function (error) {
                 console.log('FAILED...', error);
             });
+        contactSubmitSuccess();
     });
 }
