@@ -30,12 +30,13 @@ document.querySelector('.new-game-close').addEventListener('click',
 * false and the buttons class to be active]
 */
 
-function playerTwoSelectHuman() {
-    playerTwoComputer = false;
-    document.getElementById('player-two-human').classList.add('btn-active');
-    document.getElementById('player-two-computer').classList.remove('btn-active');
-    console.log(playerTwoComputer);
-}
+document.getElementById('player-two-human').addEventListener('click',
+    function () {
+        playerTwoComputer = false;
+        document.getElementById('player-two-human').classList.add('btn-active');
+        document.getElementById('player-two-computer').classList.remove('btn-active');
+        console.log(playerTwoComputer);
+    });
 
 /*
 * [This function will run when the player 2
@@ -44,12 +45,13 @@ function playerTwoSelectHuman() {
 * be true and the buttons class to be active]
 */
 
-function playerTwoSelectComputer() {
-    playerTwoComputer = true;
-    document.getElementById('player-two-computer').classList.add('btn-active');
-    document.getElementById('player-two-human').classList.remove('btn-active');
-    console.log(playerTwoComputer);
-}
+document.getElementById('player-two-computer').addEventListener('click',
+    function () {
+        playerTwoComputer = true;
+        document.getElementById('player-two-computer').classList.add('btn-active');
+        document.getElementById('player-two-human').classList.remove('btn-active');
+        console.log(playerTwoComputer);
+    });
 
 /* 
 * [Event listener for the new game Yes button
@@ -61,6 +63,7 @@ document.getElementById("new-game-yes").addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
+        newGame();
     });
 
 /* 
@@ -69,10 +72,11 @@ document.getElementById("new-game-yes").addEventListener('click',
 * and toggle nav bar menu]
 */
 
-function cancel() {
-    document.querySelector('.new-game-modal').style.display = "None";
-    document.getElementById('toggleMobileMenu').classList.remove('show');
-}
+document.getElementById("cancel").addEventListener('click',
+    function () {
+        document.querySelector('.new-game-modal').style.display = "None";
+        document.getElementById('toggleMobileMenu').classList.remove('show');
+    });
 
 // Help modal functions
 
@@ -110,39 +114,43 @@ document.querySelector('.settings-close').addEventListener('click',
 
 // Function to turn music on
 
-function musicOn() {
-    music = true;
-    document.getElementById('music-on').classList.add('btn-active');
-    document.getElementById('music-off').classList.remove('btn-active');
-    console.log(music);
-}
+document.getElementById('music-on').addEventListener('click',
+    function () {
+        music = true;
+        document.getElementById('music-on').classList.add('btn-active');
+        document.getElementById('music-off').classList.remove('btn-active');
+        console.log(music);
+    });
 
 // Function to turn music off
 
-function musicOff() {
-    music = false;
-    document.getElementById('music-off').classList.add('btn-active');
-    document.getElementById('music-on').classList.remove('btn-active');
-    console.log(music);
-}
+document.getElementById('music-off').addEventListener('click',
+    function () {
+        music = false;
+        document.getElementById('music-off').classList.add('btn-active');
+        document.getElementById('music-on').classList.remove('btn-active');
+        console.log(music);
+    });
 
 // Function to turn game sounds on
 
-function soundOn() {
-    sounds = true;
-    document.getElementById('sound-on').classList.add('btn-active');
-    document.getElementById('sound-off').classList.remove('btn-active');
-    console.log(sounds);
-}
+document.getElementById('sound-on').addEventListener('click',
+    function () {
+        sounds = true;
+        document.getElementById('sound-on').classList.add('btn-active');
+        document.getElementById('sound-off').classList.remove('btn-active');
+        console.log(sounds);
+    });
 
 // Function to turn game sounds off
 
-function soundOff() {
-    sounds = false;
-    document.getElementById('sound-off').classList.add('btn-active');
-    document.getElementById('sound-on').classList.remove('btn-active');
-    console.log(sounds);
-}
+document.getElementById('sound-off').addEventListener('click',
+    function () {
+        sounds = false;
+        document.getElementById('sound-off').classList.add('btn-active');
+        document.getElementById('sound-on').classList.remove('btn-active');
+        console.log(sounds);
+    });
 
 // Contact modal functions
 
