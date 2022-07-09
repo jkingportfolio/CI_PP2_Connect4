@@ -4,6 +4,8 @@
 * game options]
 */
 
+let submitMessage = document.getElementById('submit-message');
+
 // New Game modal functions
 
 // Show New Game modal
@@ -163,6 +165,14 @@ document.querySelector('.contact-close').addEventListener('click',
 
 function contactSubmitSuccess () {
     document.querySelector('.contact-submit-modal').style.display = "Flex"
+    submitMessage.innerText = "Thank you for your feedback!"
+}
+
+// Contact submission error modal show
+
+function contactSubmitError () {
+    document.querySelector('.contact-submit-modal').style.display = "Flex"
+    submitMessage.innerText = "Oops, something went wrong, please try again"
 }
 
 // Hide Contact submit modal 
