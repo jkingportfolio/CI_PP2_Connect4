@@ -93,7 +93,7 @@ let computerRandomNumber;
 let maxCells = 41;
 let notification = document.getElementById('game-notification');
 const soundEffect = new Audio();
-let sounds = true;
+let sounds = false;
 let music = false;
 let gameActive = false;
 let warningCount = 0;
