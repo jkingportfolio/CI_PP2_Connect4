@@ -92,7 +92,8 @@ let playerTwoComputer = true;
 let computerRandomNumber;
 let maxCells = 41;
 let notification = document.getElementById('game-notification');
-let sounds = false;
+const soundEffect = new Audio();
+let sounds = true;
 let music = false;
 let gameActive = false;
 let warningCount = 0;
@@ -152,12 +153,14 @@ function twoPlayerGame() {
                     cells[i].innerText = '1';
                     currentPlayer = 2;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+                    playCounterSound()
                 } else if (currentPlayer == 2) {
                     cells[i].classList.add('occupied');
                     cells[i].classList.add('player-two');
                     cells[i].innerText = '2';
                     currentPlayer = 1;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+                    playCounterSound()
                 }
             } else notification.innerText = 'Invalid move!';
             window.navigator.vibrate(300);
@@ -200,6 +203,7 @@ function playerOneTurn() {
                 cells[i].innerText = '1';
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+                playCounterSound()
             } else notification.innerText = 'Invalid move!';
             window.navigator.vibrate(300);
             winCheck();
@@ -229,6 +233,7 @@ function computerTurn() {
         cells[computerRandomNumber].innerText = '2';
         currentPlayer = 1;
         notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+        playCounterSound()
     }
     winCheck();
 }
@@ -330,6 +335,15 @@ function notificationColour() {
         notification.classList.remove('player-two-turn');
     }
 }
+
+function playCounterSound() {
+    if (!sounds) return;
+    console.log('it should play a sound');
+    soundEffect.src = 'assets/sounds/counter-drop.mp3';
+    soundEffect.play();
+ }
+
+
 
 // Footer contact
 
