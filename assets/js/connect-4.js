@@ -1,3 +1,8 @@
+/*
+* [The connect-4.js file is the main JavaScript file of the project
+* which is used by index.html]
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
     newGame();
 });
@@ -298,11 +303,6 @@ document.querySelector('.new-game-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-// document.getElementById('#newGameModal').addEventListener('blur',
-// function () {
-//     document.querySelector('.new-game-modal').style.display = "None";
-// });
-
 function playerTwoSelectHuman() {
     playerTwoComputer = false;
     document.getElementById('player-two-human').classList.add('btn-active');
@@ -341,11 +341,6 @@ document.querySelector('.help-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-// document.getElementById('#helpModal').addEventListener('blur',
-// function () {
-//     document.querySelector('.help-modal').style.display = "None";
-// });
-
 // Settings modal functions
 
 document.getElementById("#settingsModal").addEventListener('click',
@@ -358,11 +353,6 @@ document.querySelector('.settings-close').addEventListener('click',
         document.querySelector('.settings-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
-
-// document.getElementById('#settingsModal').addEventListener('blur',
-// function () {
-//     document.querySelector('.settings-modal').style.display = "None";
-// });
 
 function musicOn() {
     music = true;
