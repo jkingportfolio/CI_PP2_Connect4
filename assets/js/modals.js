@@ -120,6 +120,7 @@ document.getElementById('music-on').addEventListener('click',
         document.getElementById('music-on').classList.add('btn-active');
         document.getElementById('music-off').classList.remove('btn-active');
         console.log(music);
+        playMusic()
     });
 
 // Function to turn music off
@@ -130,6 +131,7 @@ document.getElementById('music-off').addEventListener('click',
         document.getElementById('music-off').classList.add('btn-active');
         document.getElementById('music-on').classList.remove('btn-active');
         console.log(music);
+        pauseMusic() 
     });
 
 // Function to turn game sounds on

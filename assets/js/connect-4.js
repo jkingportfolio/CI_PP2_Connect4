@@ -94,6 +94,7 @@ let maxCells = 41;
 let notification = document.getElementById('game-notification');
 const soundEffect = new Audio();
 let sounds = false;
+const musicFile = new Audio();
 let music = false;
 let gameActive = false;
 let warningCount = 0;
@@ -342,6 +343,22 @@ function playCounterSound() {
     soundEffect.src = 'assets/sounds/counter-drop.mp3';
     soundEffect.play();
  }
+
+ function playMusic() {
+    if (!music) return;
+    console.log('it should play music');
+    musicFile.src = 'assets/sounds/game-music.mp3';
+    musicFile.play();
+ }
+
+ function pauseMusic() {
+    if (music) return;
+    console.log('it should stop music');
+    musicFile.src = 'assets/sounds/game-music.mp3';
+    musicFile.pause();
+ }
+
+
 
 
 
