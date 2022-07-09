@@ -94,6 +94,7 @@ let maxCells = 41;
 let notification = document.getElementById('game-notification');
 const soundEffect = new Audio();
 const invalidMoveSound = new Audio();
+const winnerSound = new Audio();
 let sounds = false;
 const musicFile = new Audio();
 let music = false;
@@ -169,8 +170,9 @@ function twoPlayerGame() {
                 playInvalidSound()
                 window.navigator.vibrate(300);
                 notificationColour();
-                winCheck();
+
             }
+            winCheck();
         };
     }
 }
@@ -304,6 +306,7 @@ function winCheck() {
  */
 function gameEnd() {
     gameActive = false;
+    playWinnerSound();
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('occupied');
         notification.classList.remove('invalid-animation');
@@ -344,12 +347,15 @@ function notificationColour() {
     }
 }
 
+// Function to play counter sound on click
 function playCounterSound() {
     if (!sounds) return;
     console.log('it should play a sound');
     soundEffect.src = 'assets/sounds/counter-drop.mp3';
     soundEffect.play();
 }
+
+// Function to play invalid sound on click
 
 function playInvalidSound() {
     if (!sounds) return;
@@ -358,12 +364,23 @@ function playInvalidSound() {
     invalidMoveSound.play();
 }
 
+function playWinnerSound() {
+    if (!sounds) return;
+    console.log('it should play a winning sound');
+    winnerSound.src = 'assets/sounds/winner.mp3';
+    winnerSound.play();
+}
+
+// Function to play music when music = true
+
 function playMusic() {
     if (!music) return;
     console.log('it should play music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.play();
 }
+
+// Function to stop music when music = false
 
 function pauseMusic() {
     if (music) return;
