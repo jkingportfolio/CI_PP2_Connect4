@@ -161,6 +161,11 @@ document.getElementById("#contactModal").addEventListener('click',
         document.querySelector('.contact-modal').style.display = "Flex";
     });
 
+document.getElementById("footer-contact").addEventListener('click',
+function () {
+    document.querySelector('.contact-modal').style.display = "Flex";
+});
+
 // Hide Contact modal and toggle nav bar menu
 
 document.querySelector('.contact-close').addEventListener('click',
@@ -172,15 +177,15 @@ document.querySelector('.contact-close').addEventListener('click',
 // Contact submission success modal show
 
 function contactSubmitSuccess () {
-    document.querySelector('.contact-submit-modal').style.display = "Flex"
-    submitMessage.innerText = "Thank you for your feedback!"
+    document.querySelector('.contact-submit-modal').style.display = "Flex";
+    submitMessage.innerText = "Thank you for your feedback!";
 }
 
 // Contact submission error modal show
 
 function contactSubmitError () {
-    document.querySelector('.contact-submit-modal').style.display = "Flex"
-    submitMessage.innerText = "Oops, something went wrong, please try again"
+    document.querySelector('.contact-submit-modal').style.display = "Flex";
+    submitMessage.innerText = "Oops, something went wrong, please try again";
 }
 
 // Hide Contact submit modal 
