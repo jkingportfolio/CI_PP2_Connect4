@@ -359,3 +359,10 @@ document.querySelector('.warning-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
         warningCount += 1;
     });
+
+// New Game button listener
+
+document.getElementById('new-game-button').addEventListener('click',
+    function () {
+        newGame();
+    });
