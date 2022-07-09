@@ -257,15 +257,6 @@ document.getElementById("new-game-button").addEventListener('click',
         newGame();
     });
 
-window.addEventListener("orientationchange", function () {
-    if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
-        document.querySelector('.orientation-warning-modal').style.display = "Flex";
-        // Add code to show pop up stating the game is best played in portrait
-    } else {
-        console.log('This is landscape');
-    }
-});
-
 function notificationColour() {
     if (notification.innerText === "Its Player 1's turn!") {
         document.getElementById('game-notification').classList.remove('invalid-animation');
@@ -287,132 +278,26 @@ function notificationColour() {
     }
 };
 
+// Footer contact
 
-// Modals
-
-// New Game modal functions
-
-document.getElementById("#newGameModal").addEventListener('click',
-    function () {
-        document.querySelector('.new-game-modal').style.display = "Flex";
-    });
-
-document.querySelector('.new-game-close').addEventListener('click',
-    function () {
-        document.querySelector('.new-game-modal').style.display = "None";
-        document.getElementById('toggleMobileMenu').classList.remove('show');
-    });
-
-function playerTwoSelectHuman() {
-    playerTwoComputer = false;
-    document.getElementById('player-two-human').classList.add('btn-active');
-    document.getElementById('player-two-computer').classList.remove('btn-active');
-    console.log(playerTwoComputer);
-}
-
-function playerTwoSelectComputer() {
-    playerTwoComputer = true;
-    document.getElementById('player-two-computer').classList.add('btn-active');
-    document.getElementById('player-two-human').classList.remove('btn-active');
-    console.log(playerTwoComputer);
-}
-
-document.getElementById("new-game-yes").addEventListener('click',
-    function () {
-        document.querySelector('.new-game-modal').style.display = "None";
-        document.getElementById('toggleMobileMenu').classList.remove('show');
-    });
-
-function cancel() {
-    document.querySelector('.new-game-modal').style.display = "None";
-    document.getElementById('toggleMobileMenu').classList.remove('show');
-}
-
-// Help modal functions
-
-document.getElementById("#helpModal").addEventListener('click',
-    function () {
-        document.querySelector('.help-modal').style.display = "Flex";
-    });
-
-document.querySelector('.help-close').addEventListener('click',
-    function () {
-        document.querySelector('.help-modal').style.display = "None";
-        document.getElementById('toggleMobileMenu').classList.remove('show');
-    });
-
-// Settings modal functions
-
-document.getElementById("#settingsModal").addEventListener('click',
-    function () {
-        document.querySelector('.settings-modal').style.display = "Flex";
-    });
-
-document.querySelector('.settings-close').addEventListener('click',
-    function () {
-        document.querySelector('.settings-modal').style.display = "None";
-        document.getElementById('toggleMobileMenu').classList.remove('show');
-    });
-
-function musicOn() {
-    music = true;
-    document.getElementById('music-on').classList.add('btn-active');
-    document.getElementById('music-off').classList.remove('btn-active');
-    console.log(music);
-}
-
-function musicOff() {
-    music = false;
-    document.getElementById('music-off').classList.add('btn-active');
-    document.getElementById('music-on').classList.remove('btn-active');
-    console.log(music);
-}
-
-function soundOn() {
-    sounds = true;
-    document.getElementById('sound-on').classList.add('btn-active');
-    document.getElementById('sound-off').classList.remove('btn-active');
-    console.log(sounds);
-}
-
-function soundOff() {
-    sounds = false;
-    document.getElementById('sound-off').classList.add('btn-active');
-    document.getElementById('sound-on').classList.remove('btn-active');
-    console.log(sounds);
-}
-
-// Contact modal functions
-
-document.getElementById("#contactModal").addEventListener('click',
+document.getElementById("footer-contact").addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "Flex";
     });
 
-document.querySelector('.contact-close').addEventListener('click',
-    function () {
-        document.querySelector('.contact-modal').style.display = "None";
-        document.getElementById('toggleMobileMenu').classList.remove('show');
-    });
-
-// document.getElementById('#contactModal').addEventListener('blur',
-// function () {
-//     document.querySelector('.contact-modal').style.display = "None";
-// });
-
-// Landscape warning modal
+// Landscape orientation warning
+window.addEventListener("orientationchange", function () {
+    if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
+        document.querySelector('.orientation-warning-modal').style.display = "Flex";
+        // Add code to show pop up stating the game is best played in portrait
+    } else {
+        console.log('This is landscape');
+    }
+});
 
 document.querySelector('.warning-close').addEventListener('click',
     function () {
         document.querySelector('.orientation-warning-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
         warningCount += 1;
-    });
-
-
-// Footer contact
-
-document.getElementById("footer-contact").addEventListener('click',
-    function () {
-        document.querySelector('.contact-modal').style.display = "Flex";
     });
