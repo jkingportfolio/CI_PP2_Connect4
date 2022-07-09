@@ -93,6 +93,7 @@ let computerRandomNumber;
 let maxCells = 41;
 let notification = document.getElementById('game-notification');
 const soundEffect = new Audio();
+const invalidMoveSound = new Audio();
 let sounds = false;
 const musicFile = new Audio();
 let music = false;
@@ -163,10 +164,13 @@ function twoPlayerGame() {
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                     playCounterSound()
                 }
-            } else notification.innerText = 'Invalid move!';
-            window.navigator.vibrate(300);
-            notificationColour();
-            winCheck();
+            } else {
+                notification.innerText = 'Invalid move!';
+                playInvalidSound()
+                window.navigator.vibrate(300);
+                notificationColour();
+                winCheck();
+            }
         };
     }
 }
@@ -205,8 +209,11 @@ function playerOneTurn() {
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                 playCounterSound()
-            } else notification.innerText = 'Invalid move!';
-            window.navigator.vibrate(300);
+            } else {
+                notification.innerText = 'Invalid move!';
+                playInvalidSound()
+                window.navigator.vibrate(300);
+            }
             winCheck();
         };
     }
@@ -342,25 +349,28 @@ function playCounterSound() {
     console.log('it should play a sound');
     soundEffect.src = 'assets/sounds/counter-drop.mp3';
     soundEffect.play();
- }
+}
 
- function playMusic() {
+function playInvalidSound() {
+    if (!sounds) return;
+    console.log('it should play an invalid sound');
+    invalidMoveSound.src = 'assets/sounds/invalid-move.mp3';
+    invalidMoveSound.play();
+}
+
+function playMusic() {
     if (!music) return;
     console.log('it should play music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.play();
- }
+}
 
- function pauseMusic() {
+function pauseMusic() {
     if (music) return;
     console.log('it should stop music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.pause();
- }
-
-
-
-
+}
 
 // Footer contact
 
