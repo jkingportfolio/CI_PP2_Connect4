@@ -1,21 +1,16 @@
 /*
-* [The connect-4.js file is the main JavaScript file of the project
-* which is used by index.html]
-*/
+ * [The connect-4.js file is the main JavaScript file of the project
+ * which is used by index.html]
+ */
 
+// Onload run newGame function with default variable values
 document.addEventListener("DOMContentLoaded", function () {
     newGame();
 });
 
-// Variables
-
+// Constant values for the game grid cells
 const cells = document.querySelectorAll('.game-grid span');
-let currentPlayer = 1;
-let playerTwoComputer = true;
-let computerRandomNumber;
-let maxCells = 41;
-let notification = document.getElementById('game-notification');
-let winningCombinations = [
+const winningCombinations = [
     //horizontal
     [0, 1, 2, 3],
     [1, 2, 3, 4],
@@ -90,13 +85,23 @@ let winningCombinations = [
     [16, 24, 32, 40],
     [17, 25, 33, 41],
 ];
+
+// Game Variables
+let currentPlayer = 1;
+let playerTwoComputer = true;
+let computerRandomNumber;
+let maxCells = 41;
+let notification = document.getElementById('game-notification');
 let sounds = false;
 let music = false;
-// While game active is false, game-notification to display the game type ie PvP PvC
 let gameActive = false;
 let warningCount = 0;
 
-// Wipe all occupied counters from the board
+/* 
+ * [This function is used to revert all grid cells to empty,
+ * update the notification text to prompt for the
+ * correct game move and set correct animation class]
+ */
 function newGame() {
     currentPlayer = 1;
     for (let i = 0; i < cells.length - 7; i++) {
@@ -115,7 +120,11 @@ function newGame() {
     }
 }
 
-// Check if it is a one player or two player game
+/*
+ * [This function will check if the second player of the
+ * game is a human or computer player then call the relevant
+ * function to continue the game]
+ */
 function gameCheck() {
     if (!playerTwoComputer) {
         twoPlayerGame();
@@ -124,7 +133,14 @@ function gameCheck() {
     }
 }
 
-// Game logic for when two human players are playing
+/*
+ * [This is the main function for a 2 player game against
+ * two human players. This function will first loop through
+ * all game board cells and listen for a click on a cell and
+ * determine whos turn it is. If the cell is available and 
+ * there is an occupied cell below it, the relevant classed will
+ * be added to the cell and the currentPlayer will change]
+ */
 function twoPlayerGame() {
     // Loop through all cell spans, determine whos turn it is, then check if counter placement is valid (2 player)
     for (let i = 0; i < cells.length; i++) {
@@ -150,7 +166,11 @@ function twoPlayerGame() {
     }
 }
 
-//New onePlayerGame function to try and provide functionality to human vs computer game type
+/*
+ * [This is the main function for a 1 player game against
+ * a computer opponent. Once it has been determined whos
+ * turn it is, the relevant function will then be called]
+ */
 function onePlayerGame() {
     if (currentPlayer == 1) {
         playerOneTurn();
@@ -158,7 +178,14 @@ function onePlayerGame() {
     notificationColour();
 }
 
-// Player one turn when against the computer
+/*
+ * [This function will first remove the disable-click class
+ * from all cells and allow player one to take their turn. 
+ * The function will then loop through all game board cells 
+ * and listen for a click on a cell. If the cell is available 
+ * and there is an occupied cell below it, the relevant classed 
+ * will be added to the cell and the currentPlayer will change]
+ */
 function playerOneTurn() {
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.remove('disable-click');
@@ -178,7 +205,14 @@ function playerOneTurn() {
     }
 }
 
-// Computer turn when playing against computer
+/*
+ * [This function will randomly generated a cell for the computer
+ * to play its counter. Whilst this is happening a class of disabled
+ * click will be added to all cells so player one cannot place extra
+ * counters. If a cell has an occupied cell below it and the selected
+ * cell is not occupied a computer player counter will be placed and
+ * turn is changed to player one]
+ */
 function computerTurn() {
     computerRandomNumber = Math.floor((Math.random() * maxCells));
     console.log(computerRandomNumber);
@@ -197,7 +231,13 @@ function computerTurn() {
     winCheck();
 }
 
-// Check board for winning combination
+/*
+ * [This function checks all occupied cells against all
+ * winning combinations. If there is a match the game ends
+ * and displays the winner. Current player is swapped back
+ * to player one to stop the computer taking an extra turn
+ * after a winner has been declared]
+ */
 function winCheck() {
     for (let i = 0; i < winningCombinations.length; i++) {
         const cell1 = cells[winningCombinations[i][0]];
@@ -241,7 +281,12 @@ function winCheck() {
     gameCheck();
 }
 
-//Game end
+/*
+ * [This function will loop through all cells and mark them
+ * as occupied so that no further counters can be placed and
+ * continue to show the winning 4 in a row. These will remain
+ * until a new game is started with the New Game button]
+ */
 function gameEnd() {
     gameActive = false;
     for (let i = 0; i < cells.length; i++) {
@@ -252,11 +297,17 @@ function gameEnd() {
     }
 }
 
+// New Game button which when pressed calls the newGame function
 document.getElementById("new-game-button").addEventListener('click',
     function () {
         newGame();
     });
 
+/*
+ * [This function is used to control the classes assigned to the
+ *notifiction bar. This will then display the correct animation
+ * for the revalent turn or notification]
+ */
 function notificationColour() {
     if (notification.innerText === "Its Player 1's turn!") {
         document.getElementById('game-notification').classList.remove('invalid-animation');
@@ -285,7 +336,13 @@ document.getElementById("footer-contact").addEventListener('click',
         document.querySelector('.contact-modal').style.display = "Flex";
     });
 
-// Landscape orientation warning
+/*
+ * [This function will listen for the orientation to be
+ * landscape and warn the user that the game is best played
+ * in portrait mode. A warning count will be added which if
+ * is greater than 0 will not show the warning again]
+ */
+
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
         document.querySelector('.orientation-warning-modal').style.display = "Flex";
@@ -295,6 +352,7 @@ window.addEventListener("orientationchange", function () {
     }
 });
 
+// Warning Close button listener
 document.querySelector('.warning-close').addEventListener('click',
     function () {
         document.querySelector('.orientation-warning-modal').style.display = "None";
