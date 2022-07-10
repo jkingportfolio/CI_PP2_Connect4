@@ -45,6 +45,7 @@ header {
     flex-direction: column;
     border-bottom: 1px solid black;
     text-decoration: none;
+    background-color: white;
 }
 
 /* nav bar */
@@ -66,6 +67,12 @@ header {
 .navbar-nav > li {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+/* Main */
+
+.main-background {
+    background-image: linear-gradient(to right top, #b5c6e0, #a6d3e5, #a3dfdd, #b6e6cb, #dae9ba);
 }
 
 /* Game notifications */
