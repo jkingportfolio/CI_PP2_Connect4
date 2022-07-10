@@ -398,10 +398,14 @@ document.getElementById('music-button').addEventListener('click',
         if (music) {
             music = false;
             document.getElementById('music-button-image').src = ('../assets/images/sound-off-icon.png');
+            document.getElementById('music-off').classList.add('btn-active');
+            document.getElementById('music-on').classList.remove('btn-active');
             pauseMusic();
         } else {
             music = true;
             document.getElementById('music-button-image').src = ('../assets/images/sound-on-icon.png');
+            document.getElementById('music-on').classList.add('btn-active');
+            document.getElementById('music-off').classList.remove('btn-active');
             playMusic();
         }
     });
