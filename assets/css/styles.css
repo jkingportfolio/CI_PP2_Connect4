@@ -89,7 +89,7 @@ header {
     display: flex;
     justify-content: center;
     max-width: 200px;
-    margin: auto;
+    margin: 40px auto 0;
     cursor: pointer;
     animation: new-game-button 0.7s ease 0.5s infinite alternate;
     animation-delay: 1s;
