@@ -465,6 +465,48 @@ footer {
     justify-content: center;
 }
 
+/* Hoverable drop up menu. 
+Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover*/
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    bottom: 50px;
+    z-index: 1;
+  }
+  
+  .dropup-content span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropup-content span:hover {background-color: #ccc}
+  
+  .dropup:hover .dropup-content {
+    display: block;
+  }
+  
+  .dropup:hover .dropbtn {
+    background-color: #2980B9;
+  }
+
 /* modals */
 
 .new-game-modal {
