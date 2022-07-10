@@ -378,7 +378,7 @@ function playMusic() {
     console.log('it should play music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.play();
-    document.getElementById('music-button').src = '../assets/images/sound-on-icon.png';
+    // document.getElementById('music-button').src = '../assets/images/sound-on-icon.png';
 }
 
 // Function to stop music when music = false
@@ -388,8 +388,23 @@ function pauseMusic() {
     console.log('it should stop music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.pause();
-    document.getElementById('music-button').src = '../assets/images/sound-off-icon.png';
+    // document.getElementById('music-button').src = '../assets/images/sound-off-icon.png';
 }
+
+// Function to toggle music on off via main display icon
+
+document.getElementById('music-button').addEventListener('click',
+    function () {
+        if (music) {
+            music = false;
+            document.getElementById('music-button').src = ('../assets/images/sound-off-icon.png');
+            pauseMusic();
+        } else {
+            music = true;
+            document.getElementById('music-button').src = ('../assets/images/sound-on-icon.png');
+            playMusic();
+        }
+    });
 
 // Footer contact
 
