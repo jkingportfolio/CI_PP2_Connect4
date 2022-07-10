@@ -100,6 +100,8 @@ const musicFile = new Audio();
 let music = false;
 let gameActive = false;
 let warningCount = 0;
+let playerOneWins = 0;
+let playerTwoWins = 0;
 
 /* 
  * [This function is used to revert all grid cells to empty,
@@ -275,6 +277,9 @@ function winCheck() {
             cell3.classList.add('player-one-winner');
             cell4.classList.add('player-one-winner');
             currentPlayer = 1;
+            playerOneWins = playerOneWins + 1;
+            console.log('playerOneWins');
+            document.getElementById('player-one-wins').innerText = `Player 1 wins: ${playerOneWins}`
             document.getElementById("new-game-button").style.display = "flex";
             gameEnd();
         }
@@ -291,6 +296,8 @@ function winCheck() {
             cell3.classList.add('player-two-winner');
             cell4.classList.add('player-two-winner');
             currentPlayer = 1;
+            playerTwoWins = playerTwoWins + 1;
+            document.getElementById('player-two-wins').innerText = `Player 2 wins: ${playerTwoWins}`;
             document.getElementById("new-game-button").style.display = "flex";
             gameEnd();
         } // Insert if statment for draw
