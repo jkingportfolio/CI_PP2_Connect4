@@ -36,10 +36,6 @@ a, a:hover, a:focus, a:active {
     text-align: left;
 }
 
-.center-align {
-    text-align: center;
-}
-
 /* header */
 
 header {
@@ -47,6 +43,8 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid black;
+    text-decoration: none;
 }
 
 /* nav bar */
@@ -65,7 +63,7 @@ header {
     font-size: 20px;
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -727,6 +725,11 @@ footer {
     justify-content: center;
     width: 200px;
     margin: 10%;
+  }
+
+  .sorry-message {
+    text-align: center;
+    margin: 50px 10% 0 10%;
   }
 
 /* media queries*/
