@@ -385,14 +385,14 @@ section {
     animation: place-counter 0.5s linear 0s 1 normal none;
     background-color: red;
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .player-two {
     animation: place-counter 0.5s linear 0s 1 normal none;
     background-color: yellow;
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 @keyframes place-counter {
@@ -757,5 +757,13 @@ footer {
 
     #game-notification {
         width: 60%;
+    }
+
+    .player-one {
+        font-size: 24px;
+    }
+    
+    .player-two {
+        font-size: 24px;
     }
 }
