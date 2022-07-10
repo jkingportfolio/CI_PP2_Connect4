@@ -72,7 +72,7 @@ header {
 /* Main */
 
 .main-background {
-    background-image: linear-gradient(to right top, #b5c6e0, #a6d3e5, #a3dfdd, #b6e6cb, #dae9ba);
+    background-image: linear-gradient(to right top, #e0b5b5, #eabfb0, #eccbad, #e6daaf, #dae9ba);
 }
 
 /* Game notifications */
@@ -413,7 +413,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin-top: auto;
-    background-color: rgb(206, 206, 206);
+    background-color: white;
 }
 
 .social-icon:hover {
