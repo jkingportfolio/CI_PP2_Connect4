@@ -426,10 +426,3 @@ document.getElementById('new-game-button').addEventListener('click',
     function () {
         newGame();
     });
-
-// 404 Page return button listener
-
-document.getElementById('return-button').addEventListener('click',
-    function () {
-        window.location.replace("index.html");
-    });

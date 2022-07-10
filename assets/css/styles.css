@@ -79,7 +79,7 @@ header {
 
 #game-notification {
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px 0 20px;
     width: 90%;
     margin: 0 auto;
     border-radius: 50%;
@@ -414,6 +414,7 @@ footer {
     align-items: center;
     margin-top: auto;
     background-color: white;
+    border-top: 1px solid black;
 }
 
 .social-icon:hover {
