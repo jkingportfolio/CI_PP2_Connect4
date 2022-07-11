@@ -417,13 +417,6 @@ document.getElementById('music-button').addEventListener('click',
         }
     });
 
-// Footer contact
-
-document.getElementById("footer-contact").addEventListener('click',
-    function () {
-        document.querySelector('.contact-modal').style.display = "Flex";
-    });
-
 /*
  * [This function will listen for the orientation to be
  * landscape and warn the user that the game is best played
