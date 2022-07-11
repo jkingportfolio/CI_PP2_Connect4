@@ -539,6 +539,73 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 
 /* modals */
 
+.welcome-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    animation-name: welcome-modal-animation;
+    animation: welcome-modal-animation 2s ease 0s 1 normal forwards;
+}
+
+/* Modal slide from top animation */
+@keyframes welcome-modal-animation {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+
+.welcome-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
 .new-game-modal {
     display: none;
     justify-content: center;
