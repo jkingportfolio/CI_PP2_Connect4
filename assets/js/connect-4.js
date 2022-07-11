@@ -136,8 +136,10 @@ function newGame() {
  */
 function gameCheck() {
     if (!playerTwoComputer) {
+        notificationColour()
         twoPlayerGame();
     } else {
+        notificationColour()
         onePlayerGame();
     }
 }
