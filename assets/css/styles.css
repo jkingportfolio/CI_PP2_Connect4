@@ -52,7 +52,6 @@ header {
 
 .nav-link {
     color: rgb(0, 0, 0) !important;
-    will-change: transform;
     transition: transform 450ms;
 }
 
@@ -506,6 +505,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     z-index: 1;
     animation: stats-animation 400ms ease-in-out forwards;
     transform-origin: bottom center;
+    transition: transform ;
   }
 
   @keyframes stats-animation {
@@ -604,6 +604,27 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     font-size: 30px;
     transform: rotate(45deg);
     cursor: pointer;
+}
+
+.welcome-modal-content {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 19px 20px 5px 0px rgb(0 0 0 / 30%);
+}
+
+.welcome-pgs {
+    font-size: 18px;
+    padding-top: 30px;
+    margin: 20px;
 }
 
 .new-game-modal {
