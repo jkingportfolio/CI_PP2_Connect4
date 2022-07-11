@@ -52,11 +52,14 @@ header {
 
 .nav-link {
     color: rgb(0, 0, 0) !important;
+    will-change: transform;
+    transition: transform 450ms;
 }
 
 .nav-link:hover {
-    background-color: rgba(226, 226, 226, 0.5);
-    /* border-radius: 20%; */
+    cursor: pointer;
+    transition: transform 125ms;
+    transform: translateY(-10px);
 }
 
 .navbar-padding-right {
@@ -480,6 +483,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
   .dropup {
     position: relative;
     display: inline-block;
+    margin: 0 auto 25px;
   }
   
   .dropup-content {
