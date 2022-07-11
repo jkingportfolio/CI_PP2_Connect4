@@ -103,6 +103,8 @@ let warningCount = 0;
 let playerOneWins = 0;
 let playerTwoWins = 0;
 let newGameButton = document.getElementById("new-game-button");
+let orientationModal = document.querySelector('.orientation-warning-modal')
+let musicButton = document.getElementById('music-button');
 
 /* 
  * [This function is used to revert all grid cells to empty,
@@ -401,7 +403,7 @@ function pauseMusic() {
 
 // Function to toggle music on off via main display icon
 
-document.getElementById('music-button').addEventListener('click',
+musicButton.addEventListener('click',
     function () {
         if (music) {
             music = false;
@@ -427,9 +429,9 @@ document.getElementById('music-button').addEventListener('click',
 
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
-        document.querySelector('.orientation-warning-modal').style.display = "Flex";
+        orientationModal.style.display = "Flex";
     } else if (window.innerHeight > 768){
-        document.querySelector('.orientation-warning-modal').style.display = "None";
+        orientationModal.style.display = "None";
         console.log(window.innerHeight);
     }
 });
@@ -437,7 +439,7 @@ window.addEventListener("orientationchange", function () {
 // Warning Close button listener
 document.querySelector('.warning-close').addEventListener('click',
     function () {
-        document.querySelector('.orientation-warning-modal').style.display = "None";
+        orientationModal.style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
         warningCount += 1;
     });
