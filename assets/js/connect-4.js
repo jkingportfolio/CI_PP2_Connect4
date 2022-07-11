@@ -434,9 +434,9 @@ document.getElementById("footer-contact").addEventListener('click',
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
         document.querySelector('.orientation-warning-modal').style.display = "Flex";
-        // Add code to show pop up stating the game is best played in portrait
-    } else {
-        console.log('This is landscape');
+    } else if (window.innerHeight > 768){
+        document.querySelector('.orientation-warning-modal').style.display = "None";
+        console.log(window.innerHeight);
     }
 });
 

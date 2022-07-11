@@ -544,12 +544,12 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     width: 50%;
     border-radius: 50px;
     margin: 0.8rem;
-    background: #c4c4c4;
+    background: #ffffff;
     color: rgb(0, 0, 0);
 }
 
 .btn-active {
-    background-color: rgb(211, 64, 64) !important;
+    background-color: rgb(124, 124, 124) !important;
 }
 
 .switch-container button#player-two-human.active {
@@ -705,6 +705,22 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 
 .modal-content {
     display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 19px 20px 5px 0px rgb(0 0 0 / 30%);
+}
+
+.help-modal-content {
+    display: block;
+    margin: 0 auto;
     width: 80%;
     max-width: 400px;
     height: 70%;
@@ -728,6 +744,21 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     text-align: left;
     position: relative;
     overflow-y: auto;
+}
+
+.orientation-modal-content {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+    overflow-y: auto;
+    box-shadow: 19px 20px 5px 0px rgb(0 0 0 / 30%);
 }
 
 /* Modal slide from top animation */
