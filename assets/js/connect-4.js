@@ -102,6 +102,7 @@ let gameActive = false;
 let warningCount = 0;
 let playerOneWins = 0;
 let playerTwoWins = 0;
+let newGameButton = document.getElementById("new-game-button");
 
 /* 
  * [This function is used to revert all grid cells to empty,
@@ -115,7 +116,7 @@ function newGame() {
         cells[i].innerText = "";
         notification.classList.remove('winner');
         notification.classList.add('wobble');
-        document.getElementById("new-game-button").style.display = "none";
+        newGameButton.style.display = "none";
         if (gameActive) {
             notification.innerText = `Its Player ${currentPlayer}'s turn!`;
         } else {
@@ -280,7 +281,7 @@ function winCheck() {
             playerOneWins = playerOneWins + 1;
             console.log('playerOneWins');
             document.getElementById('player-one-wins').innerText = `Player 1 wins: ${playerOneWins}`
-            document.getElementById("new-game-button").style.display = "flex";
+            newGameButton.style.display = "flex";
             gameEnd();
         }
         if (
@@ -298,7 +299,7 @@ function winCheck() {
             currentPlayer = 1;
             playerTwoWins = playerTwoWins + 1;
             document.getElementById('player-two-wins').innerText = `Player 2 wins: ${playerTwoWins}`;
-            document.getElementById("new-game-button").style.display = "flex";
+            newGameButton.style.display = "flex";
             gameEnd();
         } // Insert if statment for draw
     }
@@ -323,7 +324,7 @@ function gameEnd() {
 }
 
 // New Game button which when pressed calls the newGame function
-document.getElementById("new-game-button").addEventListener('click',
+newGameButton.addEventListener('click',
     function () {
         newGame();
     });
@@ -443,7 +444,7 @@ document.querySelector('.warning-close').addEventListener('click',
 
 // New Game button listener
 
-document.getElementById('new-game-button').addEventListener('click',
+newGameButton.addEventListener('click',
     function () {
         newGame();
     });
