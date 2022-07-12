@@ -118,6 +118,7 @@ function newGame() {
         cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
         cells[i].innerText = "";
         notification.classList.remove('winner');
+        notification.classList.remove('draw');
         notification.classList.add('wobble');
         newGameButton.style.display = "none";
         if (gameActive) {
@@ -320,7 +321,9 @@ function drawCheck() {
         for (let i = 0; i < cells.length; i++) {
             cells[i].classList.add('disable-click');
         }
-        notification.innerText = 'Its a draw!';        
+        notification.innerText = 'Its a draw!'; 
+        notification.classList.remove('wobble');  
+        notification.classList.add('draw');      
         drawCount = drawCount + 1;
         freeCells = 42;
         document.getElementById('draw-count').innerText = `Draws: ${drawCount}`;
