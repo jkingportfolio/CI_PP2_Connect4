@@ -11,7 +11,12 @@ let submitMessage = document.getElementById('submit-message');
 // Wait for dom to load and then open Welcome modal
 
 document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.pathname.includes('index') && welcomeCount == 0){
     document.querySelector('.welcome-modal').style.display = "Flex";
+    welcomeCount += 1;
+    } else {
+        return;
+    }
 });
 
 // Hide welcome modal
