@@ -967,6 +967,11 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     justify-content: center;
     width: 200px;
     margin: 10%;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
   }
 
   .sorry-message {
