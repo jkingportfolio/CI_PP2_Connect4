@@ -99,8 +99,10 @@ let musicFile = new Audio();
 let music = false;
 let gameActive = false;
 let warningCount = 0;
+let freeCells = 42;
 let playerOneWins = 0;
 let playerTwoWins = 0;
+let drawCount = 0;
 let newGameButton = document.getElementById("new-game-button");
 let orientationModal = document.querySelector('.orientation-warning-modal')
 let musicButton = document.getElementById('music-button');
@@ -162,6 +164,7 @@ function twoPlayerGame() {
                     cells[i].innerText = '1';
                     currentPlayer = 2;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+                    freeCells -= 1;
                     playCounterSound()
                 } else if (currentPlayer == 2) {
                     cells[i].classList.add('occupied');
@@ -169,6 +172,7 @@ function twoPlayerGame() {
                     cells[i].innerText = '2';
                     currentPlayer = 1;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+                    freeCells -= 1;
                     playCounterSound()
                 }
             } else {
@@ -216,6 +220,7 @@ function playerOneTurn() {
                 cells[i].innerText = '1';
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+                freeCells -= 1;
                 playCounterSound()
             } else {
                 notification.innerText = 'Invalid move!';
@@ -249,6 +254,7 @@ function computerTurn() {
         cells[computerRandomNumber].innerText = '2';
         currentPlayer = 1;
         notification.innerText = `Its Player ${currentPlayer}'s turn!`;
+        freeCells -= 1;
         playCounterSound()
     }
     winCheck();
@@ -306,7 +312,23 @@ function winCheck() {
             gameEnd();
         } // Insert if statment for draw
     }
-    gameCheck();
+    drawCheck();
+}
+
+function drawCheck() {
+    if (freeCells == 0) {
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].classList.add('disable-click');
+        }
+        notification.innerText = 'Its a draw!';        
+        drawCount = drawCount + 1;
+        freeCells = 42;
+        document.getElementById('draw-count').innerText = `Draws: ${drawCount}`;
+        newGameButton.style.display = "flex";
+        gameEnd();
+    } else {
+        gameCheck();
+    }
 }
 
 /*
@@ -409,8 +431,8 @@ function pauseMusic() {
 musicButton.addEventListener('click',
     function () {
         if (music) {
-            music = false;   
-            sounds = false;         
+            music = false;
+            sounds = false;
             document.getElementById('music-button-image').src = 'assets/images/sound-off-icon.png';
             document.getElementById('music-off').classList.add('btn-active');
             document.getElementById('music-on').classList.remove('btn-active');
@@ -439,7 +461,7 @@ musicButton.addEventListener('click',
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
         orientationModal.style.display = "Flex";
-    } else if (window.innerHeight > 768){
+    } else if (window.innerHeight > 768) {
         orientationModal.style.display = "None";
         console.log(window.innerHeight);
     }
@@ -452,4 +474,3 @@ document.querySelector('.warning-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
         warningCount += 1;
     });
-
