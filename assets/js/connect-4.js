@@ -318,9 +318,7 @@ function winCheck() {
 
 function drawCheck() {
     if (freeCells == 0) {
-        for (let i = 0; i < cells.length; i++) {
-            cells[i].classList.add('disable-click');
-        }
+        disableClicks();
         notification.innerText = 'Its a draw!'; 
         notification.classList.remove('wobble');  
         notification.classList.add('draw');      
@@ -334,6 +332,12 @@ function drawCheck() {
     }
 }
 
+function disableClicks() {
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].classList.add('disable-click');
+    }
+}
+
 /*
  * [This function will loop through all cells and mark them
  * as occupied so that no further counters can be placed and
@@ -343,7 +347,8 @@ function drawCheck() {
 function gameEnd() {
     gameActive = false;
     playWinnerSound();
-    for (let i = 0; i < cells.length; i++) {
+    disableClicks();
+    for (let i = 0; i < cells.length; i++) {        
         cells[i].classList.add('occupied');
         notification.classList.remove('invalid-animation');
         notification.classList.remove('player-one-turn');
