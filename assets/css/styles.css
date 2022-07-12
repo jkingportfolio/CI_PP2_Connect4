@@ -828,6 +828,12 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 .submit-button {
     margin: 15px auto;
     width: 100px;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .modal-submit-text {
