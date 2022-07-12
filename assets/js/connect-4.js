@@ -292,6 +292,7 @@ function winCheck() {
             console.log('playerOneWins');
             document.getElementById('player-one-wins').innerText = `Player 1 wins: ${playerOneWins}`
             newGameButton.style.display = "flex";
+            disableClicks();
             gameEnd();
         }
         if (
