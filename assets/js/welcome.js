@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (welcomeCount == 0) {
         document.querySelector('.welcome-modal').style.display = "Flex";
         welcomeCount += 1;
-    } else {
+    } else if (document.referrer == 'https://jkingportfolio.github.io/CI_PP2_Connect4/404.html'){
         document.querySelector('.welcome-modal').style.display = "None";
     }
 });
