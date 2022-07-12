@@ -389,6 +389,7 @@ function playMusic() {
     if (!music) return;
     console.log('it should play music');
     musicFile.src = 'assets/sounds/game-music.mp3';
+    musicFile.loop = true;
     musicFile.play();
     // document.getElementById('music-button').src = '../assets/images/sound-on-icon.png';
 }
