@@ -665,7 +665,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 }
 
 .btn-active {
-    background-color: rgb(124, 124, 124) !important;
+    background-color: rgb(75, 255, 75) !important;
 }
 
 .switch-container button#player-two-human.active {
