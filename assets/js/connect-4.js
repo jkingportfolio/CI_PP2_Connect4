@@ -85,7 +85,6 @@ const winningCombinations = [
     [16, 24, 32, 40],
     [17, 25, 33, 41],
 ];
-
 // Game Variables
 let currentPlayer = 1;
 let playerTwoComputer = true;
@@ -390,6 +389,7 @@ function playMusic() {
     console.log('it should play music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.loop = true;
+    musicFile.volume = 0.5;
     musicFile.play();
     // document.getElementById('music-button').src = '../assets/images/sound-on-icon.png';
 }
@@ -453,9 +453,3 @@ document.querySelector('.warning-close').addEventListener('click',
         warningCount += 1;
     });
 
-// New Game button listener
-
-newGameButton.addEventListener('click',
-    function () {
-        newGame();
-    });
