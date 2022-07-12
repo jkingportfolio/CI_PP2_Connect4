@@ -92,11 +92,11 @@ let playerTwoComputer = true;
 let computerRandomNumber;
 let maxCells = 41;
 let notification = document.getElementById('game-notification');
-const soundEffect = new Audio();
-const invalidMoveSound = new Audio();
-const winnerSound = new Audio();
+let soundEffect = new Audio();
+let invalidMoveSound = new Audio();
+let winnerSound = new Audio();
 let sounds = false;
-const musicFile = new Audio();
+let musicFile = new Audio();
 let music = false;
 let gameActive = false;
 let warningCount = 0;
@@ -408,16 +408,22 @@ function pauseMusic() {
 musicButton.addEventListener('click',
     function () {
         if (music) {
-            music = false;
+            music = false;   
+            sounds = false;         
             document.getElementById('music-button-image').src = 'assets/images/sound-off-icon.png';
             document.getElementById('music-off').classList.add('btn-active');
             document.getElementById('music-on').classList.remove('btn-active');
+            document.getElementById('sound-off').classList.add('btn-active');
+            document.getElementById('sound-on').classList.remove('btn-active');
             pauseMusic();
         } else {
             music = true;
+            sounds = true;
             document.getElementById('music-button-image').src = 'assets/images/sound-on-icon.png';
             document.getElementById('music-on').classList.add('btn-active');
             document.getElementById('music-off').classList.remove('btn-active');
+            document.getElementById('sound-on').classList.add('btn-active');
+            document.getElementById('sound-off').classList.remove('btn-active');
             playMusic();
         }
     });
