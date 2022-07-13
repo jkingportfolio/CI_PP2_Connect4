@@ -383,7 +383,7 @@ section {
     overflow: hidden;
     border: 5px solid #000000;
     border-radius: 5px;
-    margin: 5rem auto 25px;
+    margin: 3rem auto 25px;
 }
 
 .game-grid {
@@ -1069,10 +1069,6 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 
     .game-section {
         min-height: 30vh;
-    }
-
-    .game-board {
-        margin: 3rem auto;
     }
 
     #game-notification {
