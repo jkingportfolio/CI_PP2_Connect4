@@ -113,6 +113,7 @@ let musicButton = document.getElementById('music-button');
  * correct game move and set correct animation class]
  */
 function newGame() {
+    freeCells = 42;
     currentPlayer = 1;
     for (let i = 0; i < cells.length - 7; i++) {
         cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
@@ -165,7 +166,7 @@ function twoPlayerGame() {
                     cells[i].innerText = '1';
                     currentPlayer = 2;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
-                    freeCells -= 1;
+                    freeCells -= 1;            
                     playCounterSound()
                 } else if (currentPlayer == 2) {
                     cells[i].classList.add('occupied');
@@ -174,6 +175,7 @@ function twoPlayerGame() {
                     currentPlayer = 1;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                     freeCells -= 1;
+            
                     playCounterSound()
                 }
             } else {
@@ -221,7 +223,7 @@ function playerOneTurn() {
                 cells[i].innerText = '1';
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
-                freeCells -= 1;
+                freeCells -= 1;        
                 playCounterSound()
             } else {
                 notification.innerText = 'Invalid move!';
@@ -323,8 +325,7 @@ function drawCheck() {
         notification.innerText = 'Its a draw!'; 
         notification.classList.remove('wobble');  
         notification.classList.add('draw');      
-        drawCount = drawCount + 1;
-        freeCells = 42;
+        drawCount = drawCount + 1;        
         document.getElementById('draw-count').innerText = `Draws: ${drawCount}`;
         newGameButton.style.display = "flex";
         gameEnd();
