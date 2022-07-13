@@ -41,10 +41,10 @@
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto text-center">
                     <li>
-                        <a class="nav-link" id="#newGameModal">New Game</a>
+                        <a class="nav-link" id="#newGameModal" aria-label="Open new game modal">New Game</a>
                     </li>
                     <li>
-                        <a class="nav-link" id="#helpModal">Help</a>
+                        <a class="nav-link" id="#helpModal" aria-label="Open Help modal">Help</a>
                     </li>
                     <li>
                         <a class="d-none d-md-block">
@@ -52,10 +52,10 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link" id="#settingsModal">Settings</a>
+                        <a class="nav-link" id="#settingsModal" aria-label="Open Settings modal">Settings</a>
                     </li>
                     <li>
-                        <a class="nav-link" id="#contactModal">Contact</a>
+                        <a class="nav-link" id="#contactModal" aria-label="Open Contact modal">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
         <h1 id="game-notification" class="wobble">
             Click to play!
         </h1>
-        <button id="new-game-button" class="game-button">
+        <button id="new-game-button" class="game-button" aria-label="Click to play a new game">
             Play again!
         </button>
         <section class="game-section display-flex-column">
@@ -128,7 +128,7 @@
                     id="music-button-image">
             </div>
             <div class="dropup">
-                <button class="dropbtn">Session Stats</button>
+                <button class="dropbtn" aria-label="Click to open game session stats">Session Stats</button>
                 <div class="dropup-content">
                     <span id="player-one-wins">Player 1 wins: 0</span>
                     <span id="player-two-wins">Player 2 wins: 0</span>
@@ -156,13 +156,13 @@
                 <hr>
                 <p>Who do you want to play?</p>
                 <div class="switch-container">
-                    <button id="player-two-human" class="">Human</button>
-                    <button id="player-two-computer" class="btn-active">Computer</button>
+                    <button id="player-two-human" class="" aria-label="Press to select player two as human">Human</button>
+                    <button id="player-two-computer" class="btn-active" aria-label="Press to select player two as computer">Computer</button>
                 </div>
                 <p>Are you sure you want to start a new game?</p>
                 <div class="switch-container">
-                    <button id="new-game-yes">Yes</button>
-                    <button id="cancel">Cancel</button>
+                    <button id="new-game-yes" aria-label="Press to start new game">Yes</button>
+                    <button id="cancel" aria-label="Press to cancel and return to current game">Cancel</button>
                 </div>
             </div>
         </section>
@@ -205,13 +205,13 @@
                 <hr>
                 <p>Music</p>
                 <div class="switch-container">
-                    <button id="music-on" class="">On</button>
-                    <button id="music-off" class="btn-active">Off</button>
+                    <button id="music-on" class="" aria-label="Press to turn music on">On</button>
+                    <button id="music-off" class="btn-active" aria-label="Press to turn music off">Off</button>
                 </div>
                 <p>Sound Effect</p>
                 <div class="switch-container">
-                    <button id="sound-on" class="">On</button>
-                    <button id="sound-off" class="btn-active">Off</button>
+                    <button id="sound-on" class="" aria-label="Press to turn sounds on">On</button>
+                    <button id="sound-off" class="btn-active" aria-label="Press to turn sounds off">Off</button>
                 </div>
             </div>
         </section>
@@ -220,21 +220,21 @@
                 <div class="contact-close">+</div>
                 <h3>Contact us</h3>
                 <hr>
-                <form id="contact-form" action="contact-submission.html" method="GET" class="model-content-left">
+                <form id="contact-form" class="model-content-left">
                     <div class="">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" name="user_name" aria-describedby="name"
-                            required placeholder="Your name">
+                            required placeholder="Your name" required>
                     </div>
                     <div class="">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" name="user_email" aria-describedby="email"
-                            required placeholder="your-email@example.com">
+                            required placeholder="your-email@example.com" required>
                     </div>
                     <div class="">
                         <label for="message" class="form-label">Let me know what you think!</label>
                         <textarea class="form-control" rows="10" name="message" id="message"
-                            placeholder="Enter your message here"></textarea>
+                            placeholder="Enter your message here"  aria-label="Enter message here" required></textarea>
                     </div>
                     <!-- submit button -->
                     <button type="submit" value="Send" form="contact-form" class="submit-button"
