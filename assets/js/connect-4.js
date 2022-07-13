@@ -471,7 +471,7 @@ musicButton.addEventListener('click',
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
         orientationModal.style.display = "Flex";
-    } else if (window.innerHeight > 768) {
+    } else {
         orientationModal.style.display = "None";
         console.log(window.innerHeight);
     }
