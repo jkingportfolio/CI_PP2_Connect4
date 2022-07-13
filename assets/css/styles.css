@@ -1055,6 +1055,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 }
 
 .sorry-message {
+    font-size: calc(1.3rem + .6vw);
     text-align: center;
     margin: 50px 10% 0 10%;
 }
