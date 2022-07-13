@@ -124,8 +124,8 @@
                 </div>
             </div>
             <div class="music-button" id="music-button">
-                <img src="assets/images/sound-off-icon.png" alt="sound master switch button on and off" width="50"
-                    height="50" id="music-button-image">
+                <img src="assets/images/sound-off-icon.png" alt="sound master switch button on and off" width="50" height="50"
+                    id="music-button-image">
             </div>
             <div class="dropup">
                 <button class="dropbtn" aria-label="Click to open game session stats">Session Stats</button>
@@ -135,132 +135,127 @@
                     <span id="draw-count">Draws: 0</span>
                 </div>
             </div>
-            </section>
-            <!-- modal sections -->
-            <section class="welcome-modal">
-                <div class="welcome-modal-content">
-                    <div class="welcome-close">+</div>
-                    <h1>Welcome!</h1>
-                    <hr>
-                    <div class="welcome-pgs">
-                        <p>Thank you for visiting my site!</p>
-                        <p>I hope you enjoy my game</p>
-                        <p>To learn how to play, press the Help button located in the Nav Bar</p>
-                    </div>
+        </div>
+        <!-- modal sections -->
+        <section class="welcome-modal">
+            <div class="welcome-modal-content">
+                <div class="welcome-close">+</div>
+                <h1>Welcome!</h1>
+                <hr>
+                <div class="welcome-pgs">
+                    <p>Thank you for visiting my site!</p>
+                    <p>I hope you enjoy my game</p>
+                    <p>To learn how to play, press the Help button located in the Nav Bar</p>
                 </div>
-            </section>
-            <section class="new-game-modal">
-                <div class="modal-content">
-                    <div class="new-game-close">+</div>
-                    <h3>New Game</h3>
-                    <hr>
-                    <p>Who do you want to play?</p>
-                    <div class="switch-container">
-                        <button id="player-two-human" class=""
-                            aria-label="Press to select player two as human">Human</button>
-                        <button id="player-two-computer" class="btn-active"
-                            aria-label="Press to select player two as computer">Computer</button>
-                    </div>
-                    <p>Are you sure you want to start a new game?</p>
-                    <div class="switch-container">
-                        <button id="new-game-yes" aria-label="Press to start new game">Yes</button>
-                        <button id="cancel" aria-label="Press to cancel and return to current game">Cancel</button>
-                    </div>
+            </div>
+        </section>
+        <section class="new-game-modal">
+            <div class="modal-content">
+                <div class="new-game-close">+</div>
+                <h3>New Game</h3>
+                <hr>
+                <p>Who do you want to play?</p>
+                <div class="switch-container">
+                    <button id="player-two-human" class="" aria-label="Press to select player two as human">Human</button>
+                    <button id="player-two-computer" class="btn-active" aria-label="Press to select player two as computer">Computer</button>
                 </div>
-            </section>
-            <section class="help-modal">
-                <div class="help-modal-content">
-                    <div class="help-close">+</div>
-                    <h3 id="help-modal-top">Help</h3>
-                    <hr>
-                    <h4 class="align-left">Aim of the game</h4>
-                    <p class="align-left">Be the first player to connect 4 of their counters in a row horizontally,
-                        vertically or diagonally.</p>
-                    <h4 class="align-left">How to play</h4>
-                    <ol class="align-left">
-                        <li>Select if the game is going to be against the computer or another player</li>
-                        <li>Each player will take turns placing a counter of their colour of red or yellow</li>
-                        <li>When it is your turn click on the spot you wish to place, please note that if the move is
-                            invalid you will be alerted and should pick a new spot to place your counter</li>
-                        <li>The counter will then occupy the cell and player turn will change to the next player</li>
-                        <li>Players will take turns until one wins with 4 of their coloured counters in a row
-                            horizontally,
-                            verticall or horizontally. If
-                            all positions have been taken and there is no winner the game will be declared a draw.</li>
-                        <li>Chose to restart game or quit.</li>
-                    </ol>
+                <p>Are you sure you want to start a new game?</p>
+                <div class="switch-container">
+                    <button id="new-game-yes" aria-label="Press to start new game">Yes</button>
+                    <button id="cancel" aria-label="Press to cancel and return to current game">Cancel</button>
+                </div>
+            </div>
+        </section>
+        <section class="help-modal">
+            <div class="help-modal-content">
+                <div class="help-close">+</div>
+                <h3 id="help-modal-top">Help</h3>
+                <hr>
+                <h4 class="align-left">Aim of the game</h4>
+                <p class="align-left">Be the first player to connect 4 of their counters in a row horizontally,
+                    vertically or diagonally.</p>
+                <h4 class="align-left">How to play</h4>
+                <ol class="align-left">
+                    <li>Select if the game is going to be against the computer or another player</li>
+                    <li>Each player will take turns placing a counter of their colour of red or yellow</li>
+                    <li>When it is your turn click on the spot you wish to place, please note that if the move is
+                        invalid you will be alerted and should pick a new spot to place your counter</li>
+                    <li>The counter will then occupy the cell and player turn will change to the next player</li>
+                    <li>Players will take turns until one wins with 4 of their coloured counters in a row horizontally,
+                        verticall or horizontally. If
+                        all positions have been taken and there is no winner the game will be declared a draw.</li>
+                    <li>Chose to restart game or quit.</li>
+                </ol>
 
-                    <h4 class="align-left">Controls</h4>
-                    <p class="align-left">Controls are based on mouse clicks or finger presses if using a touchscreen
-                        device.
-                    </p>
+                <h4 class="align-left">Controls</h4>
+                <p class="align-left">Controls are based on mouse clicks or finger presses if using a touchscreen
+                    device.
+                </p>
 
-                    <h4 class="align-left">Session Stats</h4>
-                    <p class="align-left">Each game sessions statistics will be counted and can be located below the
-                        game
-                        board.
-                        These statistics will reset upon page reload or closure.</p>
+                <h4 class="align-left">Session Stats</h4>
+                <p class="align-left">Each game sessions statistics will be counted and can be located below the game
+                    board.
+                    These statistics will reset upon page reload or closure.</p>
+            </div>
+        </section>
+        <section class="settings-modal">
+            <div class="modal-content">
+                <div class="settings-close">+</div>
+                <h3>Settings</h3>
+                <hr>
+                <p>Music</p>
+                <div class="switch-container">
+                    <button id="music-on" class="" aria-label="Press to turn music on">On</button>
+                    <button id="music-off" class="btn-active" aria-label="Press to turn music off">Off</button>
                 </div>
-            </section>
-            <section class="settings-modal">
-                <div class="modal-content">
-                    <div class="settings-close">+</div>
-                    <h3>Settings</h3>
-                    <hr>
-                    <p>Music</p>
-                    <div class="switch-container">
-                        <button id="music-on" class="" aria-label="Press to turn music on">On</button>
-                        <button id="music-off" class="btn-active" aria-label="Press to turn music off">Off</button>
+                <p>Sound Effect</p>
+                <div class="switch-container">
+                    <button id="sound-on" class="" aria-label="Press to turn sounds on">On</button>
+                    <button id="sound-off" class="btn-active" aria-label="Press to turn sounds off">Off</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact-modal">
+            <div class="modal-content-left">
+                <div class="contact-close">+</div>
+                <h3>Contact us</h3>
+                <hr>
+                <form id="contact-form" class="model-content-left">
+                    <div>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="user_name" aria-describedby="name"
+                            required placeholder="Your name">
                     </div>
-                    <p>Sound Effect</p>
-                    <div class="switch-container">
-                        <button id="sound-on" class="" aria-label="Press to turn sounds on">On</button>
-                        <button id="sound-off" class="btn-active" aria-label="Press to turn sounds off">Off</button>
+                    <div>
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="user_email" aria-describedby="email"
+                            required placeholder="your-email@example.com" required>
                     </div>
-                </div>
-            </section>
-            <section class="contact-modal">
-                <div class="modal-content-left">
-                    <div class="contact-close">+</div>
-                    <h3>Contact us</h3>
-                    <hr>
-                    <form id="contact-form" class="model-content-left">
-                        <div>
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="user_name" aria-describedby="name"
-                                required placeholder="Your name">
-                        </div>
-                        <div>
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" name="user_email"
-                                aria-describedby="email" required placeholder="your-email@example.com">
-                        </div>
-                        <div>
-                            <label for="message" class="form-label">Let me know what you think!</label>
-                            <textarea class="form-control" rows="10" name="message" id="message"
-                                placeholder="Enter your message here" aria-label="Enter message here"
-                                required></textarea>
-                        </div>
-                        <!-- submit button -->
-                        <button type="submit" value="Send" form="contact-form" class="submit-button"
-                            aria-label="Submit">Submit</button>
-                    </form>
-                </div>
-            </section>
-            <section class="contact-submit-modal">
-                <div class="modal-content">
-                    <div class="contact-submit-close">+</div>
-                    <h3 id="submit-message" class="modal-submit-text">Submit Message</h3>
-                </div>
-            </section>
-            <section class="orientation-warning-modal">
-                <div class="orientation-modal-content">
-                    <div class="warning-close">+</div>
-                    <h3>Warning</h3>
-                    <hr>
-                    <p>For a better experience this game is best played in portrait mode!</p>
-                </div>
-            </section>
+                    <div>
+                        <label for="message" class="form-label">Let me know what you think!</label>
+                        <textarea class="form-control" rows="10" name="message" id="message"
+                            placeholder="Enter your message here" aria-label="Enter message here" required></textarea>
+                    </div>
+                    <!-- submit button -->
+                    <button type="submit" value="Send" form="contact-form" class="submit-button"
+                        aria-label="Submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section class="contact-submit-modal">
+            <div class="modal-content">
+                <div class="contact-submit-close">+</div>
+                <h3 id="submit-message" class="modal-submit-text">Submit Message</h3>
+            </div>
+        </section>
+        <section class="orientation-warning-modal">
+            <div class="orientation-modal-content">
+                <div class="warning-close">+</div>
+                <h3>Warning</h3>
+                <hr>
+                <p>For a better experience this game is best played in portrait mode!</p>
+            </div>
+        </section>
     </main>
     <footer>
         <div id="footer-contact">
