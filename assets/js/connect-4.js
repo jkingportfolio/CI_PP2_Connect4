@@ -174,8 +174,7 @@ function twoPlayerGame() {
                     cells[i].innerText = '2';
                     currentPlayer = 1;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
-                    freeCells -= 1;
-            
+                    freeCells -= 1;            
                     playCounterSound()
                 }
             } else {
@@ -245,7 +244,6 @@ function playerOneTurn() {
  */
 function computerTurn() {
     computerRandomNumber = Math.floor((Math.random() * maxCells));
-    console.log(computerRandomNumber);
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('disable-click');
     }
@@ -291,7 +289,6 @@ function winCheck() {
             cell4.classList.add('player-one-winner');
             currentPlayer = 1;
             playerOnePoints = playerOnePoints + 1;
-            console.log('playerOnePoints');
             document.getElementById('player-one-wins').innerText = `Player 1 points: ${playerOnePoints}`
             newGameButton.style.display = "flex";
             disableClicks();
@@ -393,7 +390,6 @@ function notificationColour() {
 // Function to play counter sound on click
 function playCounterSound() {
     if (!sounds) return;
-    console.log('it should play a sound');
     soundEffect.src = 'assets/sounds/counter-drop.mp3';
     soundEffect.play();
 }
@@ -402,14 +398,12 @@ function playCounterSound() {
 
 function playInvalidSound() {
     if (!sounds) return;
-    console.log('it should play an invalid sound');
     invalidMoveSound.src = 'assets/sounds/invalid-move.mp3';
     invalidMoveSound.play();
 }
 
 function playWinnerSound() {
     if (!sounds) return;
-    console.log('it should play a winning sound');
     winnerSound.src = 'assets/sounds/winner.mp3';
     winnerSound.play();
 }
@@ -418,7 +412,6 @@ function playWinnerSound() {
 
 function playMusic() {
     if (!music) return;
-    console.log('it should play music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.loop = true;
     musicFile.volume = 0.5;
@@ -430,7 +423,6 @@ function playMusic() {
 
 function pauseMusic() {
     if (music) return;
-    console.log('it should stop music');
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.pause();
     // document.getElementById('music-button').src = '../assets/images/sound-off-icon.png';
@@ -473,7 +465,6 @@ window.addEventListener("orientationchange", function () {
         orientationModal.style.display = "Flex";
     } else {
         orientationModal.style.display = "None";
-        console.log(window.innerHeight);
     }
 });
 

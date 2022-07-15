@@ -42,7 +42,6 @@ document.getElementById('player-two-human').addEventListener('click',
         playerTwoComputer = false;
         document.getElementById('player-two-human').classList.add('btn-active');
         document.getElementById('player-two-computer').classList.remove('btn-active');
-        console.log(playerTwoComputer);
     });
 
 /*
@@ -57,7 +56,6 @@ document.getElementById('player-two-computer').addEventListener('click',
         playerTwoComputer = true;
         document.getElementById('player-two-computer').classList.add('btn-active');
         document.getElementById('player-two-human').classList.remove('btn-active');
-        console.log(playerTwoComputer);
     });
 
 /* 
@@ -126,7 +124,6 @@ document.getElementById('music-on').addEventListener('click',
         music = true;
         document.getElementById('music-on').classList.add('btn-active');
         document.getElementById('music-off').classList.remove('btn-active');
-        console.log(music);
         playMusic()
     });
 
@@ -137,7 +134,6 @@ document.getElementById('music-off').addEventListener('click',
         music = false;
         document.getElementById('music-off').classList.add('btn-active');
         document.getElementById('music-on').classList.remove('btn-active');
-        console.log(music);
         pauseMusic() 
     });
 
@@ -148,7 +144,6 @@ document.getElementById('sound-on').addEventListener('click',
         sounds = true;
         document.getElementById('sound-on').classList.add('btn-active');
         document.getElementById('sound-off').classList.remove('btn-active');
-        console.log(sounds);
     });
 
 // Function to turn game sounds off
@@ -158,7 +153,6 @@ document.getElementById('sound-off').addEventListener('click',
         sounds = false;
         document.getElementById('sound-off').classList.add('btn-active');
         document.getElementById('sound-on').classList.remove('btn-active');
-        console.log(sounds);
     });
 
 // Contact modal functions

@@ -13,10 +13,8 @@ window.onload = function () {
         // these IDs from the previous steps
         emailjs.sendForm('contact_service', 'contact_form', this)
             .then(function () {
-                console.log('SUCCESS!');
                 contactSubmitSuccess();
             }, function (error) {
-                console.log('FAILED...', error);
                 contactSubmitError();
             });        
     });
