@@ -538,7 +538,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     border: 1px solid rgb(0, 0, 0);
     position: absolute;
     background-color: rgb(255, 255, 255);
-    min-width: 180px;
+    min-width: 185px;
     right: -25px;
     bottom: 35px;
     z-index: 1;
