@@ -100,8 +100,8 @@ let music = false;
 let gameActive = false;
 let warningCount = 0;
 let freeCells = 42;
-let playerOneWins = 0;
-let playerTwoWins = 0;
+let playerOnePoints = 0;
+let playerTwoPoints = 0;
 let drawCount = 0;
 let newGameButton = document.getElementById("new-game-button");
 let orientationModal = document.querySelector('.orientation-warning-modal')
@@ -290,9 +290,9 @@ function winCheck() {
             cell3.classList.add('player-one-winner');
             cell4.classList.add('player-one-winner');
             currentPlayer = 1;
-            playerOneWins = playerOneWins + 1;
-            console.log('playerOneWins');
-            document.getElementById('player-one-wins').innerText = `Player 1 wins: ${playerOneWins}`
+            playerOnePoints = playerOnePoints + 1;
+            console.log('playerOnePoints');
+            document.getElementById('player-one-wins').innerText = `Player 1 points: ${playerOnePoints}`
             newGameButton.style.display = "flex";
             disableClicks();
             gameEnd();
@@ -310,8 +310,8 @@ function winCheck() {
             cell3.classList.add('player-two-winner');
             cell4.classList.add('player-two-winner');
             currentPlayer = 1;
-            playerTwoWins = playerTwoWins + 1;
-            document.getElementById('player-two-wins').innerText = `Player 2 wins: ${playerTwoWins}`;
+            playerTwoPoints = playerTwoPoints + 1;
+            document.getElementById('player-two-wins').innerText = `Player 2 points: ${playerTwoPoints}`;
             newGameButton.style.display = "flex";
             gameEnd();
         } // Insert if statment for draw
