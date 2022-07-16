@@ -124,7 +124,7 @@ document.getElementById('music-on').addEventListener('click',
         music = true;
         document.getElementById('music-on').classList.add('btn-active');
         document.getElementById('music-off').classList.remove('btn-active');
-        playMusic()
+        playMusic();
     });
 
 // Function to turn music off
@@ -134,7 +134,7 @@ document.getElementById('music-off').addEventListener('click',
         music = false;
         document.getElementById('music-off').classList.add('btn-active');
         document.getElementById('music-on').classList.remove('btn-active');
-        pauseMusic() 
+        pauseMusic();
     });
 
 // Function to turn game sounds on

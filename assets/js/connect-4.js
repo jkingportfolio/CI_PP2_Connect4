@@ -104,7 +104,7 @@ let playerOneWins = 0;
 let playerTwoWins = 0;
 let drawCount = 0;
 let newGameButton = document.getElementById("new-game-button");
-let orientationModal = document.querySelector('.orientation-warning-modal')
+let orientationModal = document.querySelector('.orientation-warning-modal');
 let musicButton = document.getElementById('music-button');
 
 /* 
@@ -139,10 +139,10 @@ function newGame() {
  */
 function gameCheck() {
     if (!playerTwoComputer) {
-        notificationColour()
+        notificationColour();
         twoPlayerGame();
     } else {
-        notificationColour()
+        notificationColour();
         onePlayerGame();
     }
 }
@@ -167,7 +167,7 @@ function twoPlayerGame() {
                     currentPlayer = 2;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                     freeCells -= 1;            
-                    playCounterSound()
+                    playCounterSound();
                 } else if (currentPlayer == 2) {
                     cells[i].classList.add('occupied');
                     cells[i].classList.add('player-two');
@@ -175,11 +175,11 @@ function twoPlayerGame() {
                     currentPlayer = 1;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                     freeCells -= 1;            
-                    playCounterSound()
+                    playCounterSound();
                 }
             } else {
                 notification.innerText = 'Invalid move!';
-                playInvalidSound()
+                playInvalidSound();
                 window.navigator.vibrate(300);
                 notificationColour();
 
@@ -223,10 +223,10 @@ function playerOneTurn() {
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
                 freeCells -= 1;        
-                playCounterSound()
+                playCounterSound();
             } else {
                 notification.innerText = 'Invalid move!';
-                playInvalidSound()
+                playInvalidSound();
                 window.navigator.vibrate(300);
             }
             winCheck();
@@ -256,7 +256,7 @@ function computerTurn() {
         currentPlayer = 1;
         notification.innerText = `Its Player ${currentPlayer}'s turn!`;
         freeCells -= 1;
-        playCounterSound()
+        playCounterSound();
     }
     winCheck();
 }
@@ -289,7 +289,7 @@ function winCheck() {
             cell4.classList.add('player-one-winner');
             currentPlayer = 1;
             playerOneWins = playerOneWins + 1;
-            document.getElementById('player-one-wins').innerText = `Player 1 points: ${playerOneWins}`
+            document.getElementById('player-one-wins').innerText = `Player 1 points: ${playerOneWins}`;
             newGameButton.style.display = "flex";
             disableClicks();
             gameEnd();
