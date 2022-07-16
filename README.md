@@ -29,11 +29,12 @@ Developer: Jamie King
 6. [Testing](#testing)
     1. [HTML Valiadation](#html-validation)
     2. [CSS Validation](#css-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device Testing](#device-testing)
-    6. [Browser Compatibility](#browser-compatibility)
-    7. [Testing User Stories](#testing-user-stories)
+    3. [JavaScript Validation] (#js-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Device Testing](#device-testing)
+    7. [Browser Compatibility](#browser-compatibility)
+    8. [Testing User Stories](#testing-user-stories)
 7. [Bugs](#bugs)
 8. [Deployment](#deployment)
 9. [Credits](#credits)
@@ -289,11 +290,32 @@ In the future as my skills grow I would like to implement the following features
 [W3C Jigsaw CSS validation](https://jigsaw.w3.org/css-validator/) was used to validate the CSS used in the website. The file passed and produced no errors if testing my own CSS however it did produce some warnings which are related to Bootstrap 5.0.2
 <details>
 <summary>CSS styles</summary>
-<img src="">
+<img src="docs/validation-css/validation-css-style.png">
 </details>
 <details>
 <summary>Bootstrap warnings</summary>
-<img src="">
+<img src="docs/validation-css/validation-bootstrap-css-warnings.png">
+</details>
+
+### JavaScript Validation
+
+[JShint JavaScript Validation](https://jshint.com/) was used to validate the JavaScript used in the website. The files all passed however it did issue some warnings of un-used functions as they were being called from a different file.
+
+<details>
+<summary>JavaScrip file - connect-4</summary>
+<img src="docs/validation-js/validation-jshint-connect-4.png">
+</details>
+<details>
+<summary>JavaScript file - welcome</summary>
+<img src="docs/validation-js/validation-jshint-welcome.png">
+</details>
+<details>
+<summary>JavaScrip file - modals</summary>
+<img src="docs/validation-js/validation-jshint-modals.png">
+</details>
+<details>
+<summary>JavaScript file - contact</summary>
+<img src="docs/validation-js/validation-jshint-contact.png">
 </details>
 
 ### Accessibility
