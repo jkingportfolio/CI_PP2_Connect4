@@ -145,6 +145,7 @@ Balsamiq was used in the initial design stage to layout sketches of each page an
 <summary>Welcome Modal</summary>
 <img src="docs/wireframes/index.html-(welcome-modal).png">
 </details>
+<details>
 <summary>New Game Modal</summary>
 <img src="docs/wireframes/index.html-(new-game-modal).png">
 </details>
