@@ -48,7 +48,7 @@ Developer: Jamie King
 - A user would want to play a fun game of connect 4.
 - A user would want to know the aim the game if this is my first time doing so.
 - A user would want to what the controls of the game are.
-- A user would want to have the option to play a computer opponent or with a fried (locally).
+- A user would want to have the option to play a computer opponent or with a friend (locally).
 - A user would want to be able to check how many wins and losses they have had in their current session.
 
 ### Site Owner Goals
@@ -99,15 +99,37 @@ Developer: Jamie King
 
 The game was designed with a clean simple design in mind. Using the original colours of the official game of a blue game board with red and yellow counters. This was done to induce a sense of nostalgia to older users and to make the game easily identifiable to younger users who may be new to the game. 
 
-### Colour
+### Colours
 
-The colour palette for the website is made up of X main colours
+The colour palette for the website is made up of 5 main colours:
 
-- #xxxxxx (xxxxx)
-- #xxxxxx (xxxxx)
-- #xxxxxx (xxxxx)
-- #xxxxxx (xxxxx)
-- #xxxxxx (xxxxx)
+- #FFFFFF (White)
+- #000000 (Black)
+- #FF0000 (Red)
+- #FFFF00 (Yellow)
+- #2B2EE2 (Blue)
+
+The background gradient consists of 5 colours:
+
+- #E0B5B5 
+- #EABFB0
+- #ECCBAD
+- #D6DAAF
+- #DAE9BA
+
+When a button in New game or settings is active it is Green:
+
+-#00C800
+
+Two colours are used in the Winning Animation which flashes:
+
+-#820000
+-#828200
+
+Two colours are used for the Stats button when active and inactive
+
+-#CCCCCC
+-#ACACAC
 
 All colours contrast was tested using [EightShapes contrast grid](http://eightshapes.com/)
 
