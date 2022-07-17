@@ -188,7 +188,7 @@ function contactSubmitSuccess () {
 
 function contactSubmitError () {
     document.querySelector('.contact-submit-modal').style.display = "Flex";
-    submitMessage.innerText = "Oops, something went wrong, please try again";
+    submitMessage.innerText = "Ooops, something went wrong. Please try again.";
 }
 
 // Hide Contact submit modal 
