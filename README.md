@@ -83,7 +83,7 @@ Developer: Jamie King
 3. As a user, I want to be notified as to whos turn it is.
 4. As a user, I want to be notified if my move is invalid.
 5. As a user, I want to be notified of who won the game.
-6. As a user, I want to be able to see the total wins and draws in the current session .
+6. As a user, I want to be able to see the total wins and draws in the current session.
 7. As a user, I want to be able to turn on and off in game music and sounds.
 8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
 
@@ -429,14 +429,14 @@ The website was tested on the following web browsers:
 
 ### Testing User Stories
 
-#### First time users
+#### Users
 
-1. As a first time user I would want to gain insight as to what type of establishment the bar is
+1. As a user, I want to understand the aim of the game.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Gallery  | Using the Nav Bar navigate to the Gallery page  | Gallery page opens and displays all images     | Works as intended  |
-| Video  | Navigate to the About page, scroll down to video  | Video is displayed on page ready to play, this will not autoplay     | Works as intended  |
+| x  | x  | x     | x  |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -444,12 +444,12 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-video.png">
 </details>
 
-2. As a first time user I would want to know more about the bar	
+2. As a user, I want to chose between playing a friend locally or a computer opponent.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Our Story  | Navigate to the About page, Our story is located at the top of the page  | To be presented with information about the bar    | Works as intended  |
-| Customer reviews | Navigate to the About page, scroll down to customer views section  | To be presented with customer reviews of the bar     | Works as intended  |
+| x  | x  | x    | x  |
+| x  | x  | x    | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -457,14 +457,14 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-customer-reviews.png">
 </details>
 
-3. As a first time user I would want to know where the bar is located
+3. As a user, I want to be notified as to whos turn it is.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|Visit us  | On Home page scroll down to Visit us section and click on the Visit us button  | To be taken to the contact page to see the map and address of the bar     | Works as intended  |
-| Google Map  | Navigate to the Contact page  | To be presented with a map of the bar location    | Works as intended  |
-| Footer - contact section  | Scroll down to the footer section on any page   | To be provided with bar location details     | Works as intended  |
-| Where to find us  | Navigate to the Contact page to view the where to find us section on the right hand side  | To be provided with bar location details     | Works as intended when on desktop, this will not work on mobile as it is a feature that is not display on displays smaller than 768px |
+| x  | x  | x    | x  |
+| x  | x  | x    | x  |
+| x  | x  | x    | x  |
+| x  | x  | x    | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -474,22 +474,22 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
 </details>
 
-4. As a first time user I would want to know the opening hours of the bar
+4. As a user, I want to be notified if my move is invalid.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Footer - Opening times section  | Scroll down to the footer section on any page  | To be provided with opening times     | Works as intended  |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
 <img src="docs/testing-user-stories/testing-user-stories-footer-opening-times.png">
 </details>
 
-5. As a first time user I would want to know the drinks available and their prices
+5. As a user, I want to be notified of who won the game.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Menu  | Navigate to the Menu page  | To arrive at the menu page and be presented with information on drink types and prices     | Works as intended  |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -498,12 +498,12 @@ The website was tested on the following web browsers:
 
 #### Returning users
 
-6. As a returning user I would want to know of recent news related to the bar
+6. As a user, I want to be able to see the total wins and draws in the current session.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| What's new  | On the home page scroll down to the What's new section and click on the Whats new button  | To be taken to the News section on the About page     | Works as intended  |
-| News  | Navigate to the About page, scroll down to the News section  | To view the news section at the bottom of the page     | works as intended  |
+| x  | x  | x     | x  |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -511,12 +511,12 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-news.png">
 </details>
 
-7. As a returning user I would want to see the menu
+7. As a user, I want to be able to turn on and off in game music and sounds.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Our Menu  | On the home page scroll down to the Our menu section and click on the Our Menu button  | To arrive at the menu page and be presented with information on drink types and prices      | Works as intended  |
-| Menu  | Navigate to the Menu page  | To arrive at the menu page and be presented with information on drink types and prices     | Works as intended  |
+| x  | x  | x      | x  |
+| x  | x  | x      | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -524,12 +524,12 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-menu.png">
 </details>
 
-8. As a returning user I would want to find the phone number to book a table via telephone
+8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Footer - Contact section  | Scroll down to the footer section on any page  | To be presented with the phone number for the bar     | Works as intended  |
-| Where to find us  | Navigate to the Contact page to view the where to find us section on the right hand side  | To be presented with the phone number for the bar     | Works as intended  |
+| x  | x  | x     | x  |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -538,12 +538,12 @@ The website was tested on the following web browsers:
 </details>
 
 
-9. As a returning user I would want to see the opening times
+9. As the site owner, I want users to be able to provide feedback via a contact form.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Footer - Opening times section  | Scroll down to the footer section on any page  | To be presented with the opening times for the bar     | Works as intended  |
-| Where to find us  | Navigate to the Contact page to view the where to find us section on the right hand side  | To be presented with the opening time for the bar     | Works as intended  |
+| x  | x  | x     | x  |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -552,11 +552,22 @@ The website was tested on the following web browsers:
 </details>
 
 
-10. As a returning user I would want to book a table via an online booking system
+10. As the site owner, I want to connect with users via social networks.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Contact form  | Navigate to the contact page and fill in the fields and click submit  | For the codeinstitute form dump page to display with all information that was entered     | Works as intended  |
+| x  | x  | x     | x  |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+</details>
+
+10. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| x  | x  | x     | x  |
 
 <details>
 <summary>Screenshots</summary>
@@ -570,9 +581,12 @@ During the project i encountered a number of bugs some of which were solved some
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| Bug 1  | Fix 1 |
-| Bug 2  | Fix 2 | 
-| Bug 3  | Fix 3 |
+| Computer not placing a counter and turn reverting back to player 1  | Fix 1 |
+| Multiple turns for player 1 whilst it is computer player 2s turn  | Fix 2 | 
+| Multiple wins within one game  | Fix 3 |
+| Sound button doesnt not update to reflect set values in settings modal  | Fix 4 |
+| Viewport height glitch whilst Player 2 animation running  | Fix 5 |
+| In vs computer game, on game end the invalid move sound will still sound if clicked  | Fix 6 |
 
 ## Deployment
 
