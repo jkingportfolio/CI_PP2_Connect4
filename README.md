@@ -435,8 +435,8 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
-| x  | x  | x     | x  |
+| Welcome modal  | On page load the Welcome modal will be displayed and indicate a first time user where to find help on how to play  | When page loads the welcome modal is shown with a smooth animation    | Works as intended |
+| Help Modal  | Click on the Help link from the Nav Bar  | The Help link from the nav bar is clicked and the help modal with information on the aim of the game, how to play and user controls is displayed     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -448,8 +448,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x    | x  |
-| x  | x  | x    | x  |
+| New game modal  | Click on the New game modal from the Nav Bar  |  The    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -461,10 +460,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x    | x  |
-| x  | x  | x    | x  |
-| x  | x  | x    | x  |
-| x  | x  | x    | x  |
+| Notification Bar  | Play a game and the notification bar will display the correct notification  | Whilst in game the notification bar will be updated to state which player currently has a turn to take    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -478,7 +474,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
+| Notification Bar  | Play a game and the notification bar will display the correct notification  | Whilst in game the notification bar will be updated to state invalid move if the user clicks on a cell which is either occupied or does not have a counter beneath it     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -489,7 +485,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
+| Notification Bar  | Play a game and the notification bar will display the correct notification |  When a player acheives 4 in a row the notification bar will update to state who won and disable all clicks    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -502,8 +498,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
-| x  | x  | x     | x  |
+| Stats Button  | Hover over the stats button on Desktop or click if on a Mobile / Tablet device  | Whilst hover / click occurs the stats information will display to show the total number of player 1 wins, player 2 wins and draws     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -515,8 +510,8 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x      | x  |
-| x  | x  | x      | x  |
+| Settings modal  | Click on the Settings link in the Nav Bar, from the settings modal set music / sounds to be on or off | To be able to control if music / sounds are on or off whilst playing the game     | Works as intended |
+| Master mute button  | Locate master mute button below the game board and click on it  | If clicked on it will turn both music and sounds off or on dependant on what state the sounds currently are     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -528,8 +523,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
-| x  | x  | x     | x  |
+| Contact modal  | Click on the Contact link in the Nav Bar, from the contact modal enter relevant information  | To be presented with the contact modal which once populated, entered information validated and submit button clicked will send the information to the site owner and a message will display to let the user know if the submission was successful or not      | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -542,8 +536,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
-| x  | x  | x     | x  |
+| Contact modal  | Click on the Contact link in the Nav Bar  | To be presented with the contact modal which once populated, entered information validated and submit button clicked will send the information to the site owner and a message will display to let the user know if the submission was successful or not      | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -556,18 +549,18 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
+| Footer  | Scroll to the bottom of the page and locate the social icons  | Social pages to open in new window if clicked on from the footer     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
 <img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
 </details>
 
-10. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
+11. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| x  | x  | x     | x  |
+| 404 page return button  | Locate the Return Home button and click on it  | To be returned to the main page to be able to start a new game     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
