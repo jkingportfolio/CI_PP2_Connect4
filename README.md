@@ -167,15 +167,15 @@ Balsamiq was used in the initial design stage to layout sketches of each page an
 </details>
 <details>
 <summary>In Game Modal (Player Turn)</summary>
-<img src="docs/wireframes/index.html-(in-game-player-turn).png">
+<img src="docs/wireframes/index.html-(in-game-modal-player-turn).png">
 </details>
 <details>
 <summary>In Game Modal (Invalid Turn)</summary>
-<img src="docs/wireframes/index.html-(in-game-invalid-turn).png">
+<img src="docs/wireframes/index.html-(in-game-modal-invalid-turn).png">
 </details>
 <details>
 <summary>In Game Modal (Game End)</summary>
-<img src="docs/wireframes/index.html-(in-game-game-end).png">
+<img src="docs/wireframes/index.html-(in-game-modal-game-end).png">
 </details>
 <details>
 <summary>404 page</summary>
