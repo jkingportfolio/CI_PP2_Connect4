@@ -17,7 +17,7 @@ Developer: Jamie King
     4. [Site Owner Stories](#site-owner-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
-    2. [Colour](#colour)
+    2. [Colours](#colours)
     3. [Fonts](#fonts)
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
@@ -311,7 +311,7 @@ The help modal displays all information needed to understand how to play the gam
 
 #### Settings modal 
 
-The settings modal allows users to turn music or sounds on and off individually. To improve user experience music and sounds are defaulted to be off.
+The settings modal allows users to turn music or sounds on and off individually. To improve user experience music and sounds are off by default.
 
 - Covered in user story: 7
 
@@ -383,11 +383,15 @@ The play again button will display when a game ends. Once clicked it will reset 
 
 - Covered in user story: None yet, create user story to reflect
 
+![Play again button](docs/features/feature-play-again-button.png)
+
 #### Stats Button
 
 The stats button will display the current session player 1 / player 2 wins and how many draws have occured. On Desktops this will be displayed by hovering over, while on touch screen devices will be displayed with a touch of the screen on the button.
 
 - Covered in user story: 6
+
+![Stats button](docs/features/feature-stats-button.png)
 
 #### Footer
 
