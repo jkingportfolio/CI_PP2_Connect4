@@ -3,7 +3,7 @@ Developer: Jamie King
 
 ![Responsive image](docs/am-i-responsive.png)
 
-[Connect 4](https://jkingportfolio.github.io/CI_PP2_Connect4/) website has been developed to provide (insert description).
+[Connect 4](https://jkingportfolio.github.io/CI_PP2_Connect4/) website has been developed to provide users the chance to play the classic two player strategy game of Connect 4. The game consists of players taking turns to drop their counters into the game board with the aim of the game to have four of their own counters in a row horizontally, vertically or diagonally. 
 
 ## Table of Contents
 
