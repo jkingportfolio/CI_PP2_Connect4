@@ -836,7 +836,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 .modal-submit-text {
     text-align: center;
     margin: 0 70px;
-    padding-top: 120px;
+    padding-top: 80px;
     animation: modal-submit 1s ease 0s 1 normal forwards;
 }
 
