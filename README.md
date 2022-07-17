@@ -44,28 +44,26 @@ Developer: Jamie King
 
 ### User Goals
 
-- #### First time users
-    - A first time user would want to (insert goal).
-    - A first time user would want to (insert goal).
-    - A first time user would want to (insert goal).
-- #### Returning users
-    - A returning user would want to be (insert goal).
-    - A returning user would like to (insert goal).
-    - A returning user would like to (insert goal).
+- A user would want to play a fun game of connect 4.
+- A user would want to know the aim the game if this is my first time doing so.
+- A user would want to what the controls of the game are.
+- A user would want to have the option to play a computer opponent or with a fried (locally).
+- A user would want to be able to check how many wins and losses they have had in their current session.
 
 ### Site Owner Goals
 
-- (insert goal).
-- (insert goal).
-- (insert goal).
+- As the site owner i wanted to create an enjoyable interactive game which was responsive over multiple devices.
+- As the site owner i wanted to provide a fun user experience which would make users want to come back and play again. 
+- As the site owner i wanted to allow my users to provide myself some feedback via a contact form
+- As the site owner i wanted to have the ability to connect with my users via Github and Linkedin
 
 ## User Experience
 
 ### Target Audience
 
-- People looking to (insert)
-- People looking to (insert)
-- People looking for (insert)
+- Casual gamers.
+- Adults who want to teach their children a new game.
+- People from all walks of life hoping to pass time.
 
 ### User Requirements and Expectations
 
