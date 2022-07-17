@@ -199,25 +199,27 @@ A game flowchart was created during the design process to help identify function
 - JavaScript - Used to create interactive features and content
 
 ### Frameworks and Tools
-- Balsamiq
-- Git
-- Github
-- Gitpod
-- Bootstrap v5.0
-- Google Fonts
-- Google Chrome Dev Tools
-- Font Awesome
-- Microsoft Paint
-- Affinity Designer
-- EmailJs
-- W3C Markup Validation
-- W3C Jigsaw CSS Validation
-- WAVE WebAim web accessibility evaluation tool
-- JSHint
+- Balsamiq - Used to create wireframes.
+- Git - Used for version control.
+- Github - Used to deploy the projects code.
+- Gitpod - Used to develop and test code.
+- Bootstrap v5.0 - Used for the Responsive Nav Bar.
+- Google Fonts - Used for the fonts on the site.
+- Google Chrome Dev Tools - Used for testing of the site.
+- Font Awesome - Used for Socials icons.
+- Microsoft Paint - Used to create a favicon image.
+- Affinity Designer - Used to create the site logo.
+- LibreOffice Draw - Used to create the game logic flowchart.
+- Eightshapes - Used to check colours for contrast and accessibility.
+- EmailJs - Used for sending user feedback to the site owner.
+- W3C Markup Validation - Used to check HTML markup validity.
+- W3C Jigsaw CSS Validation - Used to check CSS validity.
+- WAVE WebAim web accessibility evaluation tool - Used to evaluate accessibility.
+- JSHint - Used to check JavaScript validity.
 
 ## Features
 
-In its entirety the website consists of five main pages, one 404 error page and 16 features, two of which have a mobile version and tablet/desktop version. 
+In its entirety the website consists of one main page, four modals and one 404 error page consiting of xx features, one of which has a mobile version and tablet/desktop version. 
 
 ### Existing features
 
