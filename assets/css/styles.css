@@ -425,6 +425,7 @@ section {
 
 .player-one {
     animation: place-counter 0.5s linear 0s 1 normal none;
+    color:rgb(255, 255, 255);
     background-color: rgb(255,0,0);
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
@@ -453,6 +454,7 @@ section {
 
 .player-one-404 {
     animation: place-counter-404 1.5s linear 0s 1 normal none;
+    color: rgb(255, 255, 255);
     background-color: rgb(255,0,0);
     font-family: 'Dosis', sans-serif;
     font-size: 20px;
