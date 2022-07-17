@@ -293,11 +293,11 @@ The new game modal allows users to select their opponent, confirm or cancel the 
 
 ![New game modal](docs/features/feature-new-game-modal.png)
 
-##### Opponent
+##### Who do you want to play
 
 - The choice between a computer player which randomly selects a move or a human player to play against locally using the same device.
 
-##### Confirm changes
+##### Are you sure you want to start a new game
 
 - The option to confirm changes to opponent and start a new game or cancel and return to the current game.
 
@@ -321,7 +321,7 @@ The settings modal allows users to turn music or sounds on and off individually.
 
 - The option to have turn background music on or off. There is one track which will be looped. This is done by selecting the ON or OFF button.
 
-##### Sounds
+##### Sound Effects
 
 - The option to have game sounds such as counter placement sound and winner sound on or off. This is done by selecting the ON or OFF button.
 
