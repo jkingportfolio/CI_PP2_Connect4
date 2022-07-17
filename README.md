@@ -194,8 +194,9 @@ A game flowchart was created during the design process to help identify function
 ## Technologies
 
 ### Coding Languages
-- HTML
-- CSS
+- HTML - Used to structure page content
+- CSS - Used to style the content
+- JavaScript - Used to create interactive features and content
 
 ### Frameworks and Tools
 - Balsamiq
@@ -208,6 +209,11 @@ A game flowchart was created during the design process to help identify function
 - Font Awesome
 - Microsoft Paint
 - Affinity Designer
+- EmailJs
+- W3C Markup Validation
+- W3C Jigsaw CSS Validation
+- WAVE WebAim web accessibility evaluation tool
+- JSHint
 
 ## Features
 
