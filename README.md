@@ -327,7 +327,7 @@ The settings modal allows users to turn music or sounds on and off individually.
 
 #### Contact modal
 
-The contact modal displays a form which enables the user to provide feedback to the Site Owner by populating the following information:
+The contact modal displays a form which enables the user to provide feedback to the Site Owner by populating the following validated information:
 
 - Name
 - Email
