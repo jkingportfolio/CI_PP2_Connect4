@@ -119,17 +119,17 @@ The background gradient consists of 5 colours:
 
 When a button in New game or settings is active it is Green:
 
--#00C800
+- #00C800
 
 Two colours are used in the Winning Animation which flashes:
 
--#820000
--#828200
+- #820000
+- #828200
 
 Two colours are used for the Stats button when active and inactive
 
--#CCCCCC
--#ACACAC
+- #CCCCCC
+- #ACACAC
 
 All colours contrast was tested using [EightShapes contrast grid](http://eightshapes.com/)
 
