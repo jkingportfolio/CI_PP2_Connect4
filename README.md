@@ -225,7 +225,7 @@ In its entirety the website consists of one main page, four modals and one 404 e
 
 #### Nav Bar 
 
-The navigation bar is featured on the main page and the error 404 page. It includes 4 clickable modals:
+The navigation bar is featured on the main page. It includes 4 clickable modals:
 
 - New Game
 - Help
@@ -247,38 +247,74 @@ Other features of the Nav Bar include:
 
 ![Nav Bar Mobile](docs/features/feature-nav-bar-mobile.png)
 
-#### Contact Form
+#### Main Game Area
 
-The contact form provides a way for the user to book a table at the bar by providing the following details:
+#### Welcome Modal
+
+#### New Game Modal
+
+##### Opponent
+
+##### Confirm changes
+
+#### Help Modal
+
+#### Settings Modal 
+
+##### Music
+
+##### Sounds
+
+#### Contact Modal
+
+The contact form provides a way for the user to provide feedback to the Site Owner by providing the following information:
 
 - Name
 - Email
-- Phone number 
-- Date and time
 - A text area for additional comments or questions
 
 - Covered in user stories: xx
 
 ![Form](docs/features/feature-form.png)
 
+##### Success
+
+##### Error
+
+#### Notification Bar
+
+##### Player turn
+
+##### Invalid Turn
+
+##### Winner
+
+##### Animations
+
+#### New Game Button
+
+#### Stats Button
+
 #### Footer
 
-- The footer is featured on all five main pages and the error 404 page and includes 3 sections:
+- The footer is featured on the main page and the error 404 page and includes 2 sections:
 
-    - Contact
-    - Opening Times
-    - Socials
+    - Description of the site owner
+    - Social links
 
-- There are three clickable links
-    - The email address in the contact section will open an email mailbox of the user in order for them to easily email the bar with any questions they may have
+- There are two clickable links
     - The GitHub icon which links to my own personal GitHub page for future showcasing of my projects
     - The LinkedIn icon which links to my own personal LinkedIn page for networking with fellow coders or potential future employers
 
 - Covered in user stories: xx
 
-- Desktop
-
 ![Footer](docs/features/feature-footer-tablet-desktop.png)
+
+#### Orientation Warning
+
+#### Master Mute Button
+
+#### 404 Page
 
 #### 404 error page
 
@@ -348,10 +384,13 @@ In the future as my skills grow I would like to implement the following features
 
 <details>
 <summary>Index</summary>
-<img src="">
+<img src="docs/">
 </details>
-<details>
 
+<details>
+<summary>404 Page</summary>
+<img src="docs/">
+</details>
 
 - Icons from Font Awesome are used in the site. As they are for decorative purposes only, Font Awesome already populates the code to be copied with an aria-hidden="true" attribute to accommodate accessibility.
 
