@@ -328,9 +328,12 @@ The contact form provides a way for the user to provide feedback to the Site Own
 
 In the future as my skills grow I would like to implement the following features:
 
-- Future implementation 1
-- Future implementation 2
-- Future implementation 3
+- AI for the computer player
+    - At present the computer player only selects a cell based on a random number. I would like to implement some logic to this function to seek out if there is a potential win within the next turn of player 1 so that the computer will actively try and block a win.
+- Online PvP
+    - Currently when playing another human, this can only be done when physically beside the same device. At present the means to create a platform for this is outwith my skills, however when i have completed the back-end lessons of Code Institues Diploma i have confidence that i will be able to implement this feature.
+- Online Leaderboard
+    - Like the online PvP future implementation i would like to add a global leaderboard in which users can see how many games they have played and who has won the most, this would encourage users to come back and try to become the leader of the scoreboard.
 
 ## Testing
 
