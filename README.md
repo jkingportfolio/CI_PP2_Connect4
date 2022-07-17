@@ -414,11 +414,15 @@ The orientation warning modal detects if the orientation of the screen has chang
 
 - Covered in user story: None yet, create user story to reflect
 
+![Footer](docs/features/feature-orientation-warning.png)
+
 #### Master Mute Button
 
 The master mute button is located just below the main game board. When this button is pressed it will turn on or off both music and sounds dependant on its current state.
 
 - Covered in user story: 7
+
+![Footer](docs/features/feature-master-mute-button.png)
 
 #### Vibration alert
 
@@ -432,13 +436,15 @@ A vibration alert has been implemented when a user tries to place a counter whic
 
 - Covered in user story: None yet, create user story to reflect
 
+![where to find us](docs/features/feature-404-page.png)
+
 #### 404 error page return button
 
 - The return home button is located on the error 404 page. By clicking on this button the user will be redirect back to the main page creating a good user experience that does not require the use of the browser back button.
 
 - Covered in user story: 11
 
-![where to find us](docs/features/feature-404-page.png)
+![where to find us](docs/features/feature-return-home-button.png)
 
 ### Future implementations
 
