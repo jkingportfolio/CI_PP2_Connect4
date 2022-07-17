@@ -707,16 +707,6 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     background-color: rgb(0, 200, 0) !important;
 }
 
-.switch-container button#player-two-human.active {
-    background: linear-gradient(90deg, #4f4f4f 30%, #2e2e2e 66%, #151515 100%);
-    color: #b8021d;
-}
-
-.switch-container button#player-two-computer.active {
-    background: linear-gradient(90deg, #4f4f4f 30%, #2e2e2e 66%, #151515 100%);
-    color: #b8021d;
-}
-
 .new-game-close {
     position: absolute;
     top: 0;
