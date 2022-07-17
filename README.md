@@ -67,11 +67,13 @@ Developer: Jamie King
 
 ### User Requirements and Expectations
 
-- Find information easily and quickly
-- Navigate the pages seamlessly
-- Links and website functions to act as expected
 - A great game to pass time and have fun with friends
+- Links and website functions to act as expected
+- Notifications to indicate the current state of play
 - Simple "to the point" content that a user can quickly digest
+- An easy method to leave feedback on the game
+- Accessibility for impaired users
+- Responsiveness to allow play across devices of different screen sizes
 
 ### User stories
 
