@@ -726,6 +726,16 @@ You can make a local clone of a repository via the following steps:
 8. `$ clone https://github.com/jkingportfolio/CI_PP2_Connect4`
 9. Now press enter and the local clone will be created at the desired local location
 
+### EmailJS API
+
+An EmailJS account was created and templates made using EmailJS tutorial as per their [documentation](https://www.emailjs.com/docs/tutorial/overview/)
+
+1. Create a user account at emailjs.com
+2. Add an email service, call this Contact Service and gvie it an ID name contact_service
+3. Add a new email template, call this Contact Form and give it an ID name contact_form
+4. Load the EmailJS SDK in the head of your HTML file (it must be placed here to work)
+5. Create a JavaScript file to paste the function provided in the documentation, replacing the emailjs.init function parameter with your own public key.
+
 ## Credits
 
 ### Tutorials
