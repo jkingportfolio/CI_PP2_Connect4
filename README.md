@@ -253,17 +253,23 @@ The main game area is situated in the middle of the main page and is where the u
 
 - Covered in user story: None yet, create user story to reflect
 
+![Main game area](docs/features/feature-main-game-area.png)
+
 #### Welcome modal
 
 The welcome modal will display on load of the page and will help users know where to navigate to to find out how to play if they dont already know how to.
 
 - Covered in user story: 1
 
+![Welcome modal](docs/features/feature-welcome-modal.png)
+
 #### New game modal
 
 The new game modal allows users to select their opponent, confirm or cancel the change of opponent.
 
 - Covered in user story: 2
+
+![New game modal](docs/features/feature-new-game-modal.png)
 
 ##### Opponent
 
@@ -279,11 +285,15 @@ The help modal displays all information needed to understand how to play the gam
 
 - Covered in user story: 1
 
+![Help modal](docs/features/feature-help-modal.png)
+
 #### Settings modal 
 
 The settings modal allows users to turn music or sounds on and off individually. To improve user experience music and sounds are defaulted to be off.
 
 - Covered in user story: 7
+
+![Settings modal](docs/features/feature-settings-modal.png)
 
 ##### Music
 
@@ -303,7 +313,7 @@ The contact modal displays a form which enables the user to provide feedback to 
 
 - Covered in user stories: 8 & 9
 
-![Form](docs/features/feature-form.png)
+![Contact modal](docs/features/feature-contact-modal.png)
 
 ##### Success
 
@@ -339,9 +349,11 @@ The notification bar has 4 animations. One for each of the messages that can be 
  - Invalid move!
  - Player X wins!
 
-#### New Game Button
+![Notification bar](docs/features/feature-notification-bar.png)
 
-The new game button will display when a game ends. Once clicked it will reset the game board and its display states will change to none. 
+#### Play again Button
+
+The play again button will display when a game ends. Once clicked it will reset the game board and its display states will change to none. 
 
 - Covered in user story: None yet, create user story to reflect
 
