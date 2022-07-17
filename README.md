@@ -314,6 +314,8 @@ The contact form provides a way for the user to provide feedback to the Site Own
 
 #### Master Mute Button
 
+#### Vibration alert
+
 #### 404 Page
 
 #### 404 error page
@@ -613,18 +615,38 @@ You can make a local clone of a repository via the following steps:
 
 ## Credits
 
+### Tutorials
+
+- When beginning this project i watched a [YouTube tutorial by Ania Kubow](https://www.youtube.com/watch?v=aroYjgQH8Tw) to help with the fundamentals of how to implement my JavaScript
+- Creative CSS Animations, Transitions and Transforms Course by Ahmed Sadek, Published on Packt Publishing was used to help create the animations in my site.
+- How to make a modal - [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+
 ### Images
+
+All images used in this website were created by myself. The icons for Github and Linkedin were taken from FontAwesome.
 
 ### Code
 
- Code from external sources were used in this project, they are credited below:
+ Code from external sources were used as a basis and built ontop of in this project, they are credited below:
+
+ - How to check if a cell is occupied and has produced a winning combination by [Ania Kubow](https://github.com/kubowania/connect-four)
 
 
 ### Literature
 
 The use of reference books were used throughout the creation of this project and are credited below:
 
+- JavaScript & JQuery by Jon Duckett
+- JavaScript Pocket Reference by David Flanagan, published by O'Reilly
 
+### Sounds
+
+The sounds and music used in this project were taken from pixabay.com and are credited as per below:
+
+- Background music - 'Corporate Ambient' by [Coma-Media](https://pixabay.com/music/corporate-corporate-ambient-95417/)
+- Counter placement sound - 'Correct' by [Eponn](https://pixabay.com/sound-effects/correct-6033/) 
+- Invalid move sound - 'wrong' by [lionelmatthew001](https://pixabay.com/sound-effects/wrong-38598/)
+- Winning sound - 'Success Fanfare Trumpets' by [FunWithSound](https://pixabay.com/sound-effects/success-fanfare-trumpets-6185/)
 
 ### Misc
 
@@ -639,4 +661,5 @@ The source of where I learned how to produce a GitHub fork and clone was from th
 I would like to also thank the following:
 - My wife and family for their support and feedback whilst doing this project
 - My fellow Code Institute students whom i have bounced ideas and problems back and forth with via Slack
+- Code Institute tutor support who helped with an issue i had with game functionality.
 - My Code Institute mentor Mo Shami for his guidance through this project.
