@@ -77,31 +77,20 @@ Developer: Jamie King
 
 ### User stories
 
-#### First time user
+1. As a user, I want to understand the aim of the game
+2. As a user, I want to chose between playing a friend locally or a computer opponent
+3. As a user, I want to be notified as to whos turn it is.
+4. As a user, I want to be notified if my move is invalid
+5. As a user, I want to be notified of who won the game
+6. As a user, I want to be able to see the total wins and draws in the current session 
+7. As a user, I want to be able to turn on and off in game music and sounds
+8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent
 
-1. As a first time user I would want to (insert story)
-2. As a first time user I would want to (insert story)
-3. As a first time user I would want to (insert story)
-4. As a first time user I would want to (insert story)
-5. As a first time user I would want to (insert story)
+### Site Owner Stories
 
-#### Returning user
-
-6. As a returning user I would want to (insert story)
-7. As a returning user I would want to (insert story)
-8. As a returning user I would want to (insert story)
-9. As a returning user I would want to (insert story)
-10. As a returning user I would want to (insert story)
-11. As a returning user I would want to (insert story)
-
-#### Site owner
-
-12. As the site owner I would like to (insert story)
-13. As the site owner I would want to (insert story)
-14. As the site owner I would want to (insert story)
-15. As the site owner I would like users to (insert story)
-16. As the site owner I would like the user to (insert story)
-17. As the site owner I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs
+8. As the site owner, I want users to be able to provide feedback via a contact form
+9. As the site owner, I want to connect with users via social networks
+10. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs
 
 ## Design
 
