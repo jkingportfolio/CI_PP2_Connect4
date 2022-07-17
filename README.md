@@ -118,7 +118,7 @@ All colours contrast was tested using [EightShapes contrast grid](http://eightsh
 
 ### Fonts
 
-There were 3 fonts used in this project, as stated below:
+There were 2 fonts used in this project, as stated below:
 - Alfa Slab One with a backup of cursive is the main font used throughout the website
 - Dosis with a backup of sans-serif was used for the number identifiers on the counters
 
@@ -338,14 +338,14 @@ In the future as my skills grow I would like to implement the following features
 ## Testing
 
 ### HTML Validation
-[W3C Markup Validation](https://validator.w3.org/) was used to validate the HTML code of The Cocktail Bar website. All pages passed and produced no errors.
+[W3C Markup Validation](https://validator.w3.org/) was used to validate the HTML code of The Connect 4 website. All pages passed and produced no errors.
 <details>
 <summary>Index</summary>
-<img src="">
+<img src="docs/validation-html/validation-index-html.png">
 </details>
 <details>
 <summary>404 page</summary>
-<img src="">
+<img src="docs/validation-html/validation-404-html.png">
 </details>
 
 ### CSS Validation
@@ -387,15 +387,15 @@ In the future as my skills grow I would like to implement the following features
 
 <details>
 <summary>Index</summary>
-<img src="docs/">
+<img src="docs/validation-accessibility/accessibility-validation-index.png">
 </details>
 
 <details>
 <summary>404 Page</summary>
-<img src="docs/">
+<img src="docs/validation-accessibility/accessibility-validation-404.png">
 </details>
 
-- Icons from Font Awesome are used in the site. As they are for decorative purposes only, Font Awesome already populates the code to be copied with an aria-hidden="true" attribute to accommodate accessibility.
+- Icons from Font Awesome are used in the site. Font Awesome already populates the code to be copied with an aria-hidden="true" attribute to accommodate accessibility.
 
 ### Performance
 
@@ -403,11 +403,11 @@ In the future as my skills grow I would like to implement the following features
 
 <details>
 <summary>Index</summary>
-<img src="">
+<img src="docs/validation-performance-lighthouse/lighthouse-performance-index.png">
 </details>
 <details>
 <summary>404 page</summary>
-<img src="">
+<img src="docs/validation-performance-lighthouse/lighthouse-performance-404.png">
 </details>
 
 
@@ -422,7 +422,7 @@ In addition to testing on physical devices, the site was also tested using Googl
 ### Browser Compatibility
 
 The website was tested on the following web browsers:
-- Google Chrome Version 101.0.4951.67
+- Google Chrome (Version 103.0.5060.114)
 - DuckDuckGo
 
 ### Testing User Stories
