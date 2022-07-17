@@ -235,9 +235,9 @@ The navigation bar is featured on the main page. It includes 4 clickable modals:
 Other features of the Nav Bar include:
 
 - It is fully responsive due to using the Bootstrap v5.0.2 nav bar which then produces a toggler menu for smaller screens. 
-- A hover effect on the text of the navigation bar text allows the user to understand that it is a clickable link. Upon clicking the link the user will be taken to the desired page
+- A hover effect on the text of the navigation bar text allows the user to understand that it is a clickable link. Upon clicking the link the user will be presented with the desired modal.
 
-- Covered in user story: xx
+- Covered in user story: None yet, create user story to reflect
 
 ##### Desktop 
 
@@ -247,53 +247,109 @@ Other features of the Nav Bar include:
 
 ![Nav Bar Mobile](docs/features/feature-nav-bar-mobile.png)
 
-#### Main Game Area
+#### Main game area
 
-#### Welcome Modal
+The main game area is situated in the middle of the main page and is where the user will interact with the site to play the game
 
-#### New Game Modal
+- Covered in user story: None yet, create user story to reflect
+
+#### Welcome modal
+
+The welcome modal will display on load of the page and will help users know where to navigate to to find out how to play if they dont already know how to.
+
+- Covered in user story: 1
+
+#### New game modal
+
+The new game modal allows users to select their opponent, confirm or cancel the change of opponent.
+
+- Covered in user story: 2
 
 ##### Opponent
 
+- The choice between a computer player which randomly selects a move or a human player to play against locally using the same device.
+
 ##### Confirm changes
 
-#### Help Modal
+- The option to confirm changes to opponent and start a new game or cancel and return to the current game.
 
-#### Settings Modal 
+#### Help modal
+
+The help modal displays all information needed to understand how to play the game, user controls and how to display session stats.
+
+- Covered in user story: 1
+
+#### Settings modal 
+
+The settings modal allows users to turn music or sounds on and off individually. To improve user experience music and sounds are defaulted to be off.
+
+- Covered in user story: 7
 
 ##### Music
 
+- The option to have turn background music on or off. There is one track which will be looped. This is done by selecting the ON or OFF button.
+
 ##### Sounds
 
-#### Contact Modal
+- The option to have game sounds such as counter placement sound and winner sound on or off. This is done by selecting the ON or OFF button.
 
-The contact form provides a way for the user to provide feedback to the Site Owner by providing the following information:
+#### Contact modal
+
+The contact modal displays a form which enables the user to provide feedback to the Site Owner by populating the following information:
 
 - Name
 - Email
 - A text area for additional comments or questions
 
-- Covered in user stories: xx
+- Covered in user stories: 8 & 9
 
 ![Form](docs/features/feature-form.png)
 
 ##### Success
 
+- Upon submission of the form, if successful the user will be presented with a Thank you modal.
+
 ##### Error
+
+- Upon submission of the form, if unsuccessful the user will be presented with an Error please try again modal.
 
 #### Notification Bar
 
+The notification bar is located above the game board and will display a notification relevant to the state of the game.
+
+- Covered in user stories: 3, 4 & 5
+
 ##### Player turn
+
+- The notification bar will display whos turn it currently it is. When turn swaps from one player to the other an animation will run to create a visually pleasing experience. If sounds are ON then a sound effect for placing a counter will also run.
 
 ##### Invalid Turn
 
+- The notification bar will display Invalid turn if the user tries to place a counter in an occupied cell or a cell which does not have a counter underneth. This notification will run a "shake" type animation which will be be in red to clearly display to users the move was incorrect. If playing on a device with virbration, the device will also vibrate to further alert the user of the invalid move. A sound will also play if the user has sounds set to ON.
+
 ##### Winner
+
+- Upon a player having 4 counters in a row, the Notification bar will run an animation and display the winner. If sounds are set to ON a sound will also play.
 
 ##### Animations
 
+The notification bar has 4 animations. One for each of the messages that can be displayed:
+ - Click to play!
+ - Player X turn!
+ - Invalid move!
+ - Player X wins!
+
 #### New Game Button
 
+The new game button will display when a game ends. Once clicked it will reset the game board and its display states will change to none. 
+
+- Covered in user story: None yet, create user story to reflect
+
 #### Stats Button
+
+The stats button will display the current session player 1 / player 2 wins and how many draws have occured. On Desktops this will be displayed by hovering over, while on touch screen devices will be displayed with a touch of the screen on the button.
+
+- Covered in user story: 6
 
 #### Footer
 
@@ -306,23 +362,39 @@ The contact form provides a way for the user to provide feedback to the Site Own
     - The GitHub icon which links to my own personal GitHub page for future showcasing of my projects
     - The LinkedIn icon which links to my own personal LinkedIn page for networking with fellow coders or potential future employers
 
-- Covered in user stories: xx
+- Covered in user story: 10
 
 ![Footer](docs/features/feature-footer-tablet-desktop.png)
 
-#### Orientation Warning
+#### Orientation warning modal
+
+The orientation warning modal detects if the orientation of the screen has changed from portrait to landscape and displays a warning that the game is best played in portrait mode. This warning will only display once per session so not to provide a poor user experience by having to close this warning everytime the orientation is changed.
+
+- Covered in user story: None yet, create user story to reflect
 
 #### Master Mute Button
 
+The master mute button is located just below the main game board. When this button is pressed it will turn on or off both music and sounds dependant on its current state.
+
+- Covered in user story: 7
+
 #### Vibration alert
 
-#### 404 Page
+A vibration alert has been implemented when a user tries to place a counter which results in an Invalid Move. This feature is only available on devices which support device vibration.
+
+- Covered in user story: None yet, create user story to reflect
 
 #### 404 error page
 
-- The 404 error page feature is used when a user tries to navigate to a page that does not exist. This page will allow users to navigate back to the home page via the return home button or by clicking on any of the nav bar links creating a good user experience that does not require the use of the browser back button.
+- The 404 error page feature is used when a user tries to navigate to a page that does not exist. This page will allow users to navigate back to the home page via the return home button creating a good user experience that does not require the use of the browser back button.
 
-- Covered in user story: xx
+- Covered in user story: None yet, create user story to reflect
+
+#### 404 error page return button
+
+- The return home button is located on the error 404 page. By clicking on this button the user will be redirect back to the main page creating a good user experience that does not require the use of the browser back button.
+
+- Covered in user story: 11
 
 ![where to find us](docs/features/feature-404-page.png)
 
