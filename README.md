@@ -278,10 +278,7 @@ The contact form provides a way for the user to book a table at the bar by provi
 
 - Desktop
 
-![Footer Desktop](docs/features/feature-footer-tablet-desktop.png)
-- Mobile
-
-![Footer Desktop](docs/features/feature-footer-mobile.png)
+![Footer](docs/features/feature-footer-tablet-desktop.png)
 
 #### 404 error page
 
