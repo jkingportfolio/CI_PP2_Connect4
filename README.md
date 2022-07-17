@@ -21,6 +21,7 @@ Developer: Jamie King
     3. [Fonts](#fonts)
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
+    6. [Game Flowchart](#game-flowchart)
 4. [Technologies Used](#technologies)
     1. [Coding Languages](#coding-languages)
     2. [Frameworks and Tools](#frameworks-and-tools)
@@ -77,26 +78,26 @@ Developer: Jamie King
 
 ### User stories
 
-1. As a user, I want to understand the aim of the game
-2. As a user, I want to chose between playing a friend locally or a computer opponent
+1. As a user, I want to understand the aim of the game.
+2. As a user, I want to chose between playing a friend locally or a computer opponent.
 3. As a user, I want to be notified as to whos turn it is.
-4. As a user, I want to be notified if my move is invalid
-5. As a user, I want to be notified of who won the game
-6. As a user, I want to be able to see the total wins and draws in the current session 
-7. As a user, I want to be able to turn on and off in game music and sounds
-8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent
+4. As a user, I want to be notified if my move is invalid.
+5. As a user, I want to be notified of who won the game.
+6. As a user, I want to be able to see the total wins and draws in the current session .
+7. As a user, I want to be able to turn on and off in game music and sounds.
+8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
 
 ### Site Owner Stories
 
-8. As the site owner, I want users to be able to provide feedback via a contact form
-9. As the site owner, I want to connect with users via social networks
-10. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs
+9. As the site owner, I want users to be able to provide feedback via a contact form.
+10. As the site owner, I want to connect with users via social networks.
+11. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
 
 ## Design
 
 ### Design Choices
 
-Sentence regarding design choices to be typed here
+The game was designed with a clean simple design in mind. Using the original colours of the official game of a blue game board with red and yellow counters. This was done to induce a sense of nostalgia to older users and to make the game easily identifiable to younger users who may be new to the game. 
 
 ### Colour
 
@@ -118,19 +119,19 @@ All colours contrast was tested using [EightShapes contrast grid](http://eightsh
 ### Fonts
 
 There were 3 fonts used in this project, as stated below:
-- xxxxxxx with a backup of xxxxxx is the main font used throughout the website
-- xxxxxx with a backup of xxxxxx was used for the button styles
-- xxxxxx with a backup of xxxxxxx was used for the (any other styles ie the counters numbers)
+- Alfa Slab One with a backup of cursive is the main font used throughout the website
+- Dosis with a backup of sans-serif was used for the number identifiers on the counters
 
 ### Structure
 
-The website's structure was carefully constructed with making it recognizable, user friendly and simple kept in mind. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which is uniform across all pages. The website is made of one main page, a 404 page and 4 modals:
+The website's structure was carefully constructed whilst making it recognizable, user friendly and simple kept in mind. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which is uniform across all pages. The website is made of one main page, a 404 page and 4 modals:
 
-- A homepage, with links to the key sections of the site
-- An about page, which describes a brief history of the business, has customer reviews and as news section
-- A menu page, which lists all drinks available
-- A gallery page, which consists of a showcase of images
-- A 404 page, which will allow the user to navigate back to the main site.
+- A homepage, which houses the game and comes with a nav bar which on click will display the desired modal
+- A new game modal, where a user can select to play a human or computer opponent, a yes button to start new game or cancel button to return to the existing game currenlty in play if there is one.
+- A Help modal, which displays the aim of the game, how to play and game controls.
+- A Settings modal, where a user can turn on and off music and sounds individually
+- A Contact modal, where a user can provide feedback to the site owner and also be provided with feedback as to if the message was sent successfully.
+- A 404 page, which will allow the user to navigate back to the main site in the instance of a page 404 error.
 
 ### Wireframes
 
@@ -138,27 +139,55 @@ Balsamiq was used in the initial design stage to layout sketches of each page an
 
 <details>
 <summary>Index</summary>
-<img src="docs/wireframes/wireframe-index-html.png">
+<img src="docs/wireframes/index.html.png">
 </details>
 <details>
+<summary>Welcome Modal</summary>
+<img src="docs/wireframes/index.html-(welcome-modal).png">
+</details>
 <summary>New Game Modal</summary>
-<img src="docs/wireframes/wireframe-index-html.png">
+<img src="docs/wireframes/index.html-(new-game-modal).png">
 </details>
 <details>
 <summary>Help Modal</summary>
-<img src="docs/wireframes/wireframe-index-html.png">
+<img src="docs/wireframes/index.html-(help-modal).png">
 </details>
 <details>
 <summary>Settings Modal</summary>
-<img src="docs/wireframes/wireframe-index-html.png">
+<img src="docs/wireframes/index.html-(settings-modal).png">
 </details>
 <details>
 <summary>Contact Modal</summary>
-<img src="docs/wireframes/wireframe-index-html.png">
+<img src="docs/wireframes/index.html-(contact-modal).png">
+</details>
+<details>
+<summary>Contact submission Modal</summary>
+<img src="docs/wireframes/index.html-(submission-modal).png">
+</details>
+<details>
+<summary>In Game Modal (Player Turn)</summary>
+<img src="docs/wireframes/index.html-(in-game-player-turn).png">
+</details>
+<details>
+<summary>In Game Modal (Invalid Turn)</summary>
+<img src="docs/wireframes/index.html-(in-game-invalid-turn).png">
+</details>
+<details>
+<summary>In Game Modal (Game End)</summary>
+<img src="docs/wireframes/index.html-(in-game-game-end).png">
 </details>
 <details>
 <summary>404 page</summary>
-<img src="docs/wireframes/wireframe-404-html.png">
+<img src="docs/wireframes/404.html.png">
+</details>
+
+### Game Flowchart
+
+A game flowchart was created during the design process to help identify functions that would be required in the JavaScript files.
+
+<details>
+<summary>Flow Chart</summary>
+<img src="docs/js-logic-flow-annotated.jpg">
 </details>
 
 ## Technologies

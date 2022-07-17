@@ -569,7 +569,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 }
 
 .dropup-content span:hover {
-    background-color: #ccc
+    background-color: rgb(204, 204, 204)
 }
 
 .dropup:hover .dropup-content {
