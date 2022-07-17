@@ -341,9 +341,13 @@ The contact modal displays a form which enables the user to provide feedback to 
 
 - Upon submission of the form, if successful the user will be presented with a Thank you modal.
 
+![Submission success](docs/features/feature-submission-success.png)
+
 ##### Error
 
 - Upon submission of the form, if unsuccessful the user will be presented with an Error please try again modal.
+
+![Submission error](docs/features/feature-submission-error.png)
 
 #### Notification Bar
 
