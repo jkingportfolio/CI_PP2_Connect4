@@ -362,7 +362,6 @@ function disableClicks() {
 function gameEnd() {
     gameActive = false;
     playWinnerSound();
-    disableClicks();
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('occupied');
         notification.classList.remove('invalid-animation');

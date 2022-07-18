@@ -760,11 +760,11 @@ During the project i encountered a number of bugs some of which were solved some
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| Computer not placing a counter and turn reverting back to player 1  | Fix 1 |
-| Multiple turns for player 1 whilst it is computer player 2s turn  | Fix 2 | 
-| Multiple wins within one game  | Fix 3 |
-| Sound button doesnt not update to reflect set values in settings modal  | Fix 4 |
-| Viewport height glitch whilst Player 2 animation running  | Fix 5 |
+| Computer opponent not placing a counter and turn reverting back to player 1  | This bug was due to the array adding 7 to the total length of the array when trying to validate if there was a counter underneath it thus trying to find a number outside of the array length if one of the randomly selected cells for placement was on the last row of the board, to fix this a variable called maxCells was added. Then the game play functioned as expected |
+| Multiple turns for player 1 whilst it is computer player 2s turn  | There was no code to stop clicks, a function called disableClicks was added which would loop all cells and add the disable.click class to them which had pointer events set to none. This would then limit clicks by player one whilst the computer took its turn. | 
+| Multiple wins within one game  | If there was an instance in which a player managed to get multiple 4 in a rows due to the loop looking for a match on all combinations a win could be counted multiple times in one game, a simple break was added to the function whick would exit the function once one had been found. |
+| Sound button doesnt not update to reflect set values in settings modal  | A function was added to the click event listener for the buttons located in settings which if both buttons are set to off would be reflected by the master sound button displaying the muted symbol and if both music and sound settings were set to on the image would display the on symbol |
+| Viewport height glitch whilst Player 2 animation running  | This glitch only happens when player 2 is a computer opponent. The height of the page is set to 100vh and when the computer players turn animation runs the page can be scrolled down. This then stops once the animation stops running. After spending alot of time trying to fix this I could not find the reason behind the bug and due to this bug self fixing and not effecting the user experience i decided to leave it as a known bug |
 | In vs computer game, on game end the invalid move sound will still sound if clicked  | Fix 6 |
 
 ## Deployment
