@@ -86,12 +86,18 @@ Developer: Jamie King
 6. As a user, I want to be able to see the total wins and draws in the current session.
 7. As a user, I want to be able to turn on and off in game music and sounds.
 8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
+9. As a user, I want to be able to easily play another game once the current one has finished.
+10. As a user, I want to be able to easily access options such as opponent type, audio settings and how to play.
+11. As a user, I want to be able to play the game on a mobile device so i can play whereever i am.
 
 ### Site Owner Stories
 
-9. As the site owner, I want users to be able to provide feedback via a contact form.
-10. As the site owner, I want to connect with users via social networks.
-11. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
+12. As the site owner, I want users to be able to provide feedback via a contact form.
+13. As the site owner, I want to connect with users via social networks.
+14. As the site owner, I would want the user to be presented with a 404 page on the odd chance an error does occur.
+15. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
+16. As the site owner, I would want users to be warned that to best experience the game to have their mobile or tablet device in portrait mode.
+17. As the site owner, I want users to be greeted with a welcome message to give a friendly feel to the site. 
 
 ## Design
 
