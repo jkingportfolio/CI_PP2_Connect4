@@ -444,6 +444,16 @@ function pauseMusic() {
     musicFile.pause();
 }
 
+// Function to update Master Mute Button if both music and sounds are false
+
+function masterMuteUpdate() {
+    if (!music && !sounds) {
+        document.getElementById('music-button-image').src = 'assets/images/sound-off-icon.png';
+    } else {
+        document.getElementById('music-button-image').src = 'assets/images/sound-on-icon.png';
+    }
+}
+
 // Function to toggle music on off via main display icon
 
 musicButton.addEventListener('click',

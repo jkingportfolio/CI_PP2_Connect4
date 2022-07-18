@@ -124,6 +124,7 @@ document.getElementById('music-on').addEventListener('click',
         music = true;
         document.getElementById('music-on').classList.add('btn-active');
         document.getElementById('music-off').classList.remove('btn-active');
+        masterMuteUpdate();
         playMusic();
     });
 
@@ -134,6 +135,7 @@ document.getElementById('music-off').addEventListener('click',
         music = false;
         document.getElementById('music-off').classList.add('btn-active');
         document.getElementById('music-on').classList.remove('btn-active');
+        masterMuteUpdate();
         pauseMusic();
     });
 
@@ -144,6 +146,7 @@ document.getElementById('sound-on').addEventListener('click',
         sounds = true;
         document.getElementById('sound-on').classList.add('btn-active');
         document.getElementById('sound-off').classList.remove('btn-active');
+        masterMuteUpdate();
     });
 
 // Function to turn game sounds off
@@ -153,6 +156,7 @@ document.getElementById('sound-off').addEventListener('click',
         sounds = false;
         document.getElementById('sound-off').classList.add('btn-active');
         document.getElementById('sound-on').classList.remove('btn-active');
+        masterMuteUpdate();
     });
 
 // Contact modal functions
