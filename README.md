@@ -265,7 +265,7 @@ Other features of the Nav Bar include:
 - It is fully responsive due to using the Bootstrap v5.0.2 nav bar which then produces a toggler menu for smaller screens. 
 - A hover effect on the text of the navigation bar text allows the user to understand that it is a clickable link. Upon clicking the link the user will be presented with the desired modal.
 
-- Covered in user story: None yet, create user story to reflect
+- Covered in user story: 10
 
 ##### Desktop 
 
@@ -279,7 +279,7 @@ Other features of the Nav Bar include:
 
 The main game area is situated in the middle of the main page and is where the user will interact with the site to play the game
 
-- Covered in user story: None yet, create user story to reflect
+- Covered in user story: 11
 
 ![Main game area](docs/features/feature-main-game-area.png)
 
@@ -287,7 +287,7 @@ The main game area is situated in the middle of the main page and is where the u
 
 The welcome modal will display on load of the page and will help users know where to navigate to to find out how to play if they dont already know how to.
 
-- Covered in user story: 1
+- Covered in user story: 17
 
 ![Welcome modal](docs/features/feature-welcome-modal.png)
 
@@ -339,7 +339,7 @@ The contact modal displays a form which enables the user to provide feedback to 
 - Email
 - A text area for additional comments or questions
 
-- Covered in user stories: 8 & 9
+- Covered in user stories: 8 & 12
 
 ![Contact modal](docs/features/feature-contact-modal.png)
 
@@ -387,7 +387,7 @@ The notification bar has 4 animations. One for each of the messages that can be 
 
 The play again button will display when a game ends. Once clicked it will reset the game board and its display states will change to none. 
 
-- Covered in user story: None yet, create user story to reflect
+- Covered in user story: 9
 
 ![Play again button](docs/features/feature-play-again-button.png)
 
@@ -410,7 +410,7 @@ The stats button will display the current session player 1 / player 2 wins and h
     - The GitHub icon which links to my own personal GitHub page for future showcasing of my projects
     - The LinkedIn icon which links to my own personal LinkedIn page for networking with fellow coders or potential future employers
 
-- Covered in user story: 10
+- Covered in user story: 13
 
 ![Footer](docs/features/feature-footer-tablet-desktop.png)
 
@@ -418,7 +418,7 @@ The stats button will display the current session player 1 / player 2 wins and h
 
 The orientation warning modal detects if the orientation of the screen has changed from portrait to landscape and displays a warning that the game is best played in portrait mode. This warning will only display once per session so not to provide a poor user experience by having to close this warning everytime the orientation is changed.
 
-- Covered in user story: None yet, create user story to reflect
+- Covered in user story: 16
 
 ![Footer](docs/features/feature-orientation-warning.png)
 
@@ -434,13 +434,13 @@ The master mute button is located just below the main game board. When this butt
 
 A vibration alert has been implemented when a user tries to place a counter which results in an Invalid Move. This feature is only available on devices which support device vibration.
 
-- Covered in user story: None yet, create user story to reflect
+- Covered in user story: 4
 
 #### 404 error page
 
 - The 404 error page feature is used when a user tries to navigate to a page that does not exist. This page will allow users to navigate back to the home page via the return home button creating a good user experience that does not require the use of the browser back button.
 
-- Covered in user story: None yet, create user story to reflect
+- Covered in user story: 14
 
 ![where to find us](docs/features/feature-404-page.png)
 
@@ -448,7 +448,7 @@ A vibration alert has been implemented when a user tries to place a counter whic
 
 - The return home button is located on the error 404 page. By clicking on this button the user will be redirect back to the main page creating a good user experience that does not require the use of the browser back button.
 
-- Covered in user story: 11
+- Covered in user story: 15
 
 ![where to find us](docs/features/feature-return-home-button.png)
 
