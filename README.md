@@ -636,6 +636,7 @@ The website was tested on the following web browsers:
 <details>
 <summary>Screenshots</summary>
 <img src="docs/testing-user-stories/testing-user-stories-7.png">
+<img src="docs/testing-user-stories/testing-user-stories-7.1.png">
 </details>
 
 8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
