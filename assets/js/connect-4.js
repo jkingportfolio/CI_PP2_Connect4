@@ -166,7 +166,7 @@ function twoPlayerGame() {
                     cells[i].innerText = '1';
                     currentPlayer = 2;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
-                    freeCells -= 1;            
+                    freeCells -= 1;
                     playCounterSound();
                 } else if (currentPlayer == 2) {
                     cells[i].classList.add('occupied');
@@ -174,7 +174,7 @@ function twoPlayerGame() {
                     cells[i].innerText = '2';
                     currentPlayer = 1;
                     notification.innerText = `Its Player ${currentPlayer}'s turn!`;
-                    freeCells -= 1;            
+                    freeCells -= 1;
                     playCounterSound();
                 }
             } else {
@@ -222,7 +222,7 @@ function playerOneTurn() {
                 cells[i].innerText = '1';
                 currentPlayer = 2;
                 notification.innerText = `Its Player ${currentPlayer}'s turn!`;
-                freeCells -= 1;        
+                freeCells -= 1;
                 playCounterSound();
             } else {
                 notification.innerText = 'Invalid move!';
@@ -318,13 +318,21 @@ function winCheck() {
     drawCheck();
 }
 
+/* [This function checks if all cells are occupied
+ * and if all cells are occupied and there has yet 
+ * to be a winner the game will end and be declared
+ * a draw. This will then add 1 to the draw amount
+ * on the stats button. Otherwise the game check 
+ * function will be called and play will resume.]
+ */
+
 function drawCheck() {
     if (freeCells == 0) {
         disableClicks();
-        notification.innerText = 'Its a draw!'; 
-        notification.classList.remove('wobble');  
-        notification.classList.add('draw');      
-        drawCount = drawCount + 1;        
+        notification.innerText = 'Its a draw!';
+        notification.classList.remove('wobble');
+        notification.classList.add('draw');
+        drawCount = drawCount + 1;
         document.getElementById('draw-count').innerText = `Draws: ${drawCount}`;
         newGameButton.style.display = "flex";
         gameEnd();
@@ -332,6 +340,12 @@ function drawCheck() {
         gameCheck();
     }
 }
+
+/* [This function will disable all button clicks on
+ * cells to stop player one having multiple turns,
+ * the computer placing a counter after a win and 
+ * for when a game ends.]
+ */
 
 function disableClicks() {
     for (let i = 0; i < cells.length; i++) {
@@ -349,7 +363,7 @@ function gameEnd() {
     gameActive = false;
     playWinnerSound();
     disableClicks();
-    for (let i = 0; i < cells.length; i++) {        
+    for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('occupied');
         notification.classList.remove('invalid-animation');
         notification.classList.remove('player-one-turn');
@@ -404,6 +418,8 @@ function playInvalidSound() {
     invalidMoveSound.play();
 }
 
+// Function to play winner sound on game end with a winner
+
 function playWinnerSound() {
     if (!sounds) return;
     winnerSound.src = 'assets/sounds/winner.mp3';
@@ -418,7 +434,6 @@ function playMusic() {
     musicFile.loop = true;
     musicFile.volume = 0.5;
     musicFile.play();
-    // document.getElementById('music-button').src = '../assets/images/sound-on-icon.png';
 }
 
 // Function to stop music when music = false
@@ -427,7 +442,6 @@ function pauseMusic() {
     if (music) return;
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.pause();
-    // document.getElementById('music-button').src = '../assets/images/sound-off-icon.png';
 }
 
 // Function to toggle music on off via main display icon
