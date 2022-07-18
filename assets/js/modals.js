@@ -17,7 +17,7 @@ document.querySelector('.welcome-close').addEventListener('click',
 
 // Show New Game modal
 
-document.getElementById("#newGameModal").addEventListener('click',
+document.getElementById("new-game-modal-id").addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "Flex";
     });
@@ -87,7 +87,7 @@ document.getElementById("cancel").addEventListener('click',
 
 // Show Help modal
 
-document.getElementById("#helpModal").addEventListener('click',
+document.getElementById("help-modal-id").addEventListener('click',
     function () {
         document.querySelector('.help-modal').style.display = "Flex";
     });
@@ -104,7 +104,7 @@ document.querySelector('.help-close').addEventListener('click',
 
 // Show Settings modal
 
-document.getElementById("#settingsModal").addEventListener('click',
+document.getElementById("settings-modal-id").addEventListener('click',
     function () {
         document.querySelector('.settings-modal').style.display = "Flex";
     });
@@ -159,7 +159,7 @@ document.getElementById('sound-off').addEventListener('click',
 
 // Show Contact modal
 
-document.getElementById("#contactModal").addEventListener('click',
+document.getElementById("contact-modal-id").addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "Flex";
     });
