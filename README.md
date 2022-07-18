@@ -561,7 +561,6 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Welcome modal  | On page load the Welcome modal will be displayed and indicate a first time user where to find help on how to play  | When page loads the welcome modal is shown with a smooth animation    | Works as intended |
 | Help Modal  | Click on the Help link from the Nav Bar  | The Help link from the nav bar is clicked and the help modal with information on the aim of the game, how to play and user controls is displayed     | Works as intended |
 
 <details>
@@ -600,7 +599,8 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Notification Bar  | Play a game and the notification bar will display the correct notification  | Whilst in game the notification bar will be updated to state invalid move if the user clicks on a cell which is either occupied or does not have a counter beneath it     | Works as intended |
+| Notification Bar  | Try to place a counter on an invalid cell  | Whilst in game the notification bar will be updated to state invalid move if the user clicks on a cell which is either occupied or does not have a counter beneath it     | Works as intended |
+| Vibration Alert | Try to place a counter on an invalid cell | If a user is playing on a device which supports vibration, the device will vibrate to indicate a wrong move | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -657,8 +657,46 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
 </details>
 
+9. As a user, I want to be able to easily play another game once the current one has finished.
 
-9. As the site owner, I want users to be able to provide feedback via a contact form.
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| Play again button  | Click on the Play Again button  | On game end the Play again button would appear and when clicked on the board will clear and a new game will commence  | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
+<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+</details>
+
+10. As a user, I want to be able to easily access options such as opponent type, audio settings and how to play.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| Nav Bar  | Click on the desired Nav Bar link  |  To display the desired modal dependant on the choice of the user   | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
+<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+</details>
+
+11. As a user, I want to be able to play the game on a mobile device so i can play whereever i am.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| Main game area  | Open the game on a mobile device  | The site to show a high level of responsiveness to adjust to the mobile device screen     | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
+<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+</details>
+
+
+
+
+12. As the site owner, I want users to be able to provide feedback via a contact form.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -671,7 +709,7 @@ The website was tested on the following web browsers:
 </details>
 
 
-10. As the site owner, I want to connect with users via social networks.
+13. As the site owner, I want to connect with users via social networks.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -682,11 +720,44 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
 </details>
 
-11. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
+14. As the site owner, I would want the user to be presented with a 404 page on the odd chance an error does occur.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| 404 page      | Try to access a page which does not exist   |  The user will be presented with a 404 error page indicating that the page does not exist    | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+</details>
+
+15. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
 | 404 page return button  | Locate the Return Home button and click on it  | To be returned to the main page to be able to start a new game     | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+</details>
+
+16. As the site owner, I would want users to be warned that to best experience the game to have their mobile or tablet device in portrait mode.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| Orientation warning modal  |  On a mobile device rotate the screen from portrait to landscape |  On first instance of this orientation change the Orientation Warning modal will display. Once it has been shown once it will not be shown again until the page is reloaded.   | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+</details>
+
+17. As the site owner, I want users to be greeted with a welcome message to give a friendly feel to the site.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+| Welcome modal  | Navigate to the connect 4 website  | On page load the welcome modal will display automatically     | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
