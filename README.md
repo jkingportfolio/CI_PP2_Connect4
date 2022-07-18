@@ -565,8 +565,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-gallery.png">
-<img src="docs/testing-user-stories/testing-user-stories-video.png">
+<img src="docs/testing-user-stories/testing-user-stories-1.png">
 </details>
 
 2. As a user, I want to chose between playing a friend locally or a computer opponent.
@@ -577,8 +576,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-our-story.png">
-<img src="docs/testing-user-stories/testing-user-stories-customer-reviews.png">
+<img src="docs/testing-user-stories/testing-user-stories-2.png">
 </details>
 
 3. As a user, I want to be notified as to whos turn it is.
@@ -589,10 +587,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-visit-us.png">
-<img src="docs/testing-user-stories/testing-user-stories-map.png">
-<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
-<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+<img src="docs/testing-user-stories/testing-user-stories-3.png">
 </details>
 
 4. As a user, I want to be notified if my move is invalid.
@@ -604,7 +599,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-footer-opening-times.png">
+<img src="docs/testing-user-stories/testing-user-stories-4.png">
 </details>
 
 5. As a user, I want to be notified of who won the game.
@@ -615,7 +610,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-menu.png">
+<img src="docs/testing-user-stories/testing-user-stories-5.png">
 </details>
 
 #### Returning users
@@ -628,8 +623,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-whats-new.png">
-<img src="docs/testing-user-stories/testing-user-stories-news.png">
+<img src="docs/testing-user-stories/testing-user-stories-6.png">
 </details>
 
 7. As a user, I want to be able to turn on and off in game music and sounds.
@@ -641,8 +635,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-our-menu.png">
-<img src="docs/testing-user-stories/testing-user-stories-menu.png">
+<img src="docs/testing-user-stories/testing-user-stories-7.png">
 </details>
 
 8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
@@ -653,8 +646,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
-<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+<img src="docs/testing-user-stories/testing-user-stories-8.png">
 </details>
 
 9. As a user, I want to be able to easily play another game once the current one has finished.
@@ -665,8 +657,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
-<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+<img src="docs/testing-user-stories/testing-user-stories-9.png">
 </details>
 
 10. As a user, I want to be able to easily access options such as opponent type, audio settings and how to play.
@@ -677,8 +668,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
-<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+<img src="docs/testing-user-stories/testing-user-stories-10.png">
 </details>
 
 11. As a user, I want to be able to play the game on a mobile device so i can play whereever i am.
@@ -689,8 +679,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-footer-contact.png">
-<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+<img src="docs/testing-user-stories/testing-user-stories-11.png">
 </details>
 
 
@@ -704,8 +693,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-footer-opening-times.png">
-<img src="docs/testing-user-stories/testing-user-stories-where-to-find-us.png">
+<img src="docs/testing-user-stories/testing-user-stories-12.png">
 </details>
 
 
@@ -717,7 +705,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+<img src="docs/testing-user-stories/testing-user-stories-13.png">
 </details>
 
 14. As the site owner, I would want the user to be presented with a 404 page on the odd chance an error does occur.
@@ -728,7 +716,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+<img src="docs/testing-user-stories/testing-user-stories-14.png">
 </details>
 
 15. As the site owner, I would not want the user to have to result in using the browser back button to navigate back to the site if a 404 error occurs.
@@ -739,7 +727,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+<img src="docs/testing-user-stories/testing-user-stories-15.png">
 </details>
 
 16. As the site owner, I would want users to be warned that to best experience the game to have their mobile or tablet device in portrait mode.
@@ -750,7 +738,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+<img src="docs/testing-user-stories/testing-user-stories-16.png">
 </details>
 
 17. As the site owner, I want users to be greeted with a welcome message to give a friendly feel to the site.
@@ -761,7 +749,7 @@ The website was tested on the following web browsers:
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/testing-user-stories/testing-user-stories-contact-form-entered.png">
+<img src="docs/testing-user-stories/testing-user-stories-17.png">
 </details>
 
 
