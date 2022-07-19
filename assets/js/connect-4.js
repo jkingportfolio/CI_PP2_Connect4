@@ -115,6 +115,7 @@ let musicButton = document.getElementById('music-button');
 function newGame() {
     freeCells = 42;
     currentPlayer = 1;
+    gameActive = true;
     for (let i = 0; i < cells.length - 7; i++) {
         cells[i].classList.remove('player-one', 'player-two', 'occupied', 'player-one-winner', 'player-two-winner', 'disable-click');
         cells[i].innerText = "";
@@ -195,10 +196,14 @@ function twoPlayerGame() {
  * turn it is, the relevant function will then be called]
  */
 function onePlayerGame() {
-    if (currentPlayer == 1) {
+    if (currentPlayer == 1 && gameActive) {
         playerOneTurn();
-    } else setTimeout(computerTurn, 300);
-    notificationColour();
+    } else if (currentPlayer == 2 && gameActive) {
+        setTimeout(computerTurn, 300);
+        notificationColour();
+    } else {
+
+    }
 }
 
 /*
