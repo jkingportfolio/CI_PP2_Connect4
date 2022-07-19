@@ -775,6 +775,14 @@ During the project i encountered a number of bugs some of which were solved some
 
 | Bug           | Reason           |
 | ------------- | ---------------- |
+| Interest cohort error | When the page is reloaded using Chrome there is an error message in the console `Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.` Research online has shown that this is an effort to protect the privacy of users whilst using Github pages sites. This does not affect functionality or User Experience therefore has been left as a known bug.|
+| Navigator user agent error |When using Chrome there is an issue `Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform`. According to Chrome documentation this is done to "limit browser data shared to remove sensitive information and reduce fingerprints. This does not affect functionality or User Experience therefore has been left as a known bug. |
+
+<details>
+<summary>Screenshots</summary>
+<img src="docs/console-bugs/interest-cohort-error.png">
+<img src="docs/console-bugs/navigator-user-agent-error.png">
+</details>
 
 
 
