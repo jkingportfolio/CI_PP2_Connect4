@@ -36,6 +36,8 @@ Developer: Jamie King
     7. [Browser Compatibility](#browser-compatibility)
     8. [Testing User Stories](#testing-user-stories)
 7. [Bugs](#bugs)
+    1. [Code Bugs](#code-bugs)
+    2. [Console Bugs](#console-bugs)
 8. [Deployment](#deployment)
     1. [EmailJS API](#emailjs-api)
 9. [Credits](#credits)
@@ -756,6 +758,8 @@ The website was tested on the following web browsers:
 
 ## Bugs
 
+### Code Bugs
+
 During the project i encountered a number of bugs some of which were solved some of which were not as stated below:
 
 | Bug           | Fix           |
@@ -764,8 +768,15 @@ During the project i encountered a number of bugs some of which were solved some
 | Multiple turns for player 1 whilst it is computer player 2s turn  | There was no code to stop clicks, a function called disableClicks was added which would loop all cells and add the disable.click class to them which had pointer events set to none. This would then limit clicks by player one whilst the computer took its turn. | 
 | Multiple wins within one game  | If there was an instance in which a player managed to get multiple 4 in a rows due to the loop looking for a match on all combinations a win could be counted multiple times in one game, a simple break was added to the function whick would exit the function once one had been found. |
 | Sound button doesnt not update to reflect set values in settings modal  | A function was added to the click event listener for the buttons located in settings which if both buttons are set to off would be reflected by the master sound button displaying the muted symbol and if both music and sound settings were set to on the image would display the on symbol |
+| In vs computer game, on game end the invalid move sound will still sound if clicked  | This bug happened due to the disable-clicks class being removed as soon as it was added. To fix this, the gameActive variable was added to control if the onePlayerGame function should run, previously it would by default which would be the cause of removal for disable-clicks class thus creating the bug in which the invalid move sound would still play. |
 | Viewport height glitch whilst Player 2 animation running  | This glitch only happens when player 2 is a computer opponent. The height of the page is set to 100vh and when the computer players turn animation runs the page can be scrolled down. This then stops once the animation stops running. After spending alot of time trying to fix this I could not find the reason behind the bug and due to this bug self fixing and not effecting the user experience i decided to leave it as a known bug |
-| In vs computer game, on game end the invalid move sound will still sound if clicked  | Fix 6 |
+
+### Console Bugs
+
+| Bug           | Reason           |
+| ------------- | ---------------- |
+
+
 
 ## Deployment
 
