@@ -48,8 +48,8 @@ Developer: Jamie King
 ### User Goals
 
 - A user would want to play a fun game of connect 4.
-- A user would want to know the aim the game if this is my first time doing so.
-- A user would want to what the controls of the game are.
+- A user would want to know the aim the game if this is their first time doing so.
+- A user would want to know what the controls of the game are.
 - A user would want to have the option to play a computer opponent or with a friend (locally).
 - A user would want to be able to check how many wins and losses they have had in their current session.
 
@@ -70,11 +70,11 @@ Developer: Jamie King
 
 ### User Requirements and Expectations
 
-- A great game to pass time and have fun with friends
+- A great game with a high level of interactivness to pass time and have fun with friends
 - Links and website functions to act as expected
-- Notifications to indicate the current state of play
+- Notifications to provide feedback as to the current state of play
 - Simple "to the point" content that a user can quickly digest
-- An easy method to leave feedback on the game
+- An easy method to leave feedback on the game with validation that feedback has been sent
 - Accessibility for impaired users
 - Responsiveness to allow play across devices of different screen sizes
 
@@ -84,13 +84,13 @@ Developer: Jamie King
 2. As a user, I want to chose between playing a friend locally or a computer opponent.
 3. As a user, I want to be notified as to whos turn it is.
 4. As a user, I want to be notified if my move is invalid.
-5. As a user, I want to be notified of who won the game.
+5. As a user, I want to be notified with who won the game.
 6. As a user, I want to be able to see the total wins and draws in the current session.
 7. As a user, I want to be able to turn on and off in game music and sounds.
 8. As a user, I want to be able to provide feedback to the site owner and confirmation the feedback was sent.
 9. As a user, I want to be able to easily play another game once the current one has finished.
 10. As a user, I want to be able to easily access options such as opponent type, audio settings and how to play.
-11. As a user, I want to be able to play the game on a mobile device so i can play whereever i am.
+11. As a user, I want to be able to play the game on a mobile device so i can play wherever i am.
 
 ### Site Owner Stories
 
@@ -154,7 +154,7 @@ There were 2 fonts used in this project, as stated below:
 
 ### Structure
 
-The website's structure was carefully constructed whilst making it recognizable, user friendly and simple kept in mind. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which is uniform across all pages. The website is made of one main page, a 404 page and 4 modals:
+The website's structure was carefully constructed whilst making it recognizable, user friendly and simple kept in mind. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which in which page modals can be accessed. The website is made of one main page, a 404 page and 4 modals:
 
 - A homepage, which houses the game and comes with a nav bar which on click will display the desired modal
 - A new game modal, where a user can select to play a human or computer opponent, a yes button to start new game or cancel button to return to the existing game currenlty in play if there is one.
@@ -249,7 +249,7 @@ A game flowchart was created during the design process to help identify function
 
 ## Features
 
-In its entirety the website consists of one main page, four modals and one 404 error page consiting of xx features, one of which has a mobile version and tablet/desktop version. 
+In its entirety the website consists of one main page, four modals and one 404 error page consiting of 15 features, one of which has a mobile version and tablet/desktop version. 
 
 ### Existing features
 
@@ -279,7 +279,7 @@ Other features of the Nav Bar include:
 
 #### Main game area
 
-The main game area is situated in the middle of the main page and is where the user will interact with the site to play the game
+The main game area is situated in the middle of the main page and is where the user will interact with the site to play the game.
 
 - Covered in user story: 11
 
@@ -327,11 +327,11 @@ The settings modal allows users to turn music or sounds on and off individually.
 
 ##### Music
 
-- The option to have turn background music on or off. There is one track which will be looped. This is done by selecting the ON or OFF button.
+- The option to turn background music on or off. There is one track which will be looped. This is done by selecting the ON or OFF button. The active button will be coloured green.
 
 ##### Sound Effects
 
-- The option to have game sounds such as counter placement sound and winner sound on or off. This is done by selecting the ON or OFF button.
+- The option to have game sounds such as counter placement sound and winner sound on or off. This is done by selecting the ON or OFF button. The active button will be coloured green.
 
 #### Contact modal
 
@@ -461,7 +461,7 @@ In the future as my skills grow I would like to implement the following features
 - AI for the computer player
     - At present the computer player only selects a cell based on a random number. I would like to implement some logic to this function to seek out if there is a potential win within the next turn of player 1 so that the computer will actively try and block a win.
 - Online PvP
-    - Currently when playing another human, this can only be done when physically beside the same device. At present the means to create a platform for this is outwith my skills, however when i have completed the back-end lessons of Code Institues Diploma i have confidence that i will be able to implement this feature.
+    - Currently when playing another human, this can only be done when physically beside each other and using the same device. At present the means to create a platform for this is outwith my skills, however when i have completed the back-end lessons of Code Institues Diploma i have confidence that i will be able to implement this feature.
 - Online Leaderboard
     - Like the online PvP future implementation i would like to add a global leaderboard in which users can see how many games they have played and who has won the most, this would encourage users to come back and try to become the leader of the scoreboard.
 
@@ -492,7 +492,7 @@ In the future as my skills grow I would like to implement the following features
 
 ### JavaScript Validation
 
-[JShint JavaScript Validation](https://jshint.com/) was used to validate the JavaScript used in the website. The files all passed however it did issue some warnings of un-used functions as they were being called from a different file.
+[JShint JavaScript Validation](https://jshint.com/) was used to validate the JavaScript used in the website. The files all passed however it did issue some warnings of un-used variables and functions. This is due to those variables and functions being written within a different JavaScript file. Jshint only allows the Validation of one file at a time therefore produces an error.
 
 <details>
 <summary>JavaScrip file - connect-4</summary>
@@ -604,7 +604,7 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-4.png">
 </details>
 
-5. As a user, I want to be notified of who won the game.
+5. As a user, I want to be notified with who won the game.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -674,7 +674,7 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-10.png">
 </details>
 
-11. As a user, I want to be able to play the game on a mobile device so i can play whereever i am.
+11. As a user, I want to be able to play the game on a mobile device so i can play wherever i am.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
