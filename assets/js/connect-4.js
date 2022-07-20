@@ -98,6 +98,7 @@ let sounds = false;
 let musicFile = new Audio();
 let music = false;
 let gameActive = false;
+let initialGame = true;
 let warningCount = 0;
 let freeCells = 42;
 let playerOneWins = 0;
@@ -123,7 +124,7 @@ function newGame() {
         notification.classList.remove('draw');
         notification.classList.add('wobble');
         newGameButton.style.display = "none";
-        if (gameActive) {
+        if (gameActive && !initialGame) {
             notification.innerText = `Its Player ${currentPlayer}'s turn!`;
         } else {
             notification.innerText = `Click to play!`;
@@ -365,6 +366,7 @@ function disableClicks() {
  * until a new game is started with the New Game button]
  */
 function gameEnd() {
+    initialGame = false;
     gameActive = false;
     playWinnerSound();
     disableClicks();
