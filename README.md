@@ -852,6 +852,7 @@ All images used in this website were created by myself. The icons for Github and
  Code from external sources were used as a basis and built ontop of in this project, they are credited below:
 
  - How to check if a cell is occupied and has produced a winning combination by [Ania Kubow](https://github.com/kubowania/connect-four)
+ - CSS Animation help from [Animista](https://animista.net/)
 
 
 ### Literature
