@@ -574,7 +574,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| New game modal  | Click on the New game modal from the Nav Bar  |  The    | Works as intended |
+| New game modal  | Click on the New game modal from the Nav Bar  |  The New Game link from the nav bar is clicked and the new gam modal will display. From there two buttons are presented, one being human the other being computer. The desired opponent button is clicked and the yes button is clicked to confirm and start the new game    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -656,7 +656,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Play again button  | Click on the Play Again button  | On game end the Play again button would appear and when clicked on the board will clear and a new game will commence  | Works as intended |
+| Play again button  | Click on the Play Again button  | On game end the Play again button would appear and when clicked, the board will clear and a new game will commence  | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -764,12 +764,12 @@ During the project i encountered a number of bugs some of which were solved some
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| Computer opponent not placing a counter and turn reverting back to player 1  | This bug was due to the array adding 7 to the total length of the array when trying to validate if there was a counter underneath it thus trying to find a number outside of the array length if one of the randomly selected cells for placement was on the last row of the board, to fix this a variable called maxCells was added. Then the game play functioned as expected |
-| Multiple turns for player 1 whilst it is computer player 2s turn  | There was no code to stop clicks, a function called disableClicks was added which would loop all cells and add the disable.click class to them which had pointer events set to none. This would then limit clicks by player one whilst the computer took its turn. | 
+| Computer opponent not placing a counter and turn reverting back to player 1  | This bug was due to the cells array adding 7 to the total length of the array when trying to validate if there was a counter underneath it thus trying to find a number outside of the array length if one of the randomly selected cells for placement was on the last row of the board, to fix this a variable called maxCells was added. Then the game play functioned as expected |
+| Multiple turns for player 1 whilst it is computer player 2s turn  | There was no code to stop clicks, a function called disableClicks was added which would loop all cells and add the disable-click class to them which had pointer events set to none. This would then limit clicks by player one whilst the computer took its turn. | 
 | Multiple wins within one game  | If there was an instance in which a player managed to get multiple 4 in a rows due to the loop looking for a match on all combinations a win could be counted multiple times in one game, a simple break was added to the function whick would exit the function once one had been found. |
-| Sound button doesnt not update to reflect set values in settings modal  | A function was added to the click event listener for the buttons located in settings which if both buttons are set to off would be reflected by the master sound button displaying the muted symbol and if both music and sound settings were set to on the image would display the on symbol |
-| In vs computer game, on game end the invalid move sound will still sound if clicked  | This bug happened due to the disable-clicks class being removed as soon as it was added. To fix this, the gameActive variable was added to control if the onePlayerGame function should run, previously it would by default which would be the cause of removal for disable-clicks class thus creating the bug in which the invalid move sound would still play. |
-| Viewport height glitch whilst Player 2 animation running  | This glitch only happens when player 2 is a computer opponent. The height of the page is set to 100vh and when the computer players turn animation runs the page can be scrolled down. This then stops once the animation stops running. After spending alot of time trying to fix this I could not find the reason behind the bug and due to this bug self fixing and not effecting the user experience i decided to leave it as a known bug |
+| Sound button does not update to reflect set values in settings modal  | A function was added to the click event listener for the buttons located in settings which if both buttons are set to off would be reflected by the master sound button displaying the muted symbol and if both music and sound settings were set to on the image would display the on symbol |
+| In vs computer game, on game end the invalid move sound will still sound if clicked  | This bug happened due to the disable-click class being removed as soon as it was added. To fix this, the gameActive variable was added to control if the onePlayerGame function should run, previously it would by default which would be the cause of removal for disable-click class thus creating the bug in which the invalid move sound would still play. |
+| Viewport height glitch whilst Player 2 animation running  | This glitch only happens when it is player 2s turn. The height of the page is set to 100vh and when the computer players turn animation runs the page can be scrolled down. This then stops once the animation stops running. After spending alot of time trying to fix this I could not find the reason behind the bug and due to this bug self fixing and not effecting the user experience i decided to leave it as a known bug |
 
 ### Console Bugs
 
