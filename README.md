@@ -221,7 +221,7 @@ A game flowchart was created during the design process to help identify function
 <img src="docs/js-logic-flow-annotated.jpg">
 </details>
 
-## Technologies
+## Technologies Used
 
 ### Coding Languages
 - HTML - Used to structure page content
