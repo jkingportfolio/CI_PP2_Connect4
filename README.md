@@ -48,7 +48,7 @@ Developer: Jamie King
 ### User Goals
 
 - A user would want to play a fun game of connect 4.
-- A user would want to know the aim the game if this is their first time doing so.
+- A user would want to know the aim the game if this is their first time to play.
 - A user would want to know what the controls of the game are.
 - A user would want to have the option to play a computer opponent or with a friend (locally).
 - A user would want to be able to check how many wins and losses they have had in their current session.
@@ -57,8 +57,8 @@ Developer: Jamie King
 
 - As the site owner i wanted to create an enjoyable interactive game which was responsive over multiple devices.
 - As the site owner i wanted to provide a fun user experience which would make users want to come back and play again. 
-- As the site owner i wanted to allow my users to provide myself some feedback via a contact form
-- As the site owner i wanted to have the ability to connect with my users via Github and Linkedin
+- As the site owner i wanted to allow my users to provide myself some feedback via a contact form.
+- As the site owner i wanted to have the ability to connect with my users via Github and Linkedin.
 
 ## User Experience
 
@@ -70,13 +70,13 @@ Developer: Jamie King
 
 ### User Requirements and Expectations
 
-- A great game with a high level of interactivness to pass time and have fun with friends
-- Links and website functions to act as expected
-- Notifications to provide feedback as to the current state of play
-- Simple "to the point" content that a user can quickly digest
-- An easy method to leave feedback on the game with validation that feedback has been sent
-- Accessibility for impaired users
-- Responsiveness to allow play across devices of different screen sizes
+- A great game with a high level of interactivness to pass time and have fun with friends.
+- Links and website functions to act as expected.
+- Notifications to provide feedback as to the current state of play.
+- Simple "to the point" content that a user can quickly digest.
+- An easy method to leave feedback on the game with validation that feedback has been sent.
+- Accessibility for impaired users.
+- Responsiveness to allow play across devices of different screen sizes.
 
 ### User stories
 
@@ -149,17 +149,17 @@ All colours contrast was tested using [EightShapes contrast grid](http://eightsh
 ### Fonts
 
 There were 2 fonts used in this project, as stated below:
-- Alfa Slab One with a backup of cursive is the main font used throughout the website
-- Dosis with a backup of sans-serif was used for the number identifiers on the counters
+- Alfa Slab One with a backup of cursive is the main font used throughout the website.
+- Dosis with a backup of sans-serif was used for the number identifiers on the counters.
 
 ### Structure
 
-The website's structure was carefully constructed whilst making it recognizable, user friendly and simple kept in mind. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which in which page modals can be accessed. The website is made of one main page, a 404 page and 4 modals:
+The website's structure was carefully constructed whilst making it recognizable, user friendly and simple. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which in which page modals can be accessed. The website is made of one main page, a 404 page and 4 modals:
 
-- A homepage, which houses the game and comes with a nav bar which on click will display the desired modal
+- A homepage, which houses the game and comes with a nav bar which on click will display the desired modal.
 - A new game modal, where a user can select to play a human or computer opponent, a yes button to start new game or cancel button to return to the existing game currenlty in play if there is one.
 - A Help modal, which displays the aim of the game, how to play and game controls.
-- A Settings modal, where a user can turn on and off music and sounds individually
+- A Settings modal, where a user can turn on and off music and sounds individually.
 - A Contact modal, where a user can provide feedback to the site owner and also be provided with feedback as to if the message was sent successfully.
 - A 404 page, which will allow the user to navigate back to the main site in the instance of a page 404 error.
 
@@ -301,11 +301,11 @@ The new game modal allows users to select their opponent, confirm or cancel the 
 
 ![New game modal](docs/features/feature-new-game-modal.png)
 
-##### Who do you want to play
+##### Who do you want to play?
 
-- The choice between a computer player which randomly selects a move or a human player to play against locally using the same device.
+- The choice between a computer player which randomly selects a move or a human player to play against locally using the same device. The current opponents button will be coloured green.
 
-##### Are you sure you want to start a new game
+##### Are you sure you want to start a new game?
 
 - The option to confirm changes to opponent and start a new game or cancel and return to the current game.
 
@@ -369,7 +369,7 @@ The notification bar is located above the game board and will display a notifica
 
 ##### Invalid Turn
 
-- The notification bar will display Invalid turn if the user tries to place a counter in an occupied cell or a cell which does not have a counter underneth. This notification will run a "shake" type animation which will be be in red to clearly display to users the move was incorrect. If playing on a device with virbration, the device will also vibrate to further alert the user of the invalid move. A sound will also play if the user has sounds set to ON.
+- The notification bar will display Invalid turn if the user tries to place a counter in an occupied cell or a cell which does not have a counter underneth. This notification will run a "shake" type animation which will be coloured red to clearly display to users the move was incorrect. If playing on a device with vibration capabilities, the device will also vibrate to further alert the user of the invalid move. A sound will also play if the user has sounds set to ON.
 
 ##### Winner
 
@@ -385,7 +385,7 @@ The notification bar has 4 animations. One for each of the messages that can be 
 
 ![Notification bar](docs/features/feature-notification-bar.png)
 
-#### Play again Button
+#### Play again button
 
 The play again button will display when a game ends. Once clicked it will reset the game board and its display states will change to none. 
 
@@ -446,9 +446,9 @@ A vibration alert has been implemented when a user tries to place a counter whic
 
 ![where to find us](docs/features/feature-404-page.png)
 
-#### 404 error page return button
+#### 404 error page Return Home button
 
-- The return home button is located on the error 404 page. By clicking on this button the user will be redirect back to the main page creating a good user experience that does not require the use of the browser back button.
+- The Return Home button is located on the error 404 page. By clicking on this button the user will be redirect back to the main page creating a good user experience that does not require the use of the browser back button.
 
 - Covered in user story: 15
 
@@ -529,7 +529,7 @@ In the future as my skills grow I would like to implement the following features
 
 ### Performance
 
-[Chrome dev tools lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test all pages for performance, accessibility, best practices and SEO
+[Chrome dev tools lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test all pages for performance, accessibility, best practices and SEO.
 
 <details>
 <summary>Index</summary>
