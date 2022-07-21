@@ -3,15 +3,12 @@
  * which is used by index.html]
  */
 
-// Onload run newGame function with default variable values
 document.addEventListener("DOMContentLoaded", function () {
     newGame();
 });
 
-// Constant values for the game grid cells
 const cells = document.querySelectorAll('.game-grid span');
 const winningCombinations = [
-    //horizontal
     [0, 1, 2, 3],
     [1, 2, 3, 4],
     [2, 3, 4, 5],
@@ -36,7 +33,6 @@ const winningCombinations = [
     [36, 37, 38, 39],
     [37, 38, 39, 40],
     [38, 39, 40, 41],
-    //vertical
     [0, 7, 14, 21],
     [7, 14, 21, 28],
     [14, 21, 28, 35],
@@ -58,7 +54,6 @@ const winningCombinations = [
     [6, 13, 20, 27],
     [13, 20, 27, 34],
     [20, 27, 34, 41],
-    //diagonal right to left
     [3, 9, 15, 21],
     [4, 10, 16, 22],
     [5, 11, 17, 23],
@@ -71,7 +66,6 @@ const winningCombinations = [
     [18, 24, 30, 36],
     [19, 25, 31, 37],
     [20, 26, 32, 38],
-    //diagonal left to right
     [0, 8, 16, 24],
     [1, 9, 17, 25],
     [2, 10, 18, 26],
@@ -85,7 +79,6 @@ const winningCombinations = [
     [16, 24, 32, 40],
     [17, 25, 33, 41],
 ];
-// Game Variables
 let currentPlayer = 1;
 let playerTwoComputer = true;
 let computerRandomNumber;
@@ -152,13 +145,12 @@ function gameCheck() {
 /*
  * [This is the main function for a 2 player game against
  * two human players. This function will first loop through
- * all game board cells and listen for a click on a cell and
- * determine whos turn it is. If the cell is available and 
- * there is an occupied cell below it, the relevant classed will
- * be added to the cell and the currentPlayer will change]
+ * all game board cells and listen for a click on a cell
+ * If the cell is available and there is an occupied cell below 
+ * it, the relevant class will be added to the cell and
+ * the currentPlayer will change]
  */
 function twoPlayerGame() {
-    // Loop through all cell spans, determine whos turn it is, then check if counter placement is valid (2 player)
     for (let i = 0; i < cells.length; i++) {
         cells[i].onclick = () => {
             if (cells[i + 7].classList.contains('occupied') && !cells[i].classList.contains('occupied')) {
@@ -212,7 +204,7 @@ function onePlayerGame() {
  * from all cells and allow player one to take their turn. 
  * The function will then loop through all game board cells 
  * and listen for a click on a cell. If the cell is available 
- * and there is an occupied cell below it, the relevant classed 
+ * and there is an occupied cell below it, the relevant class
  * will be added to the cell and the currentPlayer will change]
  */
 function playerOneTurn() {
@@ -319,19 +311,19 @@ function winCheck() {
             newGameButton.style.display = "flex";
             gameEnd();
             break;
-        } 
+        }
     }
     drawCheck();
 }
 
-/* [This function checks if all cells are occupied
+/* 
+ * [This function checks if all cells are occupied
  * and if all cells are occupied and there has yet 
  * to be a winner the game will end and be declared
  * a draw. This will then add 1 to the draw amount
  * on the stats button. Otherwise the game check 
  * function will be called and play will resume.]
  */
-
 function drawCheck() {
     if (freeCells == 0) {
         disableClicks();
@@ -347,12 +339,12 @@ function drawCheck() {
     }
 }
 
-/* [This function will disable all button clicks on
+/* 
+ * [This function will disable all button clicks on
  * cells to stop player one having multiple turns,
  * the computer placing a counter after a win and 
  * for when a game ends.]
  */
-
 function disableClicks() {
     for (let i = 0; i < cells.length; i++) {
         cells[i].classList.add('disable-click');
@@ -378,7 +370,10 @@ function gameEnd() {
     }
 }
 
-// New Game button which when pressed calls the newGame function
+/* 
+ * [New Game button which will display on game end
+ * When pressed calls the newGame function]
+ */
 newGameButton.addEventListener('click',
     function () {
         newGame();
@@ -386,7 +381,7 @@ newGameButton.addEventListener('click',
 
 /*
  * [This function is used to control the classes assigned to the
- *notifiction bar. This will then display the correct animation
+ * notifiction bar. This will then display the correct animation
  * for the revalent turn or notification]
  */
 function notificationColour() {
@@ -410,31 +405,40 @@ function notificationColour() {
     }
 }
 
-// Function to play counter sound on click
+/*
+ * [This function is used to play the
+ * the counter sound effect]
+ */
 function playCounterSound() {
     if (!sounds) return;
     soundEffect.src = 'assets/sounds/counter-drop.mp3';
     soundEffect.play();
 }
 
-// Function to play invalid sound on click
-
+/*
+ * [This function is used to play the
+ * the invalid move sound effect]
+ */
 function playInvalidSound() {
     if (!sounds) return;
     invalidMoveSound.src = 'assets/sounds/invalid-move.mp3';
     invalidMoveSound.play();
 }
 
-// Function to play winner sound on game end with a winner
-
+/*
+ * [This function is used to play the
+ * the winner sound effect]
+ */
 function playWinnerSound() {
     if (!sounds) return;
     winnerSound.src = 'assets/sounds/winner.mp3';
     winnerSound.play();
 }
 
-// Function to play music when music = true
-
+/*
+ * [This function is used to turn the
+ * background music on]
+ */
 function playMusic() {
     if (!music) return;
     musicFile.src = 'assets/sounds/game-music.mp3';
@@ -443,16 +447,22 @@ function playMusic() {
     musicFile.play();
 }
 
-// Function to stop music when music = false
-
+/*
+ * [This function is used to turn the
+ * background music off]
+ */
 function pauseMusic() {
     if (music) return;
     musicFile.src = 'assets/sounds/game-music.mp3';
     musicFile.pause();
 }
 
-// Function to update Master Mute Button if both music and sounds are false
-
+/*
+ * [This function is used to update the
+ * mater mute button below the game board
+ * dependant on if both music and sounds are
+ * on or off]
+ */
 function masterMuteUpdate() {
     if (!music && !sounds) {
         document.getElementById('music-button-image').src = 'assets/images/sound-off-icon.png';
@@ -461,8 +471,12 @@ function masterMuteUpdate() {
     }
 }
 
-// Function to toggle music on off via main display icon
-
+/*
+ * [This function is used to turn the
+ * background music and sounds both on
+ * or off from the main game area dependant
+ * on its current state]
+ */
 musicButton.addEventListener('click',
     function () {
         if (music) {
@@ -492,7 +506,6 @@ musicButton.addEventListener('click',
  * in portrait mode. A warning count will be added which if
  * is greater than 0 will not show the warning again]
  */
-
 window.addEventListener("orientationchange", function () {
     if (warningCount === 0 && window.orientation == 90 || window.orientation == -90) {
         orientationModal.style.display = "Flex";
@@ -501,7 +514,11 @@ window.addEventListener("orientationchange", function () {
     }
 });
 
-// Warning Close button listener
+/*
+ * [This function is used to toggle the orientation warning
+ * and will add one to the warning count which will
+ * stop the warning from happening again unless the page is reloaded] 
+ */
 document.querySelector('.warning-close').addEventListener('click',
     function () {
         orientationModal.style.display = "None";

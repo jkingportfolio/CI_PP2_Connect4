@@ -1,29 +1,34 @@
-/* [This javascript file consists of all event
-* listeners and functions used for the showing
-* and hiding of modals and selecting different
-* game options]
-*/
+/* 
+ * [The modals.js javascript file consists of all event
+ * listeners and functions used for the showing
+ * and hiding of modals and selecting different
+ * game options]
+ */
 
 let submitMessage = document.getElementById('submit-message');
 
-// Hide welcome modal
-
+/*
+ * [This function is used to close the
+ * welcome modal]
+ */
 document.querySelector('.welcome-close').addEventListener('click',
     function () {
         document.querySelector('.welcome-modal').style.display = "None";
     });
 
-// New Game modal functions
-
-// Show New Game modal
-
+/*
+ * [This function is used to show the
+ * New Game modal]
+ */
 document.getElementById("new-game-modal-id").addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "Flex";
     });
 
-// Hide New Game modal and toggle nav bar menu
-
+/*
+ * [This function is used to close the
+ * New Game modal and collapse the Nav Bar]
+ */
 document.querySelector('.new-game-close').addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "None";
@@ -31,12 +36,11 @@ document.querySelector('.new-game-close').addEventListener('click',
     });
 
 /*
-* [This function will run when the player 2
-* selection is selected as being a human and
-* update the playerTwoComputer variable to be
-* false and the buttons class to be active]
-*/
-
+ * [This function will run when the player 2
+ * selection is selected as being a human and
+ * update the playerTwoComputer variable to be
+ * false and the buttons class to be active]
+ */
 document.getElementById('player-two-human').addEventListener('click',
     function () {
         playerTwoComputer = false;
@@ -45,12 +49,11 @@ document.getElementById('player-two-human').addEventListener('click',
     });
 
 /*
-* [This function will run when the player 2
-* selection is selected as being the computer
-* and update the playerTwoComputer variable to
-* be true and the buttons class to be active]
-*/
-
+ * [This function will run when the player 2
+ * selection is selected as being the computer
+ * and update the playerTwoComputer variable to
+ * be true and the buttons class to be active]
+ */
 document.getElementById('player-two-computer').addEventListener('click',
     function () {
         playerTwoComputer = true;
@@ -59,11 +62,10 @@ document.getElementById('player-two-computer').addEventListener('click',
     });
 
 /* 
-* [Event listener for the new game Yes button
-* which will accept selections, start a new game
-* and toggle nav bar menu]
-*/
-
+ * [Event listener for the new game Yes button
+ * which will accept selections, start a new game
+ * and toggle nav bar menu]
+ */
 document.getElementById("new-game-yes").addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "None";
@@ -72,45 +74,48 @@ document.getElementById("new-game-yes").addEventListener('click',
     });
 
 /* 
-* [Event listener for the new game Cancel button
-* which will exit the modal, not start a new game
-* and toggle nav bar menu]
-*/
-
+ * [Event listener for the new game Cancel button
+ * which will exit the modal, not start a new game
+ * and toggle nav bar menu]
+ */
 document.getElementById("cancel").addEventListener('click',
     function () {
         document.querySelector('.new-game-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-// Help modal functions
-
-// Show Help modal
-
+/*
+ * [This function is used to show the
+ * Help modal]
+ */
 document.getElementById("help-modal-id").addEventListener('click',
     function () {
         document.querySelector('.help-modal').style.display = "Flex";
     });
 
-// Hide Help modal and toggle nav bar menu
-
+/*
+ * [This function is used to close the
+ * Help modal and collapse the Nav Bar]
+ */
 document.querySelector('.help-close').addEventListener('click',
     function () {
         document.querySelector('.help-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-// Settings modal functions
-
-// Show Settings modal
-
+/*
+ * [This function is used to show the
+ * Settings modal]
+ */
 document.getElementById("settings-modal-id").addEventListener('click',
     function () {
         document.querySelector('.settings-modal').style.display = "Flex";
     });
 
-// Hide Settings modal and toggle nav bar menu
-
+/*
+ * [This function is used to close the
+ * Setting modal and collapse the Nav Bar]
+ */
 document.querySelector('.settings-close').addEventListener('click',
     function () {
         document.querySelector('.settings-modal').style.display = "None";
@@ -118,7 +123,6 @@ document.querySelector('.settings-close').addEventListener('click',
     });
 
 // Function to turn music on
-
 document.getElementById('music-on').addEventListener('click',
     function () {
         music = true;
@@ -129,7 +133,6 @@ document.getElementById('music-on').addEventListener('click',
     });
 
 // Function to turn music off
-
 document.getElementById('music-off').addEventListener('click',
     function () {
         music = false;
@@ -140,7 +143,6 @@ document.getElementById('music-off').addEventListener('click',
     });
 
 // Function to turn game sounds on
-
 document.getElementById('sound-on').addEventListener('click',
     function () {
         sounds = true;
@@ -150,7 +152,6 @@ document.getElementById('sound-on').addEventListener('click',
     });
 
 // Function to turn game sounds off
-
 document.getElementById('sound-off').addEventListener('click',
     function () {
         sounds = false;
@@ -159,49 +160,55 @@ document.getElementById('sound-off').addEventListener('click',
         masterMuteUpdate();
     });
 
-// Contact modal functions
-
-// Show Contact modal
-
+/*
+ * [This function is used to show the
+ * Contact modal]
+ */
 document.getElementById("contact-modal-id").addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "Flex";
     });
 
 document.getElementById("footer-contact").addEventListener('click',
-function () {
-    document.querySelector('.contact-modal').style.display = "Flex";
-});
+    function () {
+        document.querySelector('.contact-modal').style.display = "Flex";
+    });
 
-// Hide Contact modal and toggle nav bar menu
-
+/*
+ * [This function is used to close the
+ * Contact modal and collapse the Nav Bar]
+ */
 document.querySelector('.contact-close').addEventListener('click',
     function () {
         document.querySelector('.contact-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-// Contact submission success modal show
-
-function contactSubmitSuccess () {
+/*
+ * [This function is used to show the
+ * Successful feeback submission modal]
+ */
+function contactSubmitSuccess() {
     document.querySelector('.contact-submit-modal').style.display = "Flex";
     submitMessage.innerText = "Thank you for your feedback!";
 }
 
-// Contact submission error modal show
-
-function contactSubmitError () {
+/*
+ * [This function is used to show the
+ * Un-successful feeback submission modal]
+ */
+function contactSubmitError() {
     document.querySelector('.contact-submit-modal').style.display = "Flex";
     submitMessage.innerText = "Ooops, something went wrong. Please try again.";
 }
 
-// Hide Contact submit modal 
-
+/*
+ * [This function is used to close the
+ * Contact submit modal and collapse the Nav Bar]
+ */
 document.querySelector('.contact-submit-close').addEventListener('click',
     function () {
         document.querySelector('.contact-submit-modal').style.display = "None";
         document.querySelector('.contact-modal').style.display = "None";
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
-
-
