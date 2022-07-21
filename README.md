@@ -492,7 +492,7 @@ In the future as my skills grow I would like to implement the following features
 
 ### JavaScript Validation
 
-[JShint JavaScript Validation](https://jshint.com/) was used to validate the JavaScript used in the website. The files all passed however it did issue some warnings of un-used variables and functions. This is due to those variables and functions being written within a different JavaScript file. Jshint only allows the Validation of one file at a time therefore produces an error.
+[JShint JavaScript Validation](https://jshint.com/) was used to validate the JavaScript used in the website. The files all passed however it did issue some warnings of un-used variables and functions. This is due to those variables and functions being written within a different JavaScript file. Jshint only allows the Validation of one file at a time therefore produces an error. All un-used functions and variables were cross checked on all files and all are in use, the only exception being the variable emailjs as it is part of the EmailJS API.
 
 <details>
 <summary>JavaScrip file - connect-4</summary>
