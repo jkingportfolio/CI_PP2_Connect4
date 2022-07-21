@@ -615,8 +615,6 @@ The website was tested on the following web browsers:
 <img src="docs/testing-user-stories/testing-user-stories-5.png">
 </details>
 
-#### Returning users
-
 6. As a user, I want to be able to see the total wins and draws in the current session.
 
 | Feature       | Action        | Expected Result  | Actual Result |
