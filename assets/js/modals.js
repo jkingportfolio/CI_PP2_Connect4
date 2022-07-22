@@ -169,11 +169,6 @@ document.getElementById("contact-modal-id").addEventListener('click',
         document.querySelector('.contact-modal').style.display = "Flex";
     });
 
-document.getElementById("footer-contact").addEventListener('click',
-    function () {
-        document.querySelector('.contact-modal').style.display = "Flex";
-    });
-
 /*
  * [This function is used to close the
  * Contact modal and collapse the Nav Bar]
