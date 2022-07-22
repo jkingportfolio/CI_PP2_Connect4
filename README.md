@@ -58,7 +58,7 @@ Developer: Jamie King
 - As the site owner i wanted to create an enjoyable interactive game which was responsive over multiple devices.
 - As the site owner i wanted to provide a fun user experience which would make users want to come back and play again. 
 - As the site owner i wanted to allow my users to provide myself some feedback via a contact form.
-- As the site owner i wanted to have the ability to connect with my users via Github and Linkedin.
+- As the site owner i wanted to have the ability to connect with my users via GitHub and LinkedIn.
 
 ## User Experience
 
@@ -70,7 +70,7 @@ Developer: Jamie King
 
 ### User Requirements and Expectations
 
-- A great game with a high level of interactivness to pass time and have fun with friends.
+- A great game with a high level of interactiveness to pass time and have fun with friends.
 - Links and website functions to act as expected.
 - Notifications to provide feedback as to the current state of play.
 - Simple "to the point" content that a user can quickly digest.
@@ -157,7 +157,7 @@ There were 2 fonts used in this project, as stated below:
 The website's structure was carefully constructed whilst making it recognizable, user friendly and simple. On arrival to the website the user will be presented with a notification that indicates click to play and a navigation bar which in which page modals can be accessed. The website is made of one main page, a 404 page and 4 modals:
 
 - A homepage, which houses the game and comes with a nav bar which on click will display the desired modal.
-- A new game modal, where a user can select to play a human or computer opponent, a yes button to start new game or cancel button to return to the existing game currenlty in play if there is one.
+- A new game modal, where a user can select to play a human or computer opponent, a yes button to start new game or cancel button to return to the existing game currently in play if there is one.
 - A Help modal, which displays the aim of the game, how to play and game controls.
 - A Settings modal, where a user can turn on and off music and sounds individually.
 - A Contact modal, where a user can provide feedback to the site owner and also be provided with feedback as to if the message was sent successfully.
@@ -231,7 +231,7 @@ A game flowchart was created during the design process to help identify function
 ### Frameworks and Tools
 - Balsamiq - Used to create wireframes.
 - Git - Used for version control.
-- Github - Used to deploy the projects code.
+- GitHub - Used to deploy the projects code.
 - Gitpod - Used to develop and test code.
 - Bootstrap v5.0 - Used for the Responsive Nav Bar.
 - Google Fonts - Used for the fonts on the site.
@@ -249,7 +249,7 @@ A game flowchart was created during the design process to help identify function
 
 ## Features
 
-In its entirety the website consists of one main page, four modals and one 404 error page consiting of 15 features, one of which has a mobile version and tablet/desktop version. 
+In its entirety the website consists of one main page, four modals and one 404 error page consisting of 15 features, one of which has a mobile version and tablet/desktop version. 
 
 ### Existing features
 
@@ -264,7 +264,7 @@ The navigation bar is featured on the main page. It includes 4 clickable modals:
 
 Other features of the Nav Bar include:
 
-- It is fully responsive due to using the Bootstrap v5.0.2 nav bar which then produces a toggler menu for smaller screens. 
+- It is fully responsive due to using the Bootstrap v5.0.2 nav bar which then produces a toggle menu for smaller screens. 
 - A hover effect on the text of the navigation bar text allows the user to understand that it is a clickable link. Upon clicking the link the user will be presented with the desired modal.
 
 - Covered in user story: 10
@@ -369,7 +369,7 @@ The notification bar is located above the game board and will display a notifica
 
 ##### Invalid Turn
 
-- The notification bar will display Invalid turn if the user tries to place a counter in an occupied cell or a cell which does not have a counter underneth. This notification will run a "shake" type animation which will be coloured red to clearly display to users the move was incorrect. If playing on a device with vibration capabilities, the device will also vibrate to further alert the user of the invalid move. A sound will also play if the user has sounds set to ON.
+- The notification bar will display Invalid turn if the user tries to place a counter in an occupied cell or a cell which does not have a counter underneath. This notification will run a "shake" type animation which will be coloured red to clearly display to users the move was incorrect. If playing on a device with vibration capabilities, the device will also vibrate to further alert the user of the invalid move. A sound will also play if the user has sounds set to ON.
 
 ##### Winner
 
@@ -395,7 +395,7 @@ The play again button will display when a game ends. Once clicked it will reset 
 
 #### Stats Button
 
-The stats button will display the current session player 1 / player 2 wins and how many draws have occured. On Desktops this will be displayed by hovering over, while on touch screen devices will be displayed with a touch of the screen on the button.
+The stats button will display the current session player 1 / player 2 wins and how many draws have occurred. On Desktops this will be displayed by hovering over, while on touch screen devices will be displayed with a touch of the screen on the button.
 
 - Covered in user story: 6
 
@@ -418,7 +418,7 @@ The stats button will display the current session player 1 / player 2 wins and h
 
 #### Orientation warning modal
 
-The orientation warning modal detects if the orientation of the screen has changed from portrait to landscape and displays a warning that the game is best played in portrait mode. This warning will only display once per session so not to provide a poor user experience by having to close this warning everytime the orientation is changed.
+The orientation warning modal detects if the orientation of the screen has changed from portrait to landscape and displays a warning that the game is best played in portrait mode. This warning will only display once per session so not to provide a poor user experience by having to close this warning every time the orientation is changed.
 
 - Covered in user story: 16
 
@@ -461,9 +461,9 @@ In the future as my skills grow I would like to implement the following features
 - AI for the computer player
     - At present the computer player only selects a cell based on a random number. I would like to implement some logic to this function to seek out if there is a potential win within the next turn of player 1 so that the computer will actively try and block a win.
 - Online PvP
-    - Currently when playing another human, this can only be done when physically beside each other and using the same device. At present the means to create a platform for this is outwith my skills, however when i have completed the back-end lessons of Code Institues Diploma i have confidence that i will be able to implement this feature.
-- Online Leaderboard
-    - Like the online PvP future implementation i would like to add a global leaderboard in which users can see how many games they have played and who has won the most, this would encourage users to come back and try to become the leader of the scoreboard.
+    - Currently when playing another human, this can only be done when physically beside each other and using the same device. At present the means to create a platform for this is outwith my skills, however when i have completed the back-end lessons of Code Institutes Diploma i have confidence that i will be able to implement this feature.
+- Online leader board
+    - Like the online PvP future implementation i would like to add a global leader board in which users can see how many games they have played and who has won the most, this would encourage users to come back and try to become the leader of the scoreboard.
 
 ## Testing
 
@@ -495,7 +495,7 @@ In the future as my skills grow I would like to implement the following features
 [JShint JavaScript Validation](https://jshint.com/) was used to validate the JavaScript used in the website. The files all passed however it did issue some warnings of un-used variables and functions. This is due to those variables and functions being written within a different JavaScript file. Jshint only allows the Validation of one file at a time therefore produces an error. All un-used functions and variables were cross checked on all files and all are in use, the only exception being the variable emailjs as it is part of the EmailJS API. Another warning stated was "functions declared within loops referencing an outer scoped variable may lead to confusing semantics". These variables need to be referenced from outside of the loop as they are global variables and are used within other functions in the project.
 
 <details>
-<summary>JavaScrip file - connect-4</summary>
+<summary>JavaScript file - connect-4</summary>
 <img src="docs/validation-js/validation-jshint-connect-4.png">
 </details>
 <details>
@@ -503,7 +503,7 @@ In the future as my skills grow I would like to implement the following features
 <img src="docs/validation-js/validation-jshint-welcome.png">
 </details>
 <details>
-<summary>JavaScrip file - modals</summary>
+<summary>JavaScript file - modals</summary>
 <img src="docs/validation-js/validation-jshint-modals.png">
 </details>
 <details>
@@ -574,7 +574,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| New game modal  | Click on the New game modal from the Nav Bar  |  The New Game link from the nav bar is clicked and the new gam modal will display. From there two buttons are presented, one being human the other being computer. The desired opponent button is clicked and the yes button is clicked to confirm and start the new game    | Works as intended |
+| New game modal  | Click on the New game modal from the Nav Bar  |  The New Game link from the nav bar is clicked and the new game modal will display. From there two buttons are presented, one being human the other being computer. The desired opponent button is clicked and the yes button is clicked to confirm and start the new game    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -608,7 +608,7 @@ The website was tested on the following web browsers:
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Notification Bar  | Play a game and the notification bar will display the correct notification |  When a player acheives 4 in a row the notification bar will update to state who won and disable all clicks    | Works as intended |
+| Notification Bar  | Play a game and the notification bar will display the correct notification |  When a player achieves 4 in a row the notification bar will update to state who won and disable all clicks    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -764,16 +764,16 @@ During the project i encountered a number of bugs some of which were solved some
 | ------------- | ------------- |
 | Computer opponent not placing a counter and turn reverting back to player 1  | This bug was due to the cells array adding 7 to the total length of the array when trying to validate if there was a counter underneath it thus trying to find a number outside of the array length if one of the randomly selected cells for placement was on the last row of the board, to fix this a variable called maxCells was added. Then the game play functioned as expected |
 | Multiple turns for player 1 whilst it is computer player 2s turn  | There was no code to stop clicks, a function called disableClicks was added which would loop all cells and add the disable-click class to them which had pointer events set to none. This would then limit clicks by player one whilst the computer took its turn. | 
-| Multiple wins within one game  | If there was an instance in which a player managed to get multiple 4 in a rows due to the loop looking for a match on all combinations a win could be counted multiple times in one game, a simple break was added to the function whick would exit the function once one had been found. |
+| Multiple wins within one game  | If there was an instance in which a player managed to get multiple 4 in a rows due to the loop looking for a match on all combinations a win could be counted multiple times in one game, a simple break was added to the function which would exit the function once one had been found. |
 | Sound button does not update to reflect set values in settings modal  | A function was added to the click event listener for the buttons located in settings which if both buttons are set to off would be reflected by the master sound button displaying the muted symbol and if both music and sound settings were set to on the image would display the on symbol |
 | In vs computer game, on game end the invalid move sound will still sound if clicked  | This bug happened due to the disable-click class being removed as soon as it was added. To fix this, the gameActive variable was added to control if the onePlayerGame function should run, previously it would by default which would be the cause of removal for disable-click class thus creating the bug in which the invalid move sound would still play. |
-| Viewport height glitch whilst Player 2 animation running  | This glitch only happens when it is player 2s turn. The height of the page is set to 100vh and when the computer players turn animation runs the page can be scrolled down. This then stops once the animation stops running. After spending alot of time trying to fix this I could not find the reason behind the bug and due to this bug self fixing and not effecting the user experience i decided to leave it as a known bug |
+| Viewport height glitch whilst Player 2 animation running  | This glitch only happens when it is player 2s turn. The height of the page is set to 100vh and when the computer players turn animation runs the page can be scrolled down. This then stops once the animation stops running. After spending a lot of time trying to fix this I could not find the reason behind the bug and due to this bug self fixing and not effecting the user experience i decided to leave it as a known bug |
 
 ### Console Bugs
 
 | Bug           | Reason           |
 | ------------- | ---------------- |
-| Interest cohort error | When the page is reloaded using Chrome there is an error message in the console `Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.` Research online has shown that this is an effort to protect the privacy of users whilst using Github pages sites. As this bug is outwith my own control and does not affect functionality or User Experience it has been left as a known bug.|
+| Interest cohort error | When the page is reloaded using Chrome there is an error message in the console `Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.` Research online has shown that this is an effort to protect the privacy of users whilst using GitHub pages sites. As this bug is outwith my own control and does not affect functionality or User Experience it has been left as a known bug.|
 | Navigator user agent error |When using Chrome there is an issue `Audit usage of navigator.userAgent, navigator.appVersion, and navigator.platform`. According to Chrome documentation this is done to "limit browser data shared to remove sensitive information and reduce fingerprints. As this bug is outwith my own control and does not affect functionality or User Experience it has been left as a known bug.|
 
 <details>
@@ -786,7 +786,7 @@ During the project i encountered a number of bugs some of which were solved some
 
 ## Deployment
 
-### Github Pages
+### GitHub Pages
 
 This project was deployed to GitHub pages in the project's early stages to allow continual responsive testing. This was achieved via the following steps:
 
@@ -805,7 +805,7 @@ We can make a copy of the original repository on our GitHub account to view or m
 1. Navigate to www.github.com and log in.
 2. Once logged in navigate to the desired [GitHub Repository](https://github.com/jkingportfolio/CI_PP2_Connect4) that you would like to fork.
 3. At the top right corner of the page click on the fork icon.
-4. There should now be a copy of your original repository in your Github account.
+4. There should now be a copy of your original repository in your GitHub account.
 
 Please note if you are not a member of an organisation on GitHub then you will not be able to fork your own repository.
 
@@ -816,7 +816,7 @@ You can make a local clone of a repository via the following steps:
 1. Navigate to www.github.com and log in.
 2. Once logged in navigate to the desired [GitHub Repository](https://github.com/jkingportfolio/CI_PP2_Connect4) that you would like to clone.
 3. Locate the code button at the top, above the repository file structure.
-4. Select the prefered clone method from HTTPS. SSH or GitHub CLI then click the copy button to copy the URL to your clipboard.
+4. Select the preferred clone method from HTTPS. SSH or GitHub CLI then click the copy button to copy the URL to your clipboard.
 5. Open Git Bash
 6. Update the current working direction to the location in which you would like the clone directory to be created.
 7. Type `git clone` and paste the previously copied URL at Step 4.
@@ -828,7 +828,7 @@ You can make a local clone of a repository via the following steps:
 An EmailJS account was created and templates made using EmailJS tutorial as per their [documentation](https://www.emailjs.com/docs/tutorial/overview/)
 
 1. Create a user account at emailjs.com
-2. Add an email service, call this Contact Service and gvie it an ID name contact_service
+2. Add an email service, call this Contact Service and give it an ID name contact_service
 3. Add a new email template, call this Contact Form and give it an ID name contact_form
 4. Load the EmailJS SDK in the head of your HTML file (it must be placed here to work)
 5. Create a JavaScript file to paste the function provided in the documentation, replacing the emailjs.init function parameter with your own public key.
@@ -843,11 +843,11 @@ An EmailJS account was created and templates made using EmailJS tutorial as per 
 
 ### Images
 
-All images used in this website were created by myself. The icons for Github and Linkedin were taken from FontAwesome.
+All images used in this website were created by myself. The icons for Github and LinkedIn were taken from FontAwesome.
 
 ### Code
 
- Code from external sources were used as a basis and built ontop of in this project, they are credited below:
+ Code from external sources were used as a basis and built on top of in this project, they are credited below:
 
  - How to check if a cell is occupied and has produced a winning combination by [Ania Kubow](https://github.com/kubowania/connect-four)
  - CSS Animation help from [Animista](https://animista.net/)
