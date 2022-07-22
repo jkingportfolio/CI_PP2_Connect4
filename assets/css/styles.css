@@ -1071,4 +1071,12 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
     .game-board {
         margin: 1rem auto 25px;
     }    
+
+    textarea.form-control {
+        height: 105px;
+    }
+
+    .modal-content-left {
+        height: 30rem;
+    }
 }
