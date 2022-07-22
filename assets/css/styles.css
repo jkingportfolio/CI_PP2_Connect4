@@ -893,7 +893,7 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 .modal-content {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     max-width: 400px;
     height: 350px;
     background-color: rgb(255, 255, 255);
