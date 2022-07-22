@@ -22,7 +22,7 @@ Developer: Jamie King
     4. [Structure](#structure)
     5. [Wireframes](#wireframes)
     6. [Game Flowchart](#game-flowchart)
-4. [Technologies Used](#technologies)
+4. [Technologies Used](#technologies-used)
     1. [Coding Languages](#coding-languages)
     2. [Frameworks and Tools](#frameworks-and-tools)
 5. [Features](#features)
