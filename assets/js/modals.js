@@ -122,7 +122,10 @@ document.querySelector('.settings-close').addEventListener('click',
         document.getElementById('toggleMobileMenu').classList.remove('show');
     });
 
-// Function to turn music on
+/*
+ * [This function will turn the in game
+ * music on]
+ */
 document.getElementById('music-on').addEventListener('click',
     function () {
         music = true;
@@ -132,7 +135,10 @@ document.getElementById('music-on').addEventListener('click',
         playMusic();
     });
 
-// Function to turn music off
+/*
+ * [This function will turn the in game
+ * music off]
+ */
 document.getElementById('music-off').addEventListener('click',
     function () {
         music = false;
@@ -142,7 +148,10 @@ document.getElementById('music-off').addEventListener('click',
         pauseMusic();
     });
 
-// Function to turn game sounds on
+/*
+ * [This function will turn game
+ * sounds on]
+ */
 document.getElementById('sound-on').addEventListener('click',
     function () {
         sounds = true;
@@ -151,7 +160,10 @@ document.getElementById('sound-on').addEventListener('click',
         masterMuteUpdate();
     });
 
-// Function to turn game sounds off
+/*
+ * [This function will turn game
+ * sounds ooff]
+ */
 document.getElementById('sound-off').addEventListener('click',
     function () {
         sounds = false;
