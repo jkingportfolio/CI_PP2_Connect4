@@ -10,12 +10,6 @@ body {
     font-family: 'Alfa Slab One', cursive;
 }
 
-.display-flex {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
 .display-flex-column {
     display: flex;
     flex-direction: column;
@@ -1003,19 +997,6 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
 
 .disable-click {
     pointer-events: none;
-}
-
-/* contact submit styles */
-
-.contact-submit-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-submit-text {
-    margin: 20%;
-    text-align: center;
-    animation: roll-in-blurred-bottom 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 /* Credit to https://animista.net/ for the below animation */
