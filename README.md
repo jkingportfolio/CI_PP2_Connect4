@@ -255,7 +255,7 @@ In its entirety the website consists of one main page, four modals and one 404 e
 
 #### Nav Bar 
 
-The navigation bar is featured on the main page. It includes 4 clickable modals:
+The navigation bar is featured on the main page and will aid the user in interacting with the page. It includes 4 clickable modals:
 
 - New Game
 - Help
@@ -311,7 +311,7 @@ The new game modal allows users to select their opponent, confirm or cancel the 
 
 #### Help modal
 
-The help modal displays all information needed to understand how to play the game, user controls and how to display session stats.
+The help modal displays to the user all information needed to understand how to play the game, user controls and how to display session stats.
 
 - Covered in user story: 1
 
@@ -319,7 +319,7 @@ The help modal displays all information needed to understand how to play the gam
 
 #### Settings modal 
 
-The settings modal allows users to turn music or sounds on and off individually. To improve user experience music and sounds are off by default.
+The settings modal allows users to turn music or sounds on and off individually. Having audio in the game will provide additional feedback to the user. To improve user experience music and sounds are off by default.
 
 - Covered in user story: 7
 
@@ -359,7 +359,7 @@ The contact modal displays a form which enables the user to provide feedback to 
 
 #### Notification Bar
 
-The notification bar is located above the game board and will display a notification relevant to the state of the game.
+The notification bar is located above the game board and will display a notification relevant to the state of the game to the user.
 
 - Covered in user stories: 3, 4 & 5
 
@@ -387,7 +387,7 @@ The notification bar has 4 animations. One for each of the messages that can be 
 
 #### Play again button
 
-The play again button will display when a game ends. Once clicked it will reset the game board and its display states will change to none. 
+The play again button will display when a game ends allowing a use to quickly and easily start a new game. Once clicked it will reset the game board and its display states will change to none. 
 
 - Covered in user story: 9
 
@@ -395,7 +395,7 @@ The play again button will display when a game ends. Once clicked it will reset 
 
 #### Stats Button
 
-The stats button will display the current session player 1 / player 2 wins and how many draws have occurred. On Desktops this will be displayed by hovering over, while on touch screen devices will be displayed with a touch of the screen on the button.
+The stats button will display the current session player 1 / player 2 wins and how many draws have occurred to the user. On Desktops this will be displayed by hovering over, while on touch screen devices will be displayed with a touch of the screen on the button.
 
 - Covered in user story: 6
 
@@ -426,7 +426,7 @@ The orientation warning modal detects if the orientation of the screen has chang
 
 #### Master Mute Button
 
-The master mute button is located just below the main game board. When this button is pressed it will turn on or off both music and sounds dependant on its current state.
+The master mute button is located just below the main game board. This feature will give the user an easily accesible option to control all audio in the site. When this button is pressed it will turn on or off both music and sounds dependant on its current state. 
 
 - Covered in user story: 7
 
@@ -434,7 +434,7 @@ The master mute button is located just below the main game board. When this butt
 
 #### Vibration alert
 
-A vibration alert has been implemented when a user tries to place a counter which results in an Invalid Move. This feature is only available on devices which support device vibration.
+A vibration alert has been implemented when a user tries to place a counter which results in an Invalid Move which will provide additional feedback from the game to the user. This feature is only available on devices which support device vibration.
 
 - Covered in user story: 4
 
