@@ -1064,3 +1064,11 @@ Credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hov
         display: none;
     }
 }
+
+/* 404 page media query */
+
+@media only screen and (min-height: 700px) {
+    .game-board {
+        margin: 1rem auto 25px;
+    }    
+}
